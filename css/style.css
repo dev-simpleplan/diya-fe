@@ -707,7 +707,34 @@ color:#fff;
     justify-content: space-between;
     row-gap: 52px;
 }
-
+/* silent killer starts */
+.inner-silent{
+  width: 100%;
+}
+.sr-bottom a{
+  /* font-family: 'Satoshi'; */
+ font-size: 15px;
+ font-weight: 700;
+ line-height: 18px;
+ letter-spacing: 0.09em;
+ color:#FFFFFF;
+ text-decoration: underline;
+ }
+ .sr-top{
+     max-width: 45ch;
+ }
+ .silent-in{
+     display: flex;
+     justify-content: space-between;
+     padding-top: 151px;
+     padding-bottom: 182px;
+ }
+ .silent-right{
+     display: flex;
+     flex-direction: column;
+     row-gap: 112px;
+ }
+/* silent killer ends */
 
 
 
