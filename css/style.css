@@ -91,7 +91,7 @@ line-height: 31px;
 letter-spacing: -0.03em;
 color:#CED9D5
 }
-.custom-button a {
+.custom-button {
     display: inline-block;
     text-align: center;
     border: 1px solid #034A2F;
