@@ -55,10 +55,14 @@ var splide = new Splide( '.splide', {
   
   splide.mount();
   
-  
+
+//Banner Animation
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".ban-img img", { scale: "12vw, 12vh" }, { scale: "1, 1" });
+// add a media query. When it matches, the associated function will run
+    gsap.set(".ban-img img", { scale: "container.offsetWidth / image.offsetWidth" });
+
+  
 
 // gsap.registerPlugin(ScrollTrigger);
 
