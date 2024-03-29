@@ -506,7 +506,12 @@ row-gap: 158px;
   align-items: center;
   column-gap: 82px;
   padding:23px 0;
+  display: none;
 }
+
+
+
+
 /* segment ends */
 /* accomplishment starts */
 .acctop span{
@@ -909,6 +914,17 @@ column-gap: 326px;
   justify-content: space-between;
   row-gap: 70px;
 }
+.blog-bottom .blog1:nth-child(3n+1) .blog-label {
+  background-color: #BCD7F0;
+}
+
+.blog-bottom .blog1:nth-child(3n+2) .blog-label {
+  background-color: #EEBCAC;
+}
+
+.blog-bottom .blog1:nth-child(3n+3) .blog-label {
+  background-color: #AEC3A3;
+}
 /* Blog Page Ends */
 /* faq page starts */
 .inner-faq{
@@ -1075,13 +1091,13 @@ min-height: 100vh;
   width: 100%;
     border: 1px solid #547468;
     position: absolute;
-    top: 350px;
+    top: 402px;
 }
 .footer-line3{
   width: 100%;
   border: 1px solid #547468;
   position: absolute;
-  top: 350px;
+  top: 402px;
 }
 
 .inner-footer{
