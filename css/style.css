@@ -722,6 +722,12 @@ inset: 0;
 }
 /* solutions ends */
 /* Work starts */
+.work {
+  position: relative; 
+}
+.pinned .work-line {
+  background-color: blue; 
+}
 .work-top p{ 
  max-width: 46ch;
  }
@@ -731,7 +737,6 @@ inset: 0;
      justify-content: space-between;
      row-gap: 40px;
  }
-
  .rule-top{
   font-family: 'Gambarino-Regular';
  font-size: 49px;
@@ -773,6 +778,44 @@ inset: 0;
      flex-direction: column;
      justify-content: space-between;
      row-gap: 80px;
+ }
+ .work-line{
+  border: 1px solid #CCCCCC;
+    width: 75%;
+    position: relative;
+ }
+ .work-ellipse1{
+  border: 1px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -12px;
+    left: -1px;
+    background: #ccc;
+ }
+ .work-ellipse2{
+  border: 1px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -12px;
+    left: 49%;
+    background: #ccc;
+ }
+ .work-ellipse3{
+  border: 1px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -12px;
+    left: 99%;
+    background: #ccc;
  }
  /* Work Ends */
 
@@ -832,6 +875,18 @@ justify-content: space-between;
   justify-content: space-between;
   row-gap: 17px;
 }
+.story-content h3{
+  transition: 0.6s ease all;
+}
+.story-content p{
+  transition: 0.6s ease all;
+}
+.story-bottom-left , .story-bottom-right{
+  transition: 0.6s ease all;
+}
+.link-arrow{
+  transition: 0.6s ease all;
+}
 .inner-stories{
   display: flex;
   flex-direction: column;
@@ -842,6 +897,7 @@ justify-content: space-between;
   flex: 0 0 48%;
   border: 1px solid #E8E8E8;
   padding: 28px 52px 20px 25px;
+  transition: 0.6s ease all;
   /* padding: 28px 34px 20px 34px; */
 }
 .link-arrow{
@@ -858,31 +914,24 @@ justify-content: space-between;
   flex-shrink: 0;
 }
 .story:hover{
-  transition: 0.6s ease all;
   background: #034A2F;
 }
 .story:hover .story-content h3 {
-  transition: 0.6s ease all;
   color: #fff;
 }
 .story:hover .story-content p{
-  transition: 0.6s ease all;
   color: #fff;
 }
 .story:hover .story-bottom-left {
-  transition: 0.6s ease all;
   color: #98B2A9;
 }
 .story:hover  .story-bottom-right{
-  transition: 0.6s ease all;
   color: #98B2A9;
 }
 .story:hover .link-arrow{
-  transition: 0.6s ease all;
   background-color: #fff;
 }
 .story:hover .link-arrow img{
-  transition: 0.6s ease all;
   filter: brightness(0);
 }
 .splide__arrow--prev {
@@ -1048,14 +1097,27 @@ height:100%;
 .acc-para p{
   max-width: 58ch;
 }
+.acc-para{
+  padding-top: 18px;
+    padding-bottom: 24px;
+}
+.accrodion-container.active .toggle {
+padding-top: 0;
+}
 .accrodion-container{
   display: flex;
     flex-direction: column;
     justify-content: space-between;
-    row-gap: 18px;
+    /* row-gap: 18px; */
     border-bottom: 1px solid #D9D9D9;
-    padding-bottom: 24px;
-    padding-top: 24px;
+    /* padding-bottom: 24px;
+    padding-top: 24px; */
+}
+.toggle{
+  padding: 24px 0;
+}
+.faq-arrow{
+  transition: 0.6s ease all;
 }
 .accrodion-container:hover {
   background-color: rgba(217, 227, 212, 0.26);
@@ -1067,29 +1129,9 @@ height:100%;
   background-color: transparent;
 }
 .accrodion-container.active .faq-arrow {
-  transition: 0.6s ease all;
   transform: rotate(180deg);
 }
 /* faq page ends */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* pre-footer starts */
 .pf-left-top h2{
   font-family: "Inter", sans-serif;;
@@ -1168,7 +1210,6 @@ height:100%;
   position: absolute;
   top: 402px;
 }
-
 .inner-footer{
   padding-top: 24px;
     padding-bottom: 46px;
