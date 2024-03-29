@@ -47,91 +47,96 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-var splide = new Splide( '.splide', {
+// customer strories slider
+var splide = new Splide( '#splide1', {
     type   : 'loop',
-    
+    padding:"0rem",
     perPage: 1.25, 
   } );
   
   splide.mount();
-  
+  // customer strories slider
+  // blog slider starts
+  var splide2 = new Splide( '#splide3', {
+    type   : 'loop',
+    padding:"0rem",
+    perPage: 2.5, 
+ 
+    breakpoints: {
+      767: {
+        perPage: 1.5,
+      },
+      
+    }
+  } );
+  splide2.mount();
+  // blog slider ends
 
 //Banner Animation
 gsap.registerPlugin(ScrollTrigger);
 
 // add a media query. When it matches, the associated function will run
-    gsap.set(".ban-img img", { scale: "container.offsetWidth / image.offsetWidth" });
+    // gsap.set(".ban-img img", { scale: "container.offsetWidth / image.offsetWidth" });
 
-  
+//   counter js
+    var counted = 0;
+      $(window).scroll(function() {
 
-// gsap.registerPlugin(ScrollTrigger);
+        var oTop = $('.inner-acc').offset().top - window.innerHeight;
+        if (counted == 0 && $(window).scrollTop() > oTop) {
+          $('span.num-counter').each(function() {
+            var $this = $(this),
+              countTo = $this.attr('data-count');
+            $({
+              countNum: $this.text()
+            }).animate({
+                countNum: countTo
+              },
 
-// let navigation = document.querySelector(".navigation");
-// let images = document.querySelectorAll(".bannerimg img");
-// let currentImageIndex = 0; // Track the index of the currently displayed image
+              {
 
-// // Hide the navigation initially
-// navigation.style.display = "none";
+                duration: 2000,
+                easing: 'swing',
+                step: function() {
+                  $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                  $this.text(this.countNum);
+                  //alert('finished');
+                }
 
-// let t1 = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: ".banner",
-//         pin: true,
-//         start: "top top",
-//         end: "+=150%",
-//         scrub: 0.1,
-//         markers: true,
-//         ease: "none",
-//     },
-// });
+              });
+          });
+          counted = 1;
+        }
 
-// t1.fromTo(
-//     ".bannertext",
-//     { y: 315, scale: 1 },
-//     { y: -95, scale: 0.6 },
-//     "abc"
-// )
-// .fromTo(
-//     ".bannertext",
-//     { x: "0" },
-//     { x: "-240" },
-// )
-// .fromTo(
-//     ".bannerimg",
-//     { width: "100vw", height: "100vh", top: 0, left: 0 },
-//     { width: 140, height: 70, top: "40%", left: "41%" },
-//     "abc"
-// )
-// .to(".text1 , .text2 ,.bb-left ,.bb-right", { y: 0, x: 0, duration: 0.4 });
+      });
+// counter js ends
+//Faq Accordian
+$(document).ready(function() {
+  // Collapse all accordion items except the one with the 'open' class
+  $('.accrodion-container').not('.open').find('.inner').hide();
 
-// // ScrollTrigger to show/hide navigation
-// ScrollTrigger.create({
-//     trigger: ".banner",
-//     start: "top top",
-//     end: "+=150%",
-//     onEnter: () => {
-//         navigation.style.display = "block";
-//     },
-//     onLeaveBack: () => {
-//         navigation.style.display = "none";
-//     }
-// });
+  // Handle accordion toggle
+  $('.toggle').click(function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $accordionItem = $this.closest('.accrodion-container');
 
-// // ScrollTrigger to change images
-// ScrollTrigger.create({
-//     trigger: ".banner",
-//     start: "top top",
-//     end: "+=150%",
-//     onUpdate: (self) => {
-//         let progress = self.progress;
-//         let index = Math.floor(progress * images.length);
-        
-//         // Check if index has changed
-//         if (index !== currentImageIndex) {
-//             // Change the source of the corresponding image
-//             images[currentImageIndex].style.opacity = 0; // Hide previous image
-//             images[index].style.opacity = 1; // Show current image
-//             currentImageIndex = index; // Update current index
-//         }
-//     }
-// });
+    if (!$accordionItem.hasClass('active')) {
+      $('.accrodion-container').removeClass('active').find('.inner').slideUp(350);
+      $accordionItem.addClass('active').find('.inner').slideDown(350);
+    } else {
+      $accordionItem.removeClass('active').find('.inner').slideUp(350);
+    }
+  });
+});
+// ticker
+$('.bxslider').bxSlider({
+  minSlides: 2,
+  maxSlides: 2,
+  slideWidth: 170,
+  slideMargin: 10,
+  ticker: true,
+  speed: 9000
+});
