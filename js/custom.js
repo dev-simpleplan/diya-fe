@@ -47,14 +47,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-var splide = new Splide( '.splide', {
+// customer strories slider
+var splide = new Splide( '#splide1', {
     type   : 'loop',
-    padding:"5rem",
+    padding:"0rem",
     perPage: 1.25, 
   } );
   
   splide.mount();
-  
+  // customer strories slider
+  // blog slider starts
+  var splide2 = new Splide( '#splide3', {
+    type   : 'loop',
+    padding:"0rem",
+    perPage: 2.5, 
+ 
+    breakpoints: {
+      767: {
+        perPage: 1.5,
+      },
+      
+    }
+  } );
+  splide2.mount();
+  // blog slider ends
 
 //Banner Animation
 gsap.registerPlugin(ScrollTrigger);
@@ -114,4 +130,13 @@ $(document).ready(function() {
       $accordionItem.removeClass('active').find('.inner').slideUp(350);
     }
   });
+});
+// ticker
+$('.bxslider').bxSlider({
+  minSlides: 2,
+  maxSlides: 2,
+  slideWidth: 170,
+  slideMargin: 10,
+  ticker: true,
+  speed: 9000
 });
