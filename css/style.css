@@ -307,6 +307,7 @@ color:#034A2F
 /* hamburger menu */
 .sidenav{
     display: none;
+    background-color: #FAF9F7;
 }
 .ham-menu {
     display: inline-block;
@@ -443,7 +444,7 @@ color:#C4BDB0;
 /* header ends */
 /* banner starts */
 .head h1{
-    font-size: 144px;
+    font-size: clamp(80px, 8vw, 144px);
     font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.03px;
@@ -478,6 +479,7 @@ color:#C4BDB0;
     padding-top: 6.5%;
     width: 140px;
     z-index: 1;
+    margin: 0px 20px;
 }
 .banner-wrapper{
     display: flex;
@@ -536,6 +538,9 @@ section.banner-home .container{
   padding-bottom: 64px;
 }
 .ban-para .body2{
+}
+.mobile-sub-head h2{
+  display: none;
 }
   /* banner ends */
 /* segment starts */
@@ -1587,11 +1592,14 @@ padding-bottom: 2px;
 /* Max Width 1500px Ends */
 /* Max Width 1400px */
 @media(max-width: 1400px){
+  .sub-head h2 {
+    font-size: 80px;
+  }
 }
 /* Max Width 1400px Ends */
 /* Max Width 1300px */
 @media(max-width: 1300px){
-
+  
 }
 /* Max Width 1300px Ends */
 /* Max Width 1200px */
@@ -1612,6 +1620,12 @@ padding-bottom: 2px;
 }
 .inner-pre-footer {
   padding: 100px 0;
+}
+section.banner-home {
+background-color: #FAF9F7;
+}
+.sub-head h2 {
+  font-size: 65px;
 }
 }
 /* Max Width 1200px Ends */
@@ -1737,6 +1751,17 @@ padding-bottom: 2px;
   margin-left: auto;
     margin-right: auto;
 }
+.banner-left {
+  width:100%;
+  row-gap: 80px;
+  justify-content: flex-start;
+}
+.banner-right{
+  width: 100%;
+}
+.banner-wrapper {
+  flex-direction: column;
+}
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
@@ -1808,6 +1833,28 @@ line-height: 54.44px;
     width: 100%;
     row-gap: 48px;
   }
+  .sub-head h2 {
+font-size: 35px;
+line-height: 53.41px;
+  }
+  .sub-head h2{
+    display: none;
+   }
+   .mobile-sub-head h2{
+    display: block;
+   }
 }
+@media(max-width: 500px){
+ 
+ .head h1 {
+  font-size: clamp(65px, 8vw, 144px);
+ }
+}
+@media(max-width: 370px){
+  .head h1 {
+    font-size: clamp(60px, 8vw, 144px);
+   }
+  }
+
 /* Max Width 767px Ends */
 /* Responsive Css Ends */
