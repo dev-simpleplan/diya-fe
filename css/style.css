@@ -1007,6 +1007,11 @@ justify-content: space-between;
 .link-arrow{
   transition: 0.6s ease all;
 }
+.link-arrow img{
+  transition: 0.6s ease all;
+    width: 13px;
+    height:13px;
+}
 .inner-stories{
   display: flex;
   flex-direction: column;
