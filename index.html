@@ -1696,11 +1696,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
 
-// create
-let mm = gsap.matchMedia();
-
-// add a media query. When it matches, the associated function will run
-mm.add("(min-width: 992px)", () => {
+    if (window.matchMedia("(min-width: 1200px)").matches) {
 
     gsap.to('.solbottom.solbottom1', {
         duration: 1,
@@ -1714,11 +1710,7 @@ mm.add("(min-width: 992px)", () => {
             markers: false
         }
     })
-});
-
-// later, if we need to revert all the animations/ScrollTriggers...
-mm.revert();
-    
+}
 });
 
 </script>
@@ -1733,62 +1725,56 @@ mm.revert();
     // GSAP Animation
 document.addEventListener("DOMContentLoaded", function() {
 
-    // create
-let mm2 = gsap.matchMedia();
-
-// add a media query. When it matches, the associated function will run
-mm2.add("(min-width: 992px)", () => {
+    if (window.matchMedia("(min-width: 1200px)").matches) {
      // Create a timeline
      const tl = gsap.timeline();
 
-gsap.set('.lf.one', {width: 0});
-gsap.set('.lf.two', {width: 0});
+    gsap.set('.lf.one', {width: 0});
+    gsap.set('.lf.two', {width: 0});
 
-// Animation to fill the line
-tl.to('.lf.one', {
+    // Animation to fill the line
+    tl.to('.lf.one', {
+        duration: 1,
+        width: '50%',
+        borderColor: '#222',
+    });
+    // Animation to fill the line
+    tl.to('.lf.two', {
     duration: 1,
     width: '50%',
     borderColor: '#222',
-});
-// Animation to fill the line
-tl.to('.lf.two', {
-duration: 1,
-width: '50%',
-borderColor: '#222',
-});
+    });
 
-ScrollTrigger.create({
-animation: tl,
-trigger: 'section.work',
-start: 'top top',
-end: '+=100%',
-scrub: 1,
-pin: true,
-markers: true,
-onUpdate: (self) => {
-    const progress = self.progress;
-    console.log(progress);
-    if (progress >= 0 && progress <= 0.48) {
-        $('.work-ellipse1').addClass('active');
-    } 
-    else if (progress >= 0.49 && progress <= 0.51) {
-        $('.work-ellipse2').addClass('active');
-    } 
-    else if (progress <= 0.49) {
-        $('.work-ellipse2').removeClass('active');
-    } 
-    else if (progress > 0.91 && progress <= 0.99) {
-        $('.work-ellipse3').addClass('active');
+    ScrollTrigger.create({
+    animation: tl,
+    trigger: 'section.work',
+    start: 'top top',
+    end: '+=100%',
+    scrub: 1,
+    pin: true,
+    markers: false,
+    onUpdate: (self) => {
+        const progress = self.progress;
+        console.log(progress);
+        if (progress >= 0 && progress <= 0.48) {
+            $('.work-ellipse1').addClass('active');
+        } 
+        else if (progress >= 0.49 && progress <= 0.51) {
+            $('.work-ellipse2').addClass('active');
+        } 
+        else if (progress <= 0.49) {
+            $('.work-ellipse2').removeClass('active');
+        } 
+        else if (progress > 0.91 && progress <= 0.99) {
+            $('.work-ellipse3').addClass('active');
+        }
+        else if (progress < 0.91) {
+            $('.work-ellipse3').removeClass('active');
+        }
     }
-    else if (progress < 0.91) {
-        $('.work-ellipse3').removeClass('active');
-    }
+    });
 }
-});
-
-});
-mm2.revert();
-});
+    });
 
 </script>
 <!-- Works Animation Ends -->
