@@ -210,3 +210,38 @@ $('.bxslider').bxSlider({
 //   },
 // });
 
+// Variables to store previous window size
+let prevWidth = window.innerWidth;
+let resizeTimeout;
+
+// Function to reload the page
+function reloadPage() {
+    location.reload();
+}
+
+// Event listener for window resize
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout);
+
+    resizeTimeout = setTimeout(function() {
+        // Current window size
+        const currentWidth = window.innerWidth;
+
+        // Check if width change is significant
+        const widthDifference = Math.abs(currentWidth - prevWidth);
+        const threshold = 50; // Adjust as needed
+
+        // Only reload if the width difference is above the threshold
+        if (widthDifference > threshold) {
+            reloadPage();
+        }
+
+        // Update previous width
+        prevWidth = currentWidth;
+    }, 200); // Delay before checking for resize, adjust as needed
+});
+
+        if (performance.navigation.type === 1) {
+      // Reload the page from the top before the DOM is fully loaded
+      window.location.replace(window.location.href);
+    }
