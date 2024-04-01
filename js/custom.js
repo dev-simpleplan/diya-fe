@@ -82,16 +82,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 // customer strories slider
-var splide = new Splide( '#splide1', {
-    type   : 'loop',
-    padding:"0rem",
-    perPage: 1.25, 
-  } );
-  
-  splide.mount();
+// var splide = new Splide( '.splide1', {
+//     type   : 'loop',
+//     padding:"0rem",
+//     perPage: 1.25, 
+//   } ).mount();
   // customer strories slider
   // blog slider starts
-  var splide2 = new Splide( '#splide3', {
+  var splide2 = new Splide( '.splide3', {
     type   : 'loop',
     padding:"0rem",
     perPage: 2.5, 
@@ -102,8 +100,7 @@ var splide = new Splide( '#splide1', {
       },
       
     }
-  } );
-  splide2.mount();
+  } ).mount();
   // blog slider ends
 
 //Banner Animation
@@ -169,10 +166,10 @@ $(document).ready(function() {
 $('.bxslider').bxSlider({
   minSlides: 2,
   maxSlides: 2,
-  slideWidth: 170,
-  slideMargin: 10,
+  slideWidth: 'auto',
+  slideMargin: 18,
   ticker: true,
-  speed: 9000
+  speed: 20000
 });
 // work-scroll animation
 // gsap.registerPlugin(ScrollTrigger);
