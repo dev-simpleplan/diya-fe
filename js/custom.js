@@ -1,3 +1,37 @@
+// Header Animation
+var prevScrollpos = window.pageYOffset;
+var navbar = document.querySelector(".navigation");
+var scrollThreshold = 100; // Set the threshold value in pixels
+
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+
+// Check if the current scroll position is greater than or equal to the threshold
+if (currentScrollPos >= scrollThreshold) {
+    if (prevScrollpos > currentScrollPos) {
+    navbar.style.top = "0";
+    } else {
+    navbar.style.top = "-100px";
+    }
+} else {
+    // If the scroll position is less than the threshold, always show the navbar
+    navbar.style.top = "0";
+}
+
+prevScrollpos = currentScrollPos;
+}
+
+//Header Js
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 200) {
+    $('.navigation').addClass('backdrop');
+  } else {
+    $('.navigation').removeClass('backdrop');
+  }
+});
+
+// Header Js Ends
+
 function myFunction(x) {
     x.classList.toggle("change");
     var menu = document.querySelector('.menu');

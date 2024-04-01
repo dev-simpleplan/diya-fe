@@ -40,7 +40,7 @@
 <body>
     <wrapper>
         <!-- header starts -->
-        <header>
+        <header id="navbar">
             <div class="navigation">
                 <div class="container-fluid">
                     <div class="inner-nav">
@@ -251,6 +251,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="banner-color">
+
+                </div>
             </section>
             <!-- banner ends -->
             <!-- segment starts -->
@@ -354,8 +357,13 @@
                 </div>
             </section>
             <!-- accomplishment ends -->
+
+            <!-- Spacer -->
+            <div class="spacer"></div>
+            <!-- Spacer -->
+
             <!-- solutions page starts -->
-            <section class="paddy solutions">
+            <section class="solutions">
                 <div class="inner-sol">
                     <div class="solutions-top">
                         <div class="container-fluid">
@@ -545,8 +553,13 @@
                 </div>
             </section>
             <!-- solutions page ends -->
+
+            <!-- Spacer -->
+            <div class="spacer"></div>
+            <!-- Spacer -->
+
             <!-- How it work starts -->
-            <section class="paddy work">
+            <section class="work">
                 <div class="work-in">
                     <div class="container-fluid">
                         <div class="inner-work">
@@ -560,6 +573,12 @@
                             <div class="work-bottom">
                                 <div class="wb-top">
                                      <div class="work-line">
+                                        <div class="line-fill">
+                                            <div class="line-fill-wrap">
+                                                <div class="lf one"></div>
+                                                <div class="lf two"></div>
+                                            </div>
+                                        </div>
                                         <div class="work-ellipse1"></div>
                                         <div class="work-ellipse2"></div>
                                         <div class="work-ellipse3"></div>
@@ -609,8 +628,13 @@
                 </div>
             </section>
             <!-- how it work ends -->
+
+            <!-- Spacer -->
+            <div class="spacer"></div>
+            <!-- Spacer -->
+
             <!-- stories page starts -->
-            <section class="paddy stories">
+            <section class="stories">
                 <div class="stories-in">
                     <div class="container-fluid">
                         <div class="inner-stories">
@@ -762,8 +786,13 @@
                 </div>
             </section>
             <!-- stories page ends -->
+
+            <!-- Spacer -->
+            <div class="spacer"></div>
+            <!-- Spacer -->
+
             <!-- Blog page starts -->
-            <section class="paddy blog">
+            <section class="blog">
                 <div class="blog-in">
                     <div class="container-fluid">
                         <div class="inner-blog">
@@ -928,8 +957,13 @@
                 </div>
             </section>
             <!-- Blog page ends -->
+
+            <!-- Spacer -->
+            <div class="spacer"></div>
+            <!-- Spacer -->
+
             <!-- faq page starts -->
-            <section class="paddy faq">
+            <section class="faq">
                 <div class="inner-faq">
                     <div class="faq-left">
                         <div class="faq-img">
@@ -1195,9 +1229,162 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="js\custom.js"></script>
-
     <!-- JS Ends-->
 </body>
 <!-- Body ends-->
+
+<!-- Banner Animation -->
+
+<script>
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+
+    // create
+
+    if (window.matchMedia("(min-width: 1200px)").matches) {
+    const banner = document.querySelector('.banner-home');
+    const image = document.querySelector('.ban-img img');
+
+    if (!banner || !image) {
+        console.error('Banner or image element not found.');
+        return;
+    }
+
+    // Get the initial width and height of the banner
+    const bannerWidth = banner.offsetWidth+330;
+    const bannerHeight = banner.offsetHeight;
+
+    // Set initial state using GSAP to cover the entire banner
+    gsap.set(image, { width: bannerWidth, height: bannerHeight, xPercent: -40.4, yPercent: -56 });
+    gsap.set('.head h1', { fontSize: '18vw', y: '24vw', filter: 'invert(100%)' });
+    gsap.set(['.sub-head h2 span.txt', '.bl-bottom', '.banner-right'], { opacity: 0 });
+    gsap.set('.banner-color', { opacity: 1 });
+
+    var tl = gsap.timeline({});
+    tl.to(image, {
+        duration: 1,
+        width: '140px',
+        height: '100%',
+        xPercent: 0,
+        yPercent: 0,
+    });
+    tl.to('.head h1', {
+        duration: 1,
+        fontSize: '144px',
+        y: 0,
+        filter: 'invert(0%)',
+    }, 0);
+    tl.to(['.sub-head h2 span.txt', '.bl-bottom', '.banner-right'], {
+        duration: 2,
+        opacity: 1,
+    }, 0);
+    tl.to('.banner-color', { duration: 1.5, opacity: 0 }, 0);
+
+    // Create a ScrollTrigger for the tl timeline
+    ScrollTrigger.create({
+        animation: tl,
+        trigger: '.banner-home',
+        start: 'top top',
+        end: '+=100%',
+        scrub: 1,
+        pin: true,
+        anticipatePin: 1,
+        markers: false,
+    });
+
+
+}
+});  
+
+
+</script> 
+
+<!-- Banner Animation Ends -->
+
+<!-- Solution For Animation -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+//     // Function to scale down the div based on scroll position
+    // Function to check if an element is fully in the viewport
+// Function to check if an element is fully in the viewport
+    gsap.to('.solbottom.solbottom1', {
+        duration: 1,
+        scale: 0.6,
+        opacity: 0.8,
+        scrollTrigger:{
+            trigger: '.inner-solbottom',
+            scrub: 1,
+            start: 'top top',
+            end: '+=100%',
+            markers: false
+        }
+    })
+});
+
+</script>
+
+<!-- Solution For Animation Ends -->
+
+
+
+<!-- Works Animation -->
+
+<script>
+    // GSAP Animation
+document.addEventListener("DOMContentLoaded", function() {
+    // Create a timeline
+    const tl = gsap.timeline();
+
+    gsap.set('.lf.one', {width: 0});
+    gsap.set('.lf.two', {width: 0});
+
+    // Animation to fill the line
+    tl.to('.lf.one', {
+        duration: 1,
+        width: '50%',
+        borderColor: '#222',
+    });
+    // Animation to fill the line
+    tl.to('.lf.two', {
+    duration: 1,
+    width: '50%',
+    borderColor: '#222',
+    });
+
+    ScrollTrigger.create({
+    animation: tl,
+    trigger: 'section.work',
+    start: 'top top',
+    end: '+=100%',
+    scrub: 1,
+    pin: true,
+    markers: true,
+    onUpdate: (self) => {
+        const progress = self.progress;
+        console.log(progress);
+        if (progress >= 0 && progress <= 0.48) {
+            $('.work-ellipse1').addClass('active');
+        } 
+        else if (progress >= 0.49 && progress <= 0.51) {
+            $('.work-ellipse2').addClass('active');
+        } 
+        else if (progress <= 0.49) {
+            $('.work-ellipse2').removeClass('active');
+        } 
+        else if (progress > 0.91 && progress <= 0.99) {
+            $('.work-ellipse3').addClass('active');
+        }
+        else if (progress < 0.91) {
+            $('.work-ellipse3').removeClass('active');
+        }
+    }
+});
+
+});
+
+</script>
+<!-- Works Animation Ends -->
 
 </html>
