@@ -22,6 +22,8 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css\style.css" rel="stylesheet">
     <link href="css\anshul.css" rel="stylesheet">
     <style>
@@ -40,7 +42,7 @@
 <body>
     <wrapper>
         <!-- header starts -->
-        <header>
+        <header id="navbar">
             <div class="navigation">
                 <div class="container-fluid">
                     <div class="inner-nav">
@@ -225,9 +227,10 @@
                                     <h1>a better you</h1>
                                 </div>
                                 <div class="sub-head">
-                                    <h2><span class="txt one">like many</span>&nbsp;<span class="ban-img"><img
-                                                src="images/homeimg (1).png" alt=""></span>&nbsp;<span
+                                    <h2 class="mob-none"><span class="txt one">like many</span><span class="ban-img"><img
+                                                src="images/homeimg (1).png" alt=""></span><span
                                             class="txt two">others</span></h2>
+                                    <h2 class="mob-display">like many others</h2>
                                 </div>
                             </div>
                             <div class="bl-bottom">
@@ -250,7 +253,11 @@
                             </div>
                         </div>
                     </div>
+                   
                 </div>
+                <div class="banner-color">
+                </div>
+
             </section>
             <!-- banner ends -->
             <!-- segment starts -->
@@ -269,28 +276,28 @@
                         <div class="mobile-segment-list">
                             <ul class="bxslider">
                                 <li>
-                                    <div class="segli label2 green">PERSONALIZED APPROACH</div>
+                                    <div class="tick-wrap">
+                                        <div class="segli label2 green">PERSONALIZED APPROACH</div>
+                                        <div class="ellipse"></div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="ellipse"></div>
+                                    <div class="tick-wrap">
+                                        <div class="segli label2 green">Expert Guidance</div>
+                                        <div class="ellipse"></div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="segli label2 green">EXPERT GUIDANCE</div>
+                                    <div class="tick-wrap">
+                                        <div class="segli label2 green">Holistic Well-being</div>
+                                        <div class="ellipse"></div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="ellipse"></div>
-                                </li>
-                                <li>
-                                    <div class="segli label2 green">HOLISTIC WELL-BEING</div>
-                                </li>
-                                <li>
-                                    <div class="ellipse"></div>
-                                </li>
-                                <li>
-                                    <div class="segli label2 green">CONFIDENTIALITY</div>
-                                </li>
-                                <li>
-                                    <div class="ellipse"></div>
+                                    <div class="tick-wrap">
+                                        <div class="segli label2 green">Confidentiality</div>
+                                        <div class="ellipse"></div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -354,8 +361,13 @@
                 </div>
             </section>
             <!-- accomplishment ends -->
+
+            <!-- Spacer -->
+            <div class="spacer"></div>
+            <!-- Spacer -->
+
             <!-- solutions page starts -->
-            <section class="paddy solutions">
+            <section class="solutions">
                 <div class="inner-sol">
                     <div class="solutions-top">
                         <div class="container-fluid">
@@ -371,6 +383,7 @@
                     <div class="solutions-bottom">
                         <div class="container-fluid">
                             <div class="inner-solbottom">
+                                <div class="solbottom solbottom1">
                                 <div class="program">
                                     <div class="program-top">
                                         <div class="program-head">
@@ -453,6 +466,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                </div>
+                                <div class="solbottom solbottom2">
                                 <div class="program program2">
                                     <div class="program-top">
                                         <div class="program-head">
@@ -535,14 +550,20 @@
                                         </div>
                                     </div>
                                 </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- solutions page ends -->
+
+            <!-- Spacer -->
+            <div class="spacer"></div>
+            <!-- Spacer -->
+
             <!-- How it work starts -->
-            <section class="paddy work">
+            <section class="work">
                 <div class="work-in">
                     <div class="container-fluid">
                         <div class="inner-work">
@@ -556,6 +577,12 @@
                             <div class="work-bottom">
                                 <div class="wb-top">
                                      <div class="work-line">
+                                        <div class="line-fill">
+                                            <div class="line-fill-wrap">
+                                                <div class="lf one"></div>
+                                                <div class="lf two"></div>
+                                            </div>
+                                        </div>
                                         <div class="work-ellipse1"></div>
                                         <div class="work-ellipse2"></div>
                                         <div class="work-ellipse3"></div>
@@ -605,8 +632,13 @@
                 </div>
             </section>
             <!-- how it work ends -->
+
+            <!-- Spacer -->
+            <div class="spacer"></div>
+            <!-- Spacer -->
+
             <!-- stories page starts -->
-            <section class="paddy stories">
+            <section class="stories">
                 <div class="stories-in">
                     <div class="container-fluid">
                         <div class="inner-stories">
@@ -684,82 +716,375 @@
                         </div>
                     </div>
                     <div class="mobile-stories-bottom">
-                        <div class="splide" id="splide1" aria-label="Splide Basic HTML Example">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide"><a href="#">
-                                            <div class="story">
-
-                                                <div class="inner-story">
-                                                    <div class="story-top">
-                                                        <div class="story-top-top">
-                                                            <div class="stars">
-                                                                <img src="images\star.svg" alt="">
-                                                                <img src="images\star.svg" alt="">
-                                                                <img src="images\star.svg" alt="">
-                                                                <img src="images\star.svg" alt="">
-                                                                <img src="images\star.svg" alt="">
-                                                            </div>
-                                                            <div class="link-arrow">
-                                                                <img src="images\white-arrow.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="story-content">
-                                                            <h3>Regained my energy levels</h3>
-                                                            <p class="bodyp">I recommend using Diya's services to
-                                                                everyone i
-                                                                know dealing with diabetes. </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="story-bottom label3">
-                                                        <div class="story-bottom-left"> Program participant</div>
-                                                        <div class="story-bottom-right"> Pre-Diabetic</div>
-                                                    </div>
-                                                </div>
-
+                        <div class="container-fluid">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="blog1">
+                                        <a href="#">
+                                            <div class="blogimg">
+                                                <img src="images/blog2 (1).png" alt="">
                                             </div>
-                                        </a></li>
-                                    <li class="splide__slide"><a href="#">
-                                            <div class="story">
-
-                                                <div class="inner-story">
-                                                    <div class="story-top">
-                                                        <div class="story-top-top">
-                                                            <div class="stars">
-                                                                <img src="images\star.svg" alt="">
-                                                                <img src="images\star.svg" alt="">
-                                                                <img src="images\star.svg" alt="">
-                                                                <img src="images\star.svg" alt="">
-                                                                <img src="images\star.svg" alt="">
-                                                            </div>
-                                                            <div class="link-arrow">
-                                                                <img src="images\white-arrow.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="story-content">
-                                                            <h3>Regained my energy levels</h3>
-                                                            <p class="bodyp">I recommend using Diya's services to
-                                                                everyone i
-                                                                know dealing with diabetes. </p>
-                                                        </div>
+    
+                                            <div class="blog1-bottom">
+                                                <div class="blog-label label3">DIET AND LIFESTYLE</div>
+                                                <div class="blog-content">
+                                                    <div class="bloghead">
+                                                        <h4>Blog topic lorem ipsum</h4>
+                                                        <p class="bodyp">Lorem ipsum dolor sit amet consectetur.
+                                                            Lectus molestie
+                                                            nisi vitae leo amet ac nulla.</p>
                                                     </div>
-                                                    <div class="story-bottom label3">
-                                                        <div class="story-bottom-left"> Program participant</div>
-                                                        <div class="story-bottom-right"> Pre-Diabetic</div>
-                                                    </div>
+                                                    <div class="blog-link"><p class="link">READ MORE<span>
+                                                                <img src="images\Link-arrow.svg" alt="">
+                                                            </span></p></div>
                                                 </div>
-
                                             </div>
-                                        </a></li>
-                                </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="blog1">
+                                        <a href="#">
+                                            <div class="blogimg">
+                                                <img src="images/blog2 (1).png" alt="">
+                                            </div>
+    
+                                            <div class="blog1-bottom">
+                                                <div class="blog-label label3">DIET AND LIFESTYLE</div>
+                                                <div class="blog-content">
+                                                    <div class="bloghead">
+                                                        <h4>Blog topic lorem ipsum</h4>
+                                                        <p class="bodyp">Lorem ipsum dolor sit amet consectetur.
+                                                            Lectus molestie
+                                                            nisi vitae leo amet ac nulla.</p>
+                                                    </div>
+                                                    <div class="blog-link"><p class="link">READ MORE<span>
+                                                                <img src="images\Link-arrow.svg" alt="">
+                                                            </span></p></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="blog1">
+                                        <a href="#">
+                                            <div class="blogimg">
+                                                <img src="images/blog2 (1).png" alt="">
+                                            </div>
+    
+                                            <div class="blog1-bottom">
+                                                <div class="blog-label label3">DIET AND LIFESTYLE</div>
+                                                <div class="blog-content">
+                                                    <div class="bloghead">
+                                                        <h4>Blog topic lorem ipsum</h4>
+                                                        <p class="bodyp">Lorem ipsum dolor sit amet consectetur.
+                                                            Lectus molestie
+                                                            nisi vitae leo amet ac nulla.</p>
+                                                    </div>
+                                                    <div class="blog-link"><p class="link">READ MORE<span>
+                                                                <img src="images\Link-arrow.svg" alt="">
+                                                            </span></p></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="blog1">
+                                        <a href="#">
+                                            <div class="blogimg">
+                                                <img src="images/blog2 (1).png" alt="">
+                                            </div>
+    
+                                            <div class="blog1-bottom">
+                                                <div class="blog-label label3">DIET AND LIFESTYLE</div>
+                                                <div class="blog-content">
+                                                    <div class="bloghead">
+                                                        <h4>Blog topic lorem ipsum</h4>
+                                                        <p class="bodyp">Lorem ipsum dolor sit amet consectetur.
+                                                            Lectus molestie
+                                                            nisi vitae leo amet ac nulla.</p>
+                                                    </div>
+                                                    <div class="blog-link"><p class="link">READ MORE<span>
+                                                                <img src="images\Link-arrow.svg" alt="">
+                                                            </span></p></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="blog1">
+                                        <a href="#">
+                                            <div class="blogimg">
+                                                <img src="images/blog2 (1).png" alt="">
+                                            </div>
+    
+                                            <div class="blog1-bottom">
+                                                <div class="blog-label label3">DIET AND LIFESTYLE</div>
+                                                <div class="blog-content">
+                                                    <div class="bloghead">
+                                                        <h4>Blog topic lorem ipsum</h4>
+                                                        <p class="bodyp">Lorem ipsum dolor sit amet consectetur.
+                                                            Lectus molestie
+                                                            nisi vitae leo amet ac nulla.</p>
+                                                    </div>
+                                                    <div class="blog-link"><p class="link">READ MORE<span>
+                                                                <img src="images\Link-arrow.svg" alt="">
+                                                            </span></p></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="blog1">
+                                        <a href="#">
+                                            <div class="blogimg">
+                                                <img src="images/blog2 (1).png" alt="">
+                                            </div>
+    
+                                            <div class="blog1-bottom">
+                                                <div class="blog-label label3">DIET AND LIFESTYLE</div>
+                                                <div class="blog-content">
+                                                    <div class="bloghead">
+                                                        <h4>Blog topic lorem ipsum</h4>
+                                                        <p class="bodyp">Lorem ipsum dolor sit amet consectetur.
+                                                            Lectus molestie
+                                                            nisi vitae leo amet ac nulla.</p>
+                                                    </div>
+                                                    <div class="blog-link"><p class="link">READ MORE<span>
+                                                                <img src="images\Link-arrow.svg" alt="">
+                                                            </span></p></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- <div class="splide splide1" id="splide1" aria-label="Splide Basic HTML Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <a href="#!">
+                                            <div class="story">
+
+                                                <div class="inner-story">
+                                                    <div class="story-top">
+                                                        <div class="story-top-top">
+                                                            <div class="stars">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                            </div>
+                                                            <div class="link-arrow">
+                                                                <img src="images\white-arrow.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="story-content">
+                                                            <h3>Regained my energy levels</h3>
+                                                            <p class="bodyp">I recommend using Diya's services to
+                                                                everyone i
+                                                                know dealing with diabetes. </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="story-bottom label3">
+                                                        <div class="story-bottom-left"> Program participant</div>
+                                                        <div class="story-bottom-right"> Pre-Diabetic</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <a href="#!">
+                                            <div class="story">
+
+                                                <div class="inner-story">
+                                                    <div class="story-top">
+                                                        <div class="story-top-top">
+                                                            <div class="stars">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                            </div>
+                                                            <div class="link-arrow">
+                                                                <img src="images\white-arrow.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="story-content">
+                                                            <h3>Regained my energy levels</h3>
+                                                            <p class="bodyp">I recommend using Diya's services to
+                                                                everyone i
+                                                                know dealing with diabetes. </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="story-bottom label3">
+                                                        <div class="story-bottom-left"> Program participant</div>
+                                                        <div class="story-bottom-right"> Pre-Diabetic</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <a href="#!">
+                                            <div class="story">
+
+                                                <div class="inner-story">
+                                                    <div class="story-top">
+                                                        <div class="story-top-top">
+                                                            <div class="stars">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                            </div>
+                                                            <div class="link-arrow">
+                                                                <img src="images\white-arrow.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="story-content">
+                                                            <h3>Regained my energy levels</h3>
+                                                            <p class="bodyp">I recommend using Diya's services to
+                                                                everyone i
+                                                                know dealing with diabetes. </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="story-bottom label3">
+                                                        <div class="story-bottom-left"> Program participant</div>
+                                                        <div class="story-bottom-right"> Pre-Diabetic</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <a href="#!">
+                                            <div class="story">
+
+                                                <div class="inner-story">
+                                                    <div class="story-top">
+                                                        <div class="story-top-top">
+                                                            <div class="stars">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                            </div>
+                                                            <div class="link-arrow">
+                                                                <img src="images\white-arrow.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="story-content">
+                                                            <h3>Regained my energy levels</h3>
+                                                            <p class="bodyp">I recommend using Diya's services to
+                                                                everyone i
+                                                                know dealing with diabetes. </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="story-bottom label3">
+                                                        <div class="story-bottom-left"> Program participant</div>
+                                                        <div class="story-bottom-right"> Pre-Diabetic</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <a href="#!">
+                                            <div class="story">
+
+                                                <div class="inner-story">
+                                                    <div class="story-top">
+                                                        <div class="story-top-top">
+                                                            <div class="stars">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                            </div>
+                                                            <div class="link-arrow">
+                                                                <img src="images\white-arrow.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="story-content">
+                                                            <h3>Regained my energy levels</h3>
+                                                            <p class="bodyp">I recommend using Diya's services to
+                                                                everyone i
+                                                                know dealing with diabetes. </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="story-bottom label3">
+                                                        <div class="story-bottom-left"> Program participant</div>
+                                                        <div class="story-bottom-right"> Pre-Diabetic</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <a href="#!">
+                                            <div class="story">
+
+                                                <div class="inner-story">
+                                                    <div class="story-top">
+                                                        <div class="story-top-top">
+                                                            <div class="stars">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                                <img src="images\star.svg" alt="">
+                                                            </div>
+                                                            <div class="link-arrow">
+                                                                <img src="images\white-arrow.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="story-content">
+                                                            <h3>Regained my energy levels</h3>
+                                                            <p class="bodyp">I recommend using Diya's services to
+                                                                everyone i
+                                                                know dealing with diabetes. </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="story-bottom label3">
+                                                        <div class="story-bottom-left"> Program participant</div>
+                                                        <div class="story-bottom-right"> Pre-Diabetic</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
             <!-- stories page ends -->
+
+            <!-- Spacer -->
+            <div class="spacer"></div>
+            <!-- Spacer -->
+
             <!-- Blog page starts -->
-            <section class="paddy blog">
+            <section class="blog">
                 <div class="blog-in">
                     <div class="container-fluid">
                         <div class="inner-blog">
@@ -787,9 +1112,9 @@
                                                         molestie
                                                         nisi vitae leo amet ac nulla.</p>
                                                 </div>
-                                                <div class="blog-link"><a href="#" class="link">READ MORE<span>
+                                                <div class="blog-link"><p class="link">READ MORE<span>
                                                             <img src="images\Link-arrow.svg" alt="">
-                                                        </span></a></div>
+                                                        </span></p></div>
                                             </div>
                                         </div>
                                     </a>
@@ -809,9 +1134,9 @@
                                                         molestie
                                                         nisi vitae leo amet ac nulla.</p>
                                                 </div>
-                                                <div class="blog-link"><a href="#" class="link">READ MORE<span>
+                                                <div class="blog-link"><p class="link">READ MORE<span>
                                                             <img src="images\Link-arrow.svg" alt="">
-                                                        </span></a></div>
+                                                        </span></p></div>
                                             </div>
                                         </div>
                                     </a>
@@ -831,9 +1156,9 @@
                                                         molestie
                                                         nisi vitae leo amet ac nulla.</p>
                                                 </div>
-                                                <div class="blog-link"><a href="#" class="link">READ MORE<span>
+                                                <div class="blog-link"><p class="link">READ MORE<span>
                                                             <img src="images\Link-arrow.svg" alt="">
-                                                        </span></a></div>
+                                                        </span></p></div>
                                             </div>
                                         </div>
                                     </a>
@@ -842,7 +1167,7 @@
                         </div>
                     </div>
                     <div class="mobile-blog-bottom">
-                        <div class="splide" id="splide3" aria-label="Splide Basic HTML Example">
+                        <div class="splide splide3" id="splide3" aria-label="Splide Basic HTML Example">
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
@@ -861,9 +1186,9 @@
                                                                 Lectus molestie
                                                                 nisi vitae leo amet ac nulla.</p>
                                                         </div>
-                                                        <div class="blog-link"><a href="#" class="link">READ MORE<span>
+                                                        <div class="blog-link"><p class="link">READ MORE<span>
                                                                     <img src="images\Link-arrow.svg" alt="">
-                                                                </span></a></div>
+                                                                </span></p></div>
                                                     </div>
                                                 </div>
                                             </a>
@@ -885,9 +1210,9 @@
                                                                 Lectus molestie
                                                                 nisi vitae leo amet ac nulla.</p>
                                                         </div>
-                                                        <div class="blog-link"><a href="#" class="link">READ MORE<span>
+                                                        <div class="blog-link"><p class="link">READ MORE<span>
                                                                     <img src="images\Link-arrow.svg" alt="">
-                                                                </span></a></div>
+                                                                </span></p></div>
                                                     </div>
                                                 </div>
                                             </a>
@@ -909,9 +1234,105 @@
                                                                 Lectus molestie
                                                                 nisi vitae leo amet ac nulla.</p>
                                                         </div>
-                                                        <div class="blog-link"><a href="#" class="link">READ MORE<span>
+                                                        <div class="blog-link"><p class="link">READ MORE<span>
                                                                     <img src="images\Link-arrow.svg" alt="">
-                                                                </span></a></div>
+                                                                </span></p></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="blog1">
+                                            <a href="#">
+                                                <div class="blogimg">
+                                                    <img src="images/blog2 (1).png" alt="">
+                                                </div>
+
+                                                <div class="blog1-bottom">
+                                                    <div class="blog-label label3">DIET AND LIFESTYLE</div>
+                                                    <div class="blog-content">
+                                                        <div class="bloghead">
+                                                            <h4>Blog topic lorem ipsum</h4>
+                                                            <p class="bodyp">Lorem ipsum dolor sit amet consectetur.
+                                                                Lectus molestie
+                                                                nisi vitae leo amet ac nulla.</p>
+                                                        </div>
+                                                        <div class="blog-link"><p class="link">READ MORE<span>
+                                                                    <img src="images\Link-arrow.svg" alt="">
+                                                                </span></p></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="blog1">
+                                            <a href="#">
+                                                <div class="blogimg">
+                                                    <img src="images/blog3 (1).png" alt="">
+                                                </div>
+
+                                                <div class="blog1-bottom">
+                                                    <div class="blog-label label3">DAILY PRACTICE</div>
+                                                    <div class="blog-content">
+                                                        <div class="bloghead">
+                                                            <h4>Blog topic lorem ipsum</h4>
+                                                            <p class="bodyp">Lorem ipsum dolor sit amet consectetur.
+                                                                Lectus molestie
+                                                                nisi vitae leo amet ac nulla.</p>
+                                                        </div>
+                                                        <div class="blog-link"><p class="link">READ MORE<span>
+                                                                    <img src="images\Link-arrow.svg" alt="">
+                                                                </span></p></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="blog1">
+                                            <a href="#">
+                                                <div class="blogimg">
+                                                    <img src="images/blog2 (1).png" alt="">
+                                                </div>
+
+                                                <div class="blog1-bottom">
+                                                    <div class="blog-label label3">DIET AND LIFESTYLE</div>
+                                                    <div class="blog-content">
+                                                        <div class="bloghead">
+                                                            <h4>Blog topic lorem ipsum</h4>
+                                                            <p class="bodyp">Lorem ipsum dolor sit amet consectetur.
+                                                                Lectus molestie
+                                                                nisi vitae leo amet ac nulla.</p>
+                                                        </div>
+                                                        <div class="blog-link"><p class="link">READ MORE<span>
+                                                                    <img src="images\Link-arrow.svg" alt="">
+                                                                </span></p></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="blog1">
+                                            <a href="#">
+                                                <div class="blogimg">
+                                                    <img src="images/blog3 (1).png" alt="">
+                                                </div>
+
+                                                <div class="blog1-bottom">
+                                                    <div class="blog-label label3">DAILY PRACTICE</div>
+                                                    <div class="blog-content">
+                                                        <div class="bloghead">
+                                                            <h4>Blog topic lorem ipsum</h4>
+                                                            <p class="bodyp">Lorem ipsum dolor sit amet consectetur.
+                                                                Lectus molestie
+                                                                nisi vitae leo amet ac nulla.</p>
+                                                        </div>
+                                                        <div class="blog-link"><p class="link">READ MORE<span>
+                                                                    <img src="images\Link-arrow.svg" alt="">
+                                                                </span></p></div>
                                                     </div>
                                                 </div>
                                             </a>
@@ -924,8 +1345,13 @@
                 </div>
             </section>
             <!-- Blog page ends -->
+
+            <!-- Spacer -->
+            <div class="spacer"></div>
+            <!-- Spacer -->
+
             <!-- faq page starts -->
-            <section class="paddy faq">
+            <section class="faq">
                 <div class="inner-faq">
                     <div class="faq-left">
                         <div class="faq-img">
@@ -1117,7 +1543,7 @@
                                                     </div>
                                                     <div class="pp-check">
                                                         <input type="checkbox" id="pp">
-                                                        <label for="vehicle1"> By joining, I agree to receive emails from Diya and accept the <span>Privacy Policy</span>
+                                                        <label> By joining, I agree to receive emails from Diya and accept the <span>Privacy Policy</span>
                                                             </label>
                                                     </div>
                                                 
@@ -1190,10 +1616,180 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js\custom.js"></script>
-
     <!-- JS Ends-->
 </body>
 <!-- Body ends-->
+
+<!-- Banner Animation -->
+
+<script>
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+
+    // create
+
+    if (window.matchMedia("(min-width: 1200px)").matches) {
+    const banner = document.querySelector('.banner-home');
+    const image = document.querySelector('.ban-img img');
+
+    if (!banner || !image) {
+        console.error('Banner or image element not found.');
+        return;
+    }
+
+    // Get the initial width and height of the banner
+    const bannerWidth = banner.offsetWidth+330;
+    const bannerHeight = banner.offsetHeight;
+
+    // Set initial state using GSAP to cover the entire banner
+    gsap.set(image, { width: bannerWidth, height: bannerHeight, xPercent: -40.4, yPercent: -56 });
+    gsap.set('.head h1', { fontSize: '18vw', y: '24vw', filter: 'invert(100%)' });
+    gsap.set(['.sub-head h2 span.txt', '.bl-bottom', '.banner-right'], { opacity: 0 });
+    gsap.set('.banner-color', { opacity: 1 });
+
+    var tl = gsap.timeline({});
+    tl.to(image, {
+        duration: 1,
+        width: '140px',
+        height: '100%',
+        xPercent: 0,
+        yPercent: 0,
+    });
+    tl.to('.head h1', {
+        duration: 1,
+        fontSize: '144px',
+        y: 0,
+        filter: 'invert(0%)',
+    }, 0);
+    tl.to(['.sub-head h2 span.txt', '.bl-bottom', '.banner-right'], {
+        duration: 2,
+        opacity: 1,
+    }, 0);
+    tl.to('.banner-color', { duration: 1.5, opacity: 0 }, 0);
+
+    // Create a ScrollTrigger for the tl timeline
+    ScrollTrigger.create({
+        animation: tl,
+        trigger: '.banner-home',
+        start: 'top top',
+        end: '+=100%',
+        scrub: 1,
+        pin: true,
+        anticipatePin: 1,
+        markers: false,
+    });
+
+
+}
+});  
+
+
+</script> 
+
+<!-- Banner Animation Ends -->
+
+<!-- Solution For Animation -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    if (window.matchMedia("(min-width: 1200px)").matches) {
+
+    gsap.to('.solbottom.solbottom1', {
+        duration: 1,
+        scale: 0.6,
+        opacity: 0.8,
+        scrollTrigger:{
+            trigger: '.inner-solbottom',
+            scrub: 1,
+            start: 'top top',
+            end: '+=100%',
+            markers: false
+        }
+    })
+}
+});
+
+</script>
+
+<!-- Solution For Animation Ends -->
+
+
+
+<!-- Works Animation -->
+
+<script>
+    // GSAP Animation
+document.addEventListener("DOMContentLoaded", function() {
+
+    if (window.matchMedia("(min-width: 1200px)").matches) {
+     // Create a timeline
+     const tl = gsap.timeline();
+
+    gsap.set('.lf.one', {width: 0});
+    gsap.set('.lf.two', {width: 0});
+
+    // Animation to fill the line
+    tl.to('.lf.one', {
+        duration: 1,
+        width: '50%',
+        borderColor: '#222',
+    });
+    // Animation to fill the line
+    tl.to('.lf.two', {
+    duration: 1,
+    width: '50%',
+    borderColor: '#222',
+    });
+
+    ScrollTrigger.create({
+    animation: tl,
+    trigger: 'section.work',
+    start: 'top top',
+    end: '+=100%',
+    scrub: 1,
+    pin: true,
+    markers: false,
+    onUpdate: (self) => {
+        const progress = self.progress;
+        console.log(progress);
+        if (progress >= 0 && progress <= 0.48) {
+            $('.work-ellipse1').addClass('active');
+        } 
+        else if (progress >= 0.49 && progress <= 0.51) {
+            $('.work-ellipse2').addClass('active');
+        } 
+        else if (progress <= 0.49) {
+            $('.work-ellipse2').removeClass('active');
+        } 
+        else if (progress > 0.91 && progress <= 0.99) {
+            $('.work-ellipse3').addClass('active');
+        }
+        else if (progress < 0.91) {
+            $('.work-ellipse3').removeClass('active');
+        }
+    }
+    });
+}
+    });
+
+</script>
+<!-- Works Animation Ends -->
+
+<!-- Stories Slider -->
+
+<script>
+    $('.mobile-stories-bottom .owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    items: 1,
+})
+</script>
+
+<!-- Stories Slider Ends -->
 
 </html>

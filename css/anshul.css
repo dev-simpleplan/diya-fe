@@ -1,0 +1,317 @@
+/* about banner starts */
+.inner-about-banner{
+    padding-top: 215px;
+    padding-bottom: 182px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 100px;
+}
+.ab-banner-top h2{
+    font-size: 66px;
+    font-weight: 400;
+    line-height: 66px;
+    letter-spacing: -0.05em;
+  color:#90B180; 
+}
+.ab-banner-top h1{
+    font-family: 'Gambarino-Regular';
+    font-size: 144px;
+    font-weight: 400;
+    line-height: 151.2px;
+    letter-spacing: -0.03em; 
+}
+.ab-banner-bottom p{
+    max-width: 55ch;
+}
+.ab-banner-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+/* about banner ends */
+/* approach section starts */
+.inner-approach{
+    background: #F8F8F1;
+    padding:40px 80px;  
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px; 
+}
+.app-top-right p{
+font-size: 24px;
+font-weight: 400;
+line-height: 34.8px;
+letter-spacing: -0.03em;
+color:#929276;
+max-width: 38ch;
+}
+.app-top-left{
+    color:#739761;
+    text-transform: uppercase;
+   /* width:40%;
+   margin-right: auto; */
+}
+.app-top-right{
+    width: 50%;
+    margin-left: auto;
+}
+.approach-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.appimg{
+    position: relative;
+    padding-top: 79%;
+}
+.appimg img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+.approach-bottom{
+    width: 40%;
+    margin-right: auto;
+}
+/* approach section ends */
+/* founders section starts */
+.ft-right p{
+    color:#6B6B6B;
+    max-width: 70ch;
+}
+.founders-top{
+    display: flex;
+    justify-content: space-between;
+}
+.light-blue{
+    background-color: #DCEAF8;
+}
+.peach{
+    background-color: #F4EAE5;
+}
+.founder-img{
+    position: relative;
+    padding-top: 100%;
+}
+.founder-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+.founder-left , .founder-right{
+    width:50%;
+}
+/* .founders-bottom{
+    display: flex;
+    justify-content: space-between;
+} */
+.inner-founders{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 164px;
+}
+.founder-description{
+    padding: 30px 32px 34px 32px;
+    width: 40%;
+}
+.founder-description p{
+    color:#555555;
+}
+.founder1 {
+    display: flex;
+    width: 68%;
+    margin-right: auto;
+    align-items: flex-start;
+}
+.founder2 {
+    width: 68%;
+    margin-left: auto;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+}
+.founders-bottom{
+    position: relative;
+}
+.founder-name{
+    padding:30px 0;
+    padding-left: 16px;
+    padding-right: 48px;
+    position: absolute;
+}
+.designation{
+    padding: 16px 24px;
+    position: absolute;
+}
+.founder-name.light-blue{
+    top: 0;
+    right: -1px;
+}
+.designation.light-blue{ 
+    bottom: 0;
+    left: 0;
+}
+.founder-name.peach{
+    bottom: 0;
+    left: 0;
+}
+.designation.peach{
+    top: 0;
+    right: -1px;
+}
+/* founders section ends */
+/* mission section starts */
+.mission-left{
+    width: 60%;
+    margin-right: auto;
+}
+.mission-right{
+    width:40%;
+    margin-left: auto;
+}
+.mission-img{
+    position: relative;
+    padding-top: 100%;
+}
+.mission-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+    inset:0;
+}
+.mission-in{
+    position: relative;
+}
+.mi-head{
+    color:#BFBFBF;
+    text-transform: uppercase;
+}
+.mi-content{
+    color:#121212;
+}
+/* mission section ends */
+
+
+
+
+
+
+
+
+
+
+/* Responsive Css Starts */
+/* Max Width 1800px */
+@media(max-width: 1800px){
+}
+/* Max Width 1800px Ends */
+/* Max Width 1700px */
+@media(max-width: 1700px){
+}
+/* Max Width 1700px Ends */
+/* Max Width 1600px */
+@media(max-width: 1600px){
+}
+/* Max Width 1600px Ends */
+/* Max Width 1500px */
+@media(max-width: 1500px){
+}
+/* Max Width 1500px Ends */
+/* Max Width 1400px */
+@media(max-width: 1400px){
+}
+/* Max Width 1400px Ends */
+/* Max Width 1300px */
+@media(max-width: 1300px){
+}
+/* Max Width 1300px Ends */
+/* Max Width 1200px */
+@media(max-width: 1200px){
+    .founder-name {
+        padding: 16px 7px 16px 8px;
+    }
+    .designation {
+        padding: 12px;
+    }
+}
+/* Max Width 1200px Ends */
+/* Max Width 1100px */
+@media(max-width: 1100px){
+}
+/* Max Width 1100px Ends */
+/* Max Width 991px */
+@media(max-width: 992px){
+    .approach-top {
+        flex-direction: column;
+        row-gap: 98px;
+    }
+    .app-top-right {
+        width: 100%;
+    }
+    .approach-bottom {
+        width: 100%;
+    }
+    .inner-approach {
+        row-gap: 120px;
+    }
+    .founder1 {
+        width: 100%;
+    }
+    .founder2 {
+        width: 100%;
+        position: relative;
+        margin-top: 50px;
+    }
+    .founders-top {
+        flex-direction: column;
+        row-gap: 28px;
+    }
+}
+/* Max Width 991px Ends */
+/* Max Width 767px */
+@media(max-width: 767px){
+    .ab-banner-top h2{
+        font-size: 50px;
+        line-height: 55px; 
+    }
+    .ab-banner-top h1{
+        font-size: 80px;      
+        line-height: 78px;
+    } 
+    .statement1{
+font-size: 14px;
+line-height: 18.2px;
+    }
+    .body2{
+font-size: 16px;
+line-height: 24px;
+    }
+    .app-top-right p {
+font-size: 17px;
+line-height: 22.1px;
+    }
+    .inner-approach {
+        padding: 60px 16px;
+    }
+    .founder-description{
+        padding: 20px 16px 38px 16px;
+    }
+}
+@media(max-width: 400px){
+.ab-banner-top h1 {
+    font-size: 63px;
+}
+}
+/* Max Width 767px Ends */
+/* Responsive Css Ends */
