@@ -174,14 +174,18 @@ max-width: 38ch;
 .mission-left{
     width: 60%;
     margin-right: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .mission-right{
     width:40%;
     margin-left: auto;
+    position: relative;
 }
 .mission-img{
     position: relative;
-    padding-top: 100%;
+    padding-top: 90%;
 }
 .mission-img img{
     width:100%;
@@ -199,12 +203,38 @@ max-width: 38ch;
 }
 .mi-content{
     color:#121212;
+    max-width: 35ch;
+}
+.mission-bottom p{
+    color:#6B6B6B;
+    max-width: 59ch;
+}
+.mission-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 39px;
+}
+.inner-mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 160px;
 }
 /* mission section ends */
-
-
-
-
+/* explore section starts */
+.inner-explore{
+    background-color: #013F27;
+    padding: 112px 0;
+}
+.explore-head{
+    color:#4DCC9C;
+}
+.explore-content p{
+    max-width: 28ch;
+    color: #BDCAC5;
+}
+/* explore section ends */
 
 
 

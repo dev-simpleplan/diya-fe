@@ -1266,9 +1266,7 @@ height:100%;
     padding-bottom: 24px;
     color:#6B6B6B;
 }
-.acc-para {
-  
-}
+
 .accrodion-container.active .toggle {
 padding-bottom: 0;
 }
@@ -1314,6 +1312,7 @@ padding-bottom: 0;
 .inner-pre-footer{
   background-color: #A9C2E5;
   position: relative;
+  /* overflow: hidden; */
 }
  .inner-pf-left{
    display: flex;
