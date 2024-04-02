@@ -82,25 +82,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 // customer strories slider
-// var splide = new Splide( '.splide1', {
-//     type   : 'loop',
-//     padding:"0rem",
-//     perPage: 1.25, 
-//   } ).mount();
+$('.mobile-stories-bottom .owl-carousel').owlCarousel({
+  loop:true,
+  margin:0,
+  nav:false,
+  items: 1.25,
+})
   // customer strories slider
   // blog slider starts
-  var splide2 = new Splide( '.splide3', {
-    type   : 'loop',
-    padding:"0rem",
-    perPage: 2.5, 
- 
-    breakpoints: {
-      767: {
-        perPage: 1.5,
-      },
-      
-    }
-  } ).mount();
+
+  $('.mobile-blog-bottom .owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    items: 1.25,
+  })
   // blog slider ends
 
 //Banner Animation
