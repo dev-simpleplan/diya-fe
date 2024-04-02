@@ -853,6 +853,8 @@ inset: 0;
      flex-direction: column;
      justify-content: space-between;
      row-gap: 40px;
+     opacity: 0.6;
+     transition: 0.6s all ease;
  }
  .rule-bottom{
      display: flex;
@@ -1134,7 +1136,6 @@ justify-content: space-between;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
 }
 .blog-head p{
   color:#8B8B8B;
@@ -1266,9 +1267,7 @@ height:100%;
     padding-bottom: 24px;
     color:#6B6B6B;
 }
-.acc-para {
-  
-}
+
 .accrodion-container.active .toggle {
 padding-bottom: 0;
 }
@@ -1314,6 +1313,7 @@ padding-bottom: 0;
 .inner-pre-footer{
   background-color: #A9C2E5;
   position: relative;
+  /* overflow: hidden; */
 }
  .inner-pf-left{
    display: flex;
