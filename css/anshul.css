@@ -1,7 +1,13 @@
 /* about banner starts */
+section.about-banner{
+    height: 100vh;
+}
+.ab-banner-in{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .inner-about-banner{
-    padding-top: 215px;
-    padding-bottom: 182px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,12 +41,14 @@ letter-spacing: 0.02em;
 }
 /* about banner ends */
 /* approach section starts */
-.inner-approach{
-    background: #F8F8F1;
-    padding:40px 80px;  
+.inner-approach{ 
     display: flex;
     flex-direction: column;
     row-gap: 10px; 
+}
+.approach-in{
+    background:#F8F8F1;
+    padding: 40px 0;
 }
 .app-top-right p{
 font-size: 24px;
@@ -53,21 +61,14 @@ max-width: 38ch;
 .app-top-left{
     color:#739761;
     text-transform: uppercase;
-   /* width:40%;
-   margin-right: auto; */
-}
-.app-top-right{
-    width: 50%;
-    margin-left: auto;
 }
 .approach-top{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 .appimg{
     position: relative;
-    padding-top: 79%;
+    padding-top: 70%;
 }
 .appimg img{
     width:100%;
@@ -78,7 +79,7 @@ max-width: 38ch;
     inset: 0;
 }
 .approach-bottom{
-    width: 40%;
+    width: 45%;
     margin-right: auto;
 }
 /* approach section ends */
@@ -161,6 +162,7 @@ max-width: 38ch;
     bottom: 0;
     left: 0;
     color:#5F7589;
+    background-color:#BCD7F0;
 }
 .founder-name.peach{
     bottom: 0;
@@ -170,6 +172,7 @@ max-width: 38ch;
     top: 0;
     right: -1px;
     color:#9C8377;
+    background-color: #F3E0D7;
 }
 .founder-name .statement1{
     color:#121212;
@@ -309,8 +312,6 @@ max-width: 38ch;
 /* donate section ends */
 /* solution banner starts */
 .sol-inner-ban{
-    padding-top: 194px;
-    padding-bottom: 83px;
     height: 100%;
 }
 .solution-banner .container-fluid {
@@ -342,12 +343,14 @@ section.solution-banner{
 .sol-ban-left{
     display: flex;
     flex-direction: column;
+    row-gap: 130px;
     justify-content: space-between;
 }
 .sol-ban{
     display: flex;
     height: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 .sol-ban-bottom{
     display: flex;
@@ -356,8 +359,189 @@ section.solution-banner{
     gap: 44px;
 }
 /* solution banner ends */
-
-
+/* benefits section starts */
+.benefits-label{
+    color:#BFBFBF;
+}
+.benefits-content p{
+font-size: 26px;
+font-weight: 400;
+line-height: 33.8px;
+letter-spacing: 0.01em;
+color:#4C4949;
+max-width: 50ch;
+}
+.benefits-head{
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+.bb-line{
+    border: 1px solid green;
+    width: 1px;
+    height: 680px;
+}
+.inner-benefits{
+    row-gap: 195px;
+    display: flex;
+    flex-direction: column;
+}
+.benefits-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.bb-right-head h1{
+    text-transform: capitalize;
+    color: #393939;
+    max-width: 20ch;
+}
+.benefit-centre p{
+    color: #676A6C;
+    max-width: 23ch;
+}
+.benefit-no , .usp{
+    color: #C2C2C2;
+    text-transform: uppercase;
+}
+.benefit-top{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.benefit-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.benefit{
+    display: flex;
+    gap: 56px;
+    flex-direction: column;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E6E2DA;
+}
+.bb-right-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 74px;
+    row-gap: 110px;
+}
+.bb-right{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+.bb-left{
+    position: sticky;
+    top:0;
+}
+.bb-circle{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    left: -11px;
+    top: 0;
+}
+.bb-ellipse{
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background: #034A2F;
+    width: 24px;
+    height: 24px;
+}
+.bb-text{
+    color:#034A2F;
+    text-transform: uppercase;
+}
+/* benefits section ends */
+/* education courses */
+.bg-blue{
+background-color:#A9C2E5 ;
+}
+.bg-green{
+background-color: #034A2F;
+}
+.bg-green.edu-in{
+    margin-top:80px;
+}
+.inner-edu{
+    padding-top: 93px;
+    padding-bottom: 120px;
+    display: flex;
+    row-gap: 80px;
+    flex-direction: column;
+}
+.bg-green.edu-in .edu-head h2{
+    color: #FAF9F7;
+    max-width: 20ch;
+}
+.num{
+font-family: "Instrument Sans", sans-serif;
+font-size: 27px;
+font-weight: 400;
+line-height: 28.08px;
+letter-spacing: -0.03em;
+}
+.bg-green.edu-in .number1{
+    color:#FAF9F7;
+}
+.bg-green.edu-in .number2{
+    color:#19694A;
+}
+.edu-top{
+    display: flex;
+    justify-content: space-between;
+}
+.edu-numbers{
+    display: flex;
+    gap: 22px;
+}
+.bg-green.edu-in .eb-left{
+    color: #37B34A;
+}
+.bg-green.edu-in .eb-right{
+    color: #D6E3DE;
+    max-width: 45ch;
+}
+.edu-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.light-blue.edu-in .edu-head h2{
+    color: #121212;
+    max-width: 10ch;
+}
+.light-blue.edu-in .number1{
+    color:#BDCEDE;
+}
+.light-blue.edu-in .number2{
+    color:#121212;
+}
+.light-blue.edu-in .eb-left{
+    color: #5886B4;
+}
+.light-blue.edu-in .eb-right{
+    color: #5E7287;
+    max-width: 45ch;
+}
+/* education courses */
+/* plan section starts */
+.plan-heading h1{
+    text-transform: capitalize;
+    max-width: 12ch;
+}
+.plan-in{
+    padding-top: 128px;
+    padding-bottom: 120px;
+}
+.plan-left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 61px;
+}
+/* plan section ends */
 
 
 /* Responsive Css Starts */
@@ -402,11 +586,11 @@ section.solution-banner{
     }
     .founder1 {
         width: 100%;
-        align-items: stretch;
+        /* align-items: stretch; */
     }
     .founder2 {
-        flex-direction: row-reverse;
-        align-items: stretch;
+        /* flex-direction: row-reverse; */
+        /* align-items: stretch; */
         width: 100%;
         position: relative;
         margin-top: 50px;
@@ -457,6 +641,9 @@ section.solution-banner{
     .explore-bottom {
         flex-direction: column;
     }
+    section.about-banner{
+        height: 600px;
+    }
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
@@ -493,6 +680,14 @@ font-size: 48px;
 line-height: 49.44px;
 letter-spacing: -0.05em;
     }
+    .founder1 {
+         align-items: stretch; 
+    }
+    .founder2 {
+         /* flex-direction: row-reverse;  */
+         align-items: stretch; 
+    }
+
 }
 @media(max-width: 400px){
 .ab-banner-top h1 {
