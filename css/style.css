@@ -1245,15 +1245,15 @@ justify-content: space-between;
 .mobile-blog-bottom .blog1{
   padding:0 10px;
 }
-/* .blog1:hover .link span{
+ /* .blog1:hover .link span{
   transform: translateX(10px);
-} */
+}  */
 .blog1:hover .link span .hide{
-  transform: translateX(0%);
+  transform: translateX(0);
 }
-/* .blog1:hover .blogimg .show{
+.blog1:hover .link span .show{
   transform: translateX(100%);
-} */
+} 
 .hide{
   position: absolute;
     inset: 0;
