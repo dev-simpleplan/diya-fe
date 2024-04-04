@@ -81,29 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-// customer strories slider
-$('.mobile-stories-bottom .owl-carousel').owlCarousel({
-  loop:true,
-  margin:0,
-  nav:false,
-  items: 1.25,
-})
-  // customer strories slider
-  // blog slider starts
 
-  $('.mobile-blog-bottom .owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    nav:false,
-    items: 1.25,
-  })
-  // blog slider ends
-
-//Banner Animation
-gsap.registerPlugin(ScrollTrigger);
-
-// add a media query. When it matches, the associated function will run
-    // gsap.set(".ban-img img", { scale: "container.offsetWidth / image.offsetWidth" });
 
 //   counter js
     var counted = 0;
@@ -238,3 +216,20 @@ window.addEventListener('resize', function() {
       // Reload the page from the top before the DOM is fully loaded
       window.location.replace(window.location.href);
     }
+    // customer strories slider
+$('.mobile-stories-bottom .owl-carousel').owlCarousel({
+  loop:true,
+  margin:0,
+  nav:false,
+  items: 1.25,
+})
+  // customer strories slider
+  // blog slider starts
+
+  $('.mobile-blog-bottom .owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    items: 1.25,
+  })
+  // blog slider ends

@@ -53,7 +53,7 @@
                     <div class="inner-nav">
                         <div class="nav-left">
                             <div class="logo">
-                                Diya
+                                <a href="#">Diya</a>
                                 <!-- <img src="" alt="Diya"> -->
                             </div>
                         </div>
@@ -122,7 +122,9 @@
             <div class="sidenav">
                 <div class="container-fluid">
                     <div class="inner-nav">
-                        <div class="logo">Diya</div>
+                        <div class="logo">
+                            <a href="#">Diya</a>
+                        </div>
                         <div class="sidenav-right">
 
                             <a href="#" class="custom-button coloured">GET STARTED</a>
@@ -665,7 +667,8 @@
                                     <h1>Customer Stories</h1>
                                 </div>
                                 <div class="story-top-right">
-                                    <a href="#" class="custom-button">READ MORE</a>
+                                    <a href="#" class="custom-button desktop">READ MORE</a>
+                                    <a href="#" class="custom-button-mob">READ MORE</a>
                                 </div>
                             </div>
                             <div class="stories-bottom">
@@ -839,7 +842,6 @@
                     </div>
 
                 </div>
-        </div>
         </section>
         <!-- stories page ends -->
 
@@ -857,7 +859,8 @@
                                 <h1>Insight Hub Explore Our Blogs</h1>
                             </div>
                             <div class="blog-top-right">
-                                <a href="#" class="custom-button">READ MORE</a>
+                                <a href="#" class="custom-button desktop">READ MORE</a>
+                                    <a href="#" class="custom-button-mob">READ MORE</a>
                             </div>
                         </div>
                         <div class="blog-bottom">
@@ -878,7 +881,8 @@
                                             </div>
                                             <div class="blog-link">
                                                 <p class="link">READ MORE<span>
-                                                        <img src="images\Link-arrow.svg" alt="">
+                                                        <img src="images\Link-arrow.svg" alt="" class="hide">
+                                                        <img src="images\Link-arrow.svg" alt="" class="show">
                                                     </span></p>
                                             </div>
                                         </div>
@@ -890,7 +894,6 @@
                                     <div class="blogimg">
                                         <img src="images/blog2 (1).png" alt="">
                                     </div>
-
                                     <div class="blog1-bottom">
                                         <div class="blog-label label3">DIET AND LIFESTYLE</div>
                                         <div class="blog-content">
@@ -1044,7 +1047,7 @@
                                     <h1>Frequently Asked Questions</h1>
                                 </div>
                                 <div class="faq-accordion">
-                                    <div class="accrodion-container open">
+                                    <div class="accrodion-container open active">
                                         <a href="" class="toggle">
                                             <div class="acc-tittle">
                                                 <div class="question qh1">Is this service different from other
@@ -1119,7 +1122,8 @@
                                 </div>
                             </div>
                             <div class="faq-right-bottom">
-                                <a href="" class="custom-button">READ MORE</a>
+                                <a href="#" class="custom-button desktop">READ MORE</a>
+                                    <a href="#" class="custom-button-mob">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -1128,10 +1132,11 @@
         </section>
         <!-- faq page ends -->
         </div>
+        <div class="spacer"></div>
         <!-- footer starts  -->
         <footer>
             <!-- pre-footer starts -->
-            <div class="paddy pre-footer">
+            <div class="pre-footer">
                 <div class="inner-pre-footer">
                     <div class="pf-left">
                         <div class="container-fluid">
@@ -1140,9 +1145,7 @@
                                     <h2> Take The First Step Today With Diya</h2>
                                 </div>
                                 <div class="pf-left-bottom">
-
                                     <a href="#" class="custom-button coloured">START TODAY</a>
-
                                 </div>
                             </div>
                         </div>
@@ -1163,7 +1166,8 @@
                     <div class="container-fluid">
                         <div class="inner-footer">
                             <div class="footer-top">
-                                <div class="logo-white logo">Diya
+                                <div class="logo-white logo">
+                                    <a href="#">Diya</a>
                                     <!-- <img src="" alt="">  -->
                                 </div>
                             </div>
@@ -1463,6 +1467,7 @@
                 scrub: 1,
                 pin: true,
                 markers: false,
+                fastScrollEnd: true,
                 onUpdate: (self) => {
                     const progress = self.progress;
                     console.log(progress);
