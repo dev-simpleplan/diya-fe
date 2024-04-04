@@ -1254,13 +1254,13 @@ justify-content: space-between;
 /* .blog1:hover .blogimg .show{
   transform: translateX(100%);
 } */
-.hide{
+.blog-in .hide{
   position: absolute;
     inset: 0;
     transition: 0.3s ease all;
     transform: translateX(-100%);
 }
-.show{
+.blog-in .show{
   position: relative;
   transition: 0.5s ease all;
   transform: translateX(0%);
@@ -1321,13 +1321,16 @@ padding-top: 100%;
 }
 .acc-para p{
   max-width: 58ch;
-  padding-top: 18px;
     padding-bottom: 24px;
     color:#6B6B6B;
+    margin-top: -4px;
 }
-.accrodion-container.active .toggle {
+.faq-accordion .accrodion-container:first-child .toggle{
+  padding-top: 0;
+}
+/* .accrodion-container.active .toggle {
 padding-bottom: 0;
-}
+} */
 .accrodion-container{
   display: flex;
     flex-direction: column;
