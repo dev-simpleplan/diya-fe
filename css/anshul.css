@@ -153,6 +153,7 @@ max-width: 38ch;
 .designation{
     padding: 16px 24px;
     position: absolute;
+    font-size: 16px;
 }
 .founder-name.light-blue{
     top: 0;
@@ -189,12 +190,11 @@ max-width: 38ch;
 /* founders section ends */
 /* mission section starts */
 .mission-left{
-    width: 60%;
-    margin-right: auto;
+    width:100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    padding-left: 30px;
 }
 .mission-right{
     width:40%;
@@ -238,6 +238,8 @@ max-width: 38ch;
     flex-direction: column;
     justify-content: space-between;
     gap: 160px;
+     width: 60%;
+    margin-right: auto; 
 }
 /* mission section ends */
 /* explore section starts */
@@ -263,11 +265,11 @@ max-width: 38ch;
     color: #B6D7CA;
     max-width: 44ch;
 }
-.explore-in{
+ .explore-in{
     display: flex;
     flex-direction: column;
     gap: 56px;
-}
+} 
 .explore-bottom{
     display: flex;
     justify-content: space-between;
@@ -280,11 +282,12 @@ max-width: 38ch;
 .reason{
     display: flex;
     gap: 17px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid #0F5439;
 }
-.exp-line{
-    border: 1px solid #0F5439;
-    width: 100%;
-}
+.explore-reasons .reason:last-child {
+    border-bottom: none;
+  }
 .explore-reasons{
     display: flex;
     flex-direction: column;
@@ -292,6 +295,9 @@ max-width: 38ch;
     padding-top: 100px;
 }
 /* explore section ends */
+section.impact .acc-top{
+    color: #C7C4BA;
+}
 /* donate section starts */
 .donate-in{
     background-color: #D9E3D4;
