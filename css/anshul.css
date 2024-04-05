@@ -330,7 +330,7 @@ font-weight: 400;
 line-height: 100.8px;
 color:#212121;
 text-transform: capitalize;
-    max-width: 15ch;
+max-width: 15ch;
 }
 .sol-ban-head h1 span{
 font-family: 'Gambarino-Regular';
@@ -546,8 +546,101 @@ letter-spacing: -0.03em;
     display: flex;
     flex-direction: column;
     row-gap: 61px;
+    width: 30%;
+    margin-right: auto;
+}
+.plan-right{
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+    align-items: stretch;
+    column-gap: 13px;
+}
+.plan-right .sbbr-left{
+    width: 100%;
+    row-gap: 24px;
+}
+.readmore a{
+    text-transform: uppercase;
+font-size: 10px;
+font-weight: 600;
+line-height: 10.4px;
+letter-spacing: 0.1em;
+color:#034A2F;
+border-bottom: 1px solid #034A2F;
+padding-bottom: 2px;
+}
+.inner-plan{
+    display: flex;
+}
+.plan-r-left{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    row-gap: 20px;
+    width:50%;
+}
+.plan-r-right{
+    width:50%;
 }
 /* plan section ends */
+/* green accomplishment */
+.bg-green .acc-top {
+    color: #228F65;
+}
+.bg-green .acctop {
+    color:#F4F2EC;
+}
+.bg-green .acctop span{
+    color:#F4F2EC;
+}
+.bg-green .accbottom {
+    color:#F4F2EC;
+}
+/* green accomplishment */
+/* blue accomplishment */
+.light-blue .acc-top {
+    color: #93B2D1;
+}
+.light-blue .acctop {
+    color:#121212;
+}
+.light-blue .acctop span{
+    color:#121212;
+}
+.light-blue .accbottom {
+    color:#121212;
+}
+/* blue accomplishment */
+/* blue footer */
+.foot-label p{
+    color:#FAF9F7;
+}
+.inner-bfooter .custom-button{
+    border:1px solid transparent;
+    margin-left: 47px;
+}
+.inner-bfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.blue-footer{
+    position: sticky;
+    bottom:0;
+}
+.green-footer{
+    position: sticky;
+    bottom:0;
+}
+/* blue footer */
+
+
+
+
+
+
 
 
 /* Responsive Css Starts */

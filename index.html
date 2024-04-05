@@ -369,11 +369,9 @@
                 </div>
             </section>
             <!-- accomplishment ends -->
-
             <!-- Spacer -->
             <div class="spacer"></div>
             <!-- Spacer -->
-
             <!-- solutions page starts -->
             <section class="solutions">
                 <div class="inner-sol">
@@ -577,11 +575,9 @@
                 </div>
             </section>
             <!-- solutions page ends -->
-
             <!-- Spacer -->
             <div class="spacer"></div>
             <!-- Spacer -->
-
             <!-- How it work starts -->
             <section class="work">
                 <div class="work-in">
@@ -652,11 +648,9 @@
                 </div>
             </section>
             <!-- how it work ends -->
-
             <!-- Spacer -->
             <div class="spacer"></div>
             <!-- Spacer -->
-
             <!-- stories page starts -->
             <section class="stories">
                 <div class="stories-in">
@@ -835,8 +829,6 @@
                                         </a>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
@@ -844,11 +836,9 @@
                 </div>
         </section>
         <!-- stories page ends -->
-
         <!-- Spacer -->
         <div class="spacer"></div>
         <!-- Spacer -->
-
         <!-- Blog page starts -->
         <section class="blog">
             <div class="blog-in">
@@ -940,6 +930,7 @@
                     </div>
                 </div>
                 <div class="mobile-blog-bottom">
+                    <div class="container-fluid">
                     <div class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="blog blog1">
@@ -1022,15 +1013,14 @@
 
 
                     </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Blog page ends -->
-
         <!-- Spacer -->
         <div class="spacer"></div>
         <!-- Spacer -->
-
         <!-- faq page starts -->
         <section class="faq">
             <div class="inner-faq">
@@ -1158,6 +1148,7 @@
                 </div>
             </div>
             <!-- pre-footer ends -->
+            <!-- footer starts -->
             <div class="footer">
                 <div class="footer-in">
                     <div class="footer-line1"></div>
@@ -1275,6 +1266,7 @@
                         </div>
                     </div>
                 </div>
+                </div>
         </footer>
         <!-- footer ends -->
     </wrapper>
@@ -1343,7 +1335,7 @@
             });
             tl.to('.head h1', {
                 duration: 1,
-                fontSize: '144px',
+                fontSize: 'clamp(80px, 10vw, 144px)',
                 y: 0,
                 filter: 'invert(0%)',
             }, 0);

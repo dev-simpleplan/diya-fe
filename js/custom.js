@@ -29,7 +29,6 @@ $(window).scroll(function() {
     $('.navigation').removeClass('backdrop');
   }
 });
-
 // Header Js Ends
 
 function myFunction(x) {
@@ -81,8 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-
 //   counter js
     var counted = 0;
       $(window).scroll(function() {
@@ -145,41 +142,7 @@ $('.bxslider').bxSlider({
   ticker: true,
   speed: 20000
 });
-// work-scroll animation
-// gsap.registerPlugin(ScrollTrigger);
 
-// let t1 = gsap.timeline({
-//   scrollTrigger: {
-//       trigger: ".work",
-//       pin: true,
-//       start: "top top",
-//       end: "+=150%",
-//       scrub: 0.1,
-//       markers: true,
-//       ease: "none",
-//       onUpdate: function(self) {
-//         const progress = self.progress;
-//         gsap.set(".work-line", { backgroundColor: "transparent" });
-//         // Set initial state
-//         if (progress === 0) {
-//           gsap.set(".work-ellipse1", { backgroundColor: "blue" });
-//           gsap.set(".rule1", { color: "black" });
-//           gsap.set(".work-line", { backgroundColor: "transparent" });
-//         } else if (progress <= 0.1) {
-//           // 10% progress
-//           gsap.to(".work-line", { backgroundColor: "blue" });
-//         } else if (progress <= 0.49) {
-//           // 49% progress
-//           gsap.to(".work-ellipse2", { backgroundColor: "red" });
-//           gsap.to(".work-line", { backgroundColor: "red" });
-//         } else if (progress <= 0.99) {
-//           // 99% progress
-//           gsap.to(".work-ellipse3", { backgroundColor: "green" });
-//           gsap.to(".work-line", { backgroundColor: "green" });
-//         }
-//       }
-//   },
-// });
 
 // Variables to store previous window size
 let prevWidth = window.innerWidth;
@@ -221,7 +184,7 @@ $('.mobile-stories-bottom .owl-carousel').owlCarousel({
   loop:true,
   margin:0,
   nav:false,
-  items: 1.25,
+  items: 1,
 })
   // customer strories slider
   // blog slider starts
@@ -230,6 +193,6 @@ $('.mobile-stories-bottom .owl-carousel').owlCarousel({
     loop:true,
     margin:0,
     nav:false,
-    items: 1.25,
+    items: 1,
   })
   // blog slider ends

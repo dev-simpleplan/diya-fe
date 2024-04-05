@@ -63,12 +63,12 @@ letter-spacing: 0.2px;
 color:#656565;
 }
 .label1{
-font-size: 16px;
+font-size:16px;
 font-weight: 700;
 line-height: 20px;
 letter-spacing: 0.16em;
 text-transform: uppercase;
-color:#4DCC9C;
+color: #4DCC9C;
 }
 .label2{
 font-size: 12px;
@@ -138,7 +138,7 @@ text-transform: uppercase;
 display: none;
 }
 h1{
-font-size: 50px;
+ font-size:  clamp(32px, 6vw, 50px);
 font-weight: 400;
 line-height: 62.5px;
 letter-spacing: -0.03em;
@@ -146,7 +146,7 @@ color:#212121;
 }
 h2{
   font-family: 'Gambarino-Regular';
-  font-size: 60px;
+  font-size: clamp(32px, 6vw, 60px);
   font-weight: 400;
   line-height: 62.4px;
  color:#212121
@@ -222,20 +222,21 @@ color:#212121;
 } 
 .nav-list li:hover .nava{
     color:#034A2F;
+    text-decoration: underline;
 } 
 .nava{
   transition: 0.6s ease all;
 }
- .nav-list li {
+ .droplist li {
   display: table-cell;
   position: relative;
 }
-.nav-list a{
+.droplist a{
   text-decoration: none; 
   position: relative;
 }
 
-.nav-list a:after {
+.droplist a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -249,7 +250,7 @@ color:#212121;
   width: 0;
 }
 
-.nav-list a:hover:after {
+.droplist a:hover:after {
   width: 100%;
   left: 0;
 }
@@ -486,7 +487,7 @@ color:#C4BDB0;
 /* header ends */
 /* banner starts */
 .head h1{
-    font-size: clamp(80px, 8vw, 144px);
+    font-size: clamp(80px, 10vw, 144px);
     font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.03px;
@@ -498,7 +499,7 @@ color:#C4BDB0;
     color: #212121;
 }
   .sub-head h2{
-      font-size: 96px;
+      font-size: clamp(40px, 6vw, 96px);
       line-height: 100%;
       letter-spacing: -0.07px;
       color: #90B180;
@@ -1300,6 +1301,7 @@ padding-top: 100%;
   display: flex;
     flex-direction: column;
     justify-content: space-between;
+        align-items: flex-start;
 }
 .faq-right .container-fluid{
   height: 100%;
@@ -1482,16 +1484,6 @@ padding-bottom: 0;
   width: 100%;
   left: 0;
 }
-
-
-
-
-
-
-
-
-
-
 .footer-label{
 color:#339C74;
 }
@@ -1503,7 +1495,7 @@ transition: 0.6s ease all;
   position: relative;
   display: inline-block;
  }
- 
+
  .formcontainer .name input {
   width: 313px;
    padding: 10px 0;
@@ -1650,27 +1642,15 @@ padding-bottom: 2px;
 .sr-bottom a {
   color: #FFFFFF;
   padding-bottom: 2px;
-  /* border-bottom: 1px solid #FFFFFF; */
+   border-bottom: 1px solid #FFFFFF; 
   text-decoration: none;
   position: relative;
+  transition: 0.6s ease all;
 }
 
-.sr-bottom a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 1px;
-  left: 0;
-  position: absolute;
-  background: #fff; /* Set underline color to white */
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-.sr-bottom a:hover:after {
-  width: 100%;
-  left: 0;
+.sr-bottom:hover a{
+  color:#4CCC9B;
+  border-color: #4CCC9B;
 }
 
 
@@ -1761,9 +1741,9 @@ padding-bottom: 2px;
 /* Max Width 1500px Ends */
 /* Max Width 1400px */
 @media(max-width: 1400px){
-  .sub-head h2 {
+  /* .sub-head h2 {
     font-size: 80px;
-  }
+  } */
 }
 /* Max Width 1400px Ends */
 /* Max Width 1300px */
@@ -1793,9 +1773,9 @@ padding-bottom: 2px;
 section.banner-home {
 background-color: #FAF9F7;
 }
-.sub-head h2 {
+/* .sub-head h2 {
   font-size: 65px;
-}
+} */
 .banner-color{
   display: none;
 }
@@ -1874,7 +1854,6 @@ background-color: #FAF9F7;
 }
 .mobile-blog-bottom{
   display: block;
-  margin-left: 47px;
 }
 .blog-in{
   display: flex;
@@ -1921,6 +1900,7 @@ background-color: #FAF9F7;
   margin-left: 0;
   width: 100%;
   flex-direction: column;
+  order: -1;
 }
 .bodyp{
   max-width: 100%;
@@ -1958,7 +1938,7 @@ background-color: #FAF9F7;
 }
 .banner-left {
   width:100%;
-  row-gap: 80px;
+  row-gap: 60px;
   justify-content: flex-start;
 }
 .banner-wrapper {
@@ -2004,6 +1984,15 @@ section.banner-home{
 }
 .accrodion-container.open .toggle{
 padding:0
+}
+.rule-top{
+  color:#212121;
+}
+.ruleb1{
+color:#212121;
+}
+.ruleb2{
+color:#212121;
 }
 }
 /* Max Width 991px Ends */
@@ -2075,13 +2064,14 @@ line-height: 54.44px;
     width: 100%;
     row-gap: 48px;
   }
-  .sub-head h2 {
+  /* .sub-head h2 {
 font-size: 45px;
 line-height: 53.41px;
-  }
+  } */
   .spacer{
     padding-top:80px;
   }
+  
 }
 @media(max-width: 500px){
  
@@ -2090,6 +2080,11 @@ line-height: 53.41px;
  }
  .story-bottom{
   font-size: 8px;
+}
+.blog-top {
+  flex-direction: column;
+  align-items: baseline;
+    row-gap: 12px;
 }
 }
 @media(max-width: 370px){
