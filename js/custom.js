@@ -29,6 +29,15 @@ $(window).scroll(function() {
     $('.navigation').removeClass('backdrop');
   }
 });
+
+$(document).ready(function(){
+  $('.ham-menu').click(function(){
+    $('body').toggleClass('of-hidden');
+  });
+  // $('.ham-menu').click(function(){
+  //   $('body').removeClass('of-hidden');
+  // })
+});
 // Header Js Ends
 
 function myFunction(x) {
