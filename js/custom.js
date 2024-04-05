@@ -30,6 +30,14 @@ $(window).scroll(function() {
   }
 });
 
+$(document).ready(function(){
+  $('.ham-menu').click(function(){
+    $('body').toggleClass('of-hidden');
+  });
+  // $('.ham-menu').click(function(){
+  //   $('body').removeClass('of-hidden');
+  // })
+});
 // Header Js Ends
 
 function myFunction(x) {
@@ -81,41 +89,58 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-
 //   counter js
-    var counted = 0;
-      $(window).scroll(function() {
+    var counted1 = 0;
+var counted2 = 0;
 
-        var oTop = $('.inner-acc').offset().top - window.innerHeight;
-        if (counted == 0 && $(window).scrollTop() > oTop) {
-          $('span.num-counter').each(function() {
-            var $this = $(this),
-              countTo = $this.attr('data-count');
-            $({
-              countNum: $this.text()
-            }).animate({
-                countNum: countTo
-              },
-
-              {
-
-                duration: 2000,
-                easing: 'swing',
-                step: function() {
-                  $this.text(Math.floor(this.countNum));
-                },
-                complete: function() {
-                  $this.text(this.countNum);
-                  //alert('finished');
-                }
-
-              });
-          });
-          counted = 1;
+$(window).scroll(function() {
+  // First section
+  var oTop1 = $('.inner-acc:first').offset().top - window.innerHeight;
+  if (counted1 == 0 && $(window).scrollTop() > oTop1) {
+    $('.inner-acc:first span.num-counter').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({ countNum: $this.text() }).animate(
+        { countNum: countTo },
+        {
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
         }
+      );
+    });
+    counted1 = 1;
+  }
 
-      });
+  // Second section
+  var oTop2 = $('.inner-acc:last').offset().top - window.innerHeight;
+  if (counted2 == 0 && $(window).scrollTop() > oTop2) {
+    $('.inner-acc:last span.num-counter').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({ countNum: $this.text() }).animate(
+        { countNum: countTo },
+        {
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
+        }
+      );
+    });
+    counted2 = 1;
+  }
+});
+
 // counter js ends
 //Faq Accordian
 $(document).ready(function() {
@@ -145,41 +170,7 @@ $('.bxslider').bxSlider({
   ticker: true,
   speed: 20000
 });
-// work-scroll animation
-// gsap.registerPlugin(ScrollTrigger);
 
-// let t1 = gsap.timeline({
-//   scrollTrigger: {
-//       trigger: ".work",
-//       pin: true,
-//       start: "top top",
-//       end: "+=150%",
-//       scrub: 0.1,
-//       markers: true,
-//       ease: "none",
-//       onUpdate: function(self) {
-//         const progress = self.progress;
-//         gsap.set(".work-line", { backgroundColor: "transparent" });
-//         // Set initial state
-//         if (progress === 0) {
-//           gsap.set(".work-ellipse1", { backgroundColor: "blue" });
-//           gsap.set(".rule1", { color: "black" });
-//           gsap.set(".work-line", { backgroundColor: "transparent" });
-//         } else if (progress <= 0.1) {
-//           // 10% progress
-//           gsap.to(".work-line", { backgroundColor: "blue" });
-//         } else if (progress <= 0.49) {
-//           // 49% progress
-//           gsap.to(".work-ellipse2", { backgroundColor: "red" });
-//           gsap.to(".work-line", { backgroundColor: "red" });
-//         } else if (progress <= 0.99) {
-//           // 99% progress
-//           gsap.to(".work-ellipse3", { backgroundColor: "green" });
-//           gsap.to(".work-line", { backgroundColor: "green" });
-//         }
-//       }
-//   },
-// });
 
 // Variables to store previous window size
 let prevWidth = window.innerWidth;
@@ -221,7 +212,7 @@ $('.mobile-stories-bottom .owl-carousel').owlCarousel({
   loop:true,
   margin:0,
   nav:false,
-  items: 1.25,
+  items: 1,
 })
   // customer strories slider
   // blog slider starts
@@ -230,6 +221,6 @@ $('.mobile-stories-bottom .owl-carousel').owlCarousel({
     loop:true,
     margin:0,
     nav:false,
-    items: 1.25,
+    items: 1,
   })
   // blog slider ends
