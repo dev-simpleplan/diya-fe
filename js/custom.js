@@ -221,7 +221,7 @@ $('.mobile-stories-bottom .owl-carousel').owlCarousel({
   loop:true,
   margin:0,
   nav:false,
-  items: 1.25,
+  items: 1,
 })
   // customer strories slider
   // blog slider starts
@@ -230,6 +230,6 @@ $('.mobile-stories-bottom .owl-carousel').owlCarousel({
     loop:true,
     margin:0,
     nav:false,
-    items: 1.25,
+    items: 1,
   })
   // blog slider ends
