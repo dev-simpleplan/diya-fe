@@ -1301,7 +1301,11 @@ padding-top: 100%;
   display: flex;
     flex-direction: column;
     justify-content: space-between;
+<<<<<<< Updated upstream
         align-items: flex-start;
+=======
+    align-items: flex-start;
+>>>>>>> Stashed changes
 }
 .faq-right .container-fluid{
   height: 100%;
@@ -1982,8 +1986,8 @@ section.banner-home{
 .desktop{
   display: none;
 }
-.accrodion-container.open .toggle{
-padding:0
+.rule {
+  opacity: 1;
 }
 .rule-top{
   color:#212121;
