@@ -319,13 +319,12 @@ section.impact .acc-top{
 /* solution banner starts */
 .sol-inner-ban{
     height: 100%;
-}
-.solution-banner .container-fluid {
-    height: 100%;
-}
+    display: flex;
+    align-items: center;
+}  
 .sol-ban-head h1{
 font-family: 'Gambarino-Regular';
-font-size: 96px;
+font-size:  clamp(68px, 6vw, 96px);
 font-weight: 400;
 line-height: 100.8px;
 color:#212121;
@@ -334,7 +333,7 @@ max-width: 15ch;
 }
 .sol-ban-head h1 span{
 font-family: 'Gambarino-Regular';
-font-size: 96px;
+font-size: clamp(68px, 6vw, 96px);
 font-weight: 400;
 line-height: 100.8px;
 color:#90B180;
@@ -344,7 +343,8 @@ color:#90B180;
     max-width: 45ch;
 }
 section.solution-banner{
-    height: 700px;
+    height: 100vh;
+    min-height: 700px;
 }
 .sol-ban-left{
     display: flex;
@@ -356,13 +356,17 @@ section.solution-banner{
     display: flex;
     height: 100%;
     justify-content: space-between;
-    align-items: center;
 }
 .sol-ban-bottom{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 44px;
+}
+.sol-ban-right{
+    align-self: end;
+    max-width: 43ch;
+    text-align: right;
 }
 /* solution banner ends */
 /* benefits section starts */
@@ -383,7 +387,7 @@ max-width: 50ch;
     gap: 39px;
 }
 .bb-line{
-    border: 1px solid green;
+    border: 1px solid #034A2F;
     width: 1px;
     height: 680px;
 }
@@ -438,16 +442,15 @@ max-width: 50ch;
     gap: 56px;
 }
 .bb-left{
-    position: sticky;
-    top:0;
+    position: relative;
 }
 .bb-circle{
     display: flex;
     align-items: center;
     gap: 8px;
-    position: absolute;
-    left: -11px;
-    top: 0;
+    position: sticky;
+    top: 80px;
+    margin-left: -11px;
 }
 .bb-ellipse{
     border-radius: 50%;
@@ -517,7 +520,7 @@ letter-spacing: -0.03em;
 }
 .light-blue.edu-in .edu-head h2{
     color: #121212;
-    max-width: 10ch;
+    max-width: 12ch;
 }
 .light-blue.edu-in .number1{
     color:#BDCEDE;
@@ -536,7 +539,7 @@ letter-spacing: -0.03em;
 /* plan section starts */
 .plan-heading h1{
     text-transform: capitalize;
-    max-width: 12ch;
+    max-width: 15ch;
 }
 .plan-in{
     padding-top: 128px;
@@ -546,21 +549,23 @@ letter-spacing: -0.03em;
     display: flex;
     flex-direction: column;
     row-gap: 61px;
-    width: 30%;
+    width: 35%;
     margin-right: auto;
 }
-.plan-right{
-    width: 60%;
-    margin-left: auto;
+.inner-plan-right{
     display: flex;
     align-items: stretch;
     column-gap: 13px;
 }
-.plan-right .sbbr-left{
+.plan-right{
+    width: 55%;
+    margin-left: auto;
+}
+.inner-plan-right .sbbr-left{
     width: 100%;
     row-gap: 24px;
 }
-.readmore a{
+.read a{
     text-transform: uppercase;
 font-size: 10px;
 font-weight: 600;
@@ -570,6 +575,9 @@ color:#034A2F;
 border-bottom: 1px solid #034A2F;
 padding-bottom: 2px;
 }
+.readmore-mob{
+    display: none;
+}
 .inner-plan{
     display: flex;
 }
@@ -577,8 +585,10 @@ padding-bottom: 2px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    height: 100%;
     row-gap: 20px;
-    width:50%;
+    width: 50%;
+    justify-content: space-between;
 }
 .plan-r-right{
     width:50%;
@@ -743,6 +753,53 @@ padding-bottom: 2px;
     section.about-banner{
         height: 600px;
     }
+    .sol-ban {
+        flex-direction: column;
+        row-gap: 92px;
+    }
+    .sol-ban-right{
+        margin-bottom: 50px;
+    }
+    .sol-ban-left {
+        row-gap: 48px;
+    }
+    .inner-benefits {
+        row-gap: 82px;
+    }
+    .bb-left {
+        display: none;
+    }
+    .benefits-bottom {
+        display: block;
+    }
+    .edu-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .inner-edu {
+        row-gap: 100px;
+    }
+    .inner-plan {
+        flex-direction: column;
+        row-gap: 80px;
+    }
+    .plan-right {
+        width: 100%;
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    .plan-left {
+        width:100%;
+    }
+    .readmore{
+        display: none;
+    }
+    .readmore-mob{
+        display: block;
+    }
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
@@ -786,7 +843,14 @@ letter-spacing: -0.05em;
          /* flex-direction: row-reverse;  */
          align-items: stretch; 
     }
-
+    .benefits-content p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .num {
+        font-size: 14px;
+        line-height: 15px;
+    }
 }
 @media(max-width: 400px){
 .ab-banner-top h1 {
