@@ -668,6 +668,102 @@ color:#BFBFBF;
     text-transform: uppercase;
     color: #111111;
 }
+.support-mail{
+    color: #034A2F;
+    padding: 8px 0;
+    border-bottom: 1px solid #000000;
+}
+.address{
+    text-transform: capitalize;
+    color: #666666;
+}
+.phone{
+font-family: "Instrument Sans", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 22.56px;
+letter-spacing: 0.02em;
+text-align: left;
+color:#666666
+}
+.cb-left-in{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+.support{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+.average-head{
+    text-transform: uppercase;
+    color: #A7BC9F;
+}
+.avgtop{
+    font-size: 14px;
+    line-height: 14.7px;
+    color:#1C410D;
+}
+.avgtop span{
+font-size: 24px;
+line-height: 25.2px;
+color:#1C410D;
+}
+.avgbottom{
+font-size: 8px;
+line-height: 9.68px;
+color:#034A2F;
+max-width: 13ch;
+    text-align: center;
+}
+.average{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+.average-counter{
+    display: inline-flex;
+    background: #E2F0DC;
+    padding: 24px 116px;
+    flex-direction: column;
+    gap: 37px;
+    align-items: center;
+}
+.average-bottom{
+    display: flex;
+    gap: 62px;
+}
+.con-bottom-left{
+    display: flex;
+    flex-direction: column;
+    gap: 162px;
+    width: 50%;
+    margin-right: auto;
+}
+.contact-in{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+.contact-bottom{
+    border-top: 1px solid #EEEBE7;
+    padding-top: 56px;
+}
+.con-bottom-in {
+    display: flex;
+}
+.con-bottom-right {
+    width: 50%;
+    margin-left: auto;
+}
+.con-bottom-right form label{
+    text-transform: uppercase;
+    color: #111111;
+}
 /* contact page ends */
 
 
