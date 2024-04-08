@@ -646,8 +646,27 @@ padding-bottom: 2px;
     bottom:0;
 }
 /* blue footer */
-
-
+/* contact page starts*/
+.contact-form{
+    padding-top: 130px;
+}
+.con-top-left{
+letter-spacing: 0.14em;
+color:#BFBFBF;
+}
+.con-top-right{
+    max-width: 35ch;
+}
+.con-top-in{
+    display: flex;
+    column-gap: 460px;
+    align-items: flex-start;
+}
+.reach{
+    text-transform: uppercase;
+    color: #111111;
+}
+/* contact page ends */
 
 
 

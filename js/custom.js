@@ -207,20 +207,20 @@ window.addEventListener('resize', function() {
       // Reload the page from the top before the DOM is fully loaded
       window.location.replace(window.location.href);
     }
-    // customer strories slider
-$('.mobile-stories-bottom .owl-carousel').owlCarousel({
-  loop:true,
-  margin:0,
-  nav:false,
-  items: 1,
-})
-  // customer strories slider
-  // blog slider starts
+//     // customer strories slider
+// $('.mobile-stories-bottom .owl-carousel').owlCarousel({
+//   loop:true,
+//   margin:0,
+//   nav:false,
+//   items: 1,
+// })
+//   // customer strories slider
+//   // blog slider starts
 
-  $('.mobile-blog-bottom .owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    nav:false,
-    items: 1,
-  })
+//   $('.mobile-blog-bottom .owl-carousel').owlCarousel({
+//     loop:true,
+//     margin:0,
+//     nav:false,
+//     items: 1,
+//   })
   // blog slider ends
