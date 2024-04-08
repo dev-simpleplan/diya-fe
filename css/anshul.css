@@ -210,6 +210,7 @@ max-width: 38ch;
     height:100%;
     object-fit: cover;
     position: absolute;
+    object-position: top;
     inset:0;
 }
 .mission-in{
@@ -645,8 +646,27 @@ padding-bottom: 2px;
     bottom:0;
 }
 /* blue footer */
-
-
+/* contact page starts*/
+.contact-form{
+    padding-top: 130px;
+}
+.con-top-left{
+letter-spacing: 0.14em;
+color:#BFBFBF;
+}
+.con-top-right{
+    max-width: 35ch;
+}
+.con-top-in{
+    display: flex;
+    column-gap: 460px;
+    align-items: flex-start;
+}
+.reach{
+    text-transform: uppercase;
+    color: #111111;
+}
+/* contact page ends */
 
 
 
@@ -739,13 +759,14 @@ padding-bottom: 2px;
     }
     .inner-mission {
         gap: 100px;
+        width: 100%;
     }
     .mission-right {
         width: 100%;
         margin-top: 56px;
     }
     .mission-img {
-        padding-top: 70%;
+        padding-top: 75%;
     }
     .explore-bottom {
         flex-direction: column;
@@ -800,6 +821,9 @@ padding-bottom: 2px;
     .readmore-mob{
         display: block;
     }
+    section.poster .pf-right{
+        display: block;
+    }
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
@@ -827,21 +851,26 @@ line-height: 22.1px;
     .inner-approach {
         padding: 60px 16px;
     }
-    .founder-description{
-        padding: 20px 16px 38px 16px;
-        width:50%;
-    }
+    
     .pf-left-top h2{
 font-size: 48px;
 line-height: 49.44px;
 letter-spacing: -0.05em;
     }
     .founder1 {
-         align-items: stretch; 
+        flex-direction: column;
     }
     .founder2 {
-         /* flex-direction: row-reverse;  */
-         align-items: stretch; 
+         flex-direction: column;
+    }
+    .founder-left, .founder-right {
+        width: 100%;
+    }
+    .founder-description {
+        width: 100%;
+    }
+    .founder-right {
+        order:-1;
     }
     .benefits-content p {
         font-size: 20px;
@@ -860,6 +889,14 @@ letter-spacing: -0.05em;
     }
     .plan-r-right{
         width: 100%;
+    }
+    .mi-content{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .mission-bottom p {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 @media(max-width: 400px){
