@@ -87,6 +87,7 @@ max-width: 38ch;
 .ft-right p{
     color:#6B6B6B;
     max-width: 70ch;
+    text-wrap: pretty;
 }
 .founders-top{
     display: flex;
@@ -227,6 +228,7 @@ max-width: 38ch;
 .mission-bottom p{
     color:#6B6B6B;
     max-width: 59ch;
+    text-wrap: pretty;
 }
 .mission-top{
     display: flex;
@@ -327,7 +329,7 @@ section.impact .acc-top{
 font-family: 'Gambarino-Regular';
 font-size:  clamp(68px, 6vw, 96px);
 font-weight: 400;
-line-height: 100.8px;
+line-height: 120%;
 color:#212121;
 text-transform: capitalize;
 max-width: 15ch;
@@ -737,7 +739,7 @@ color:#BFBFBF;
 @media(max-width: 992px){
     .approach-top {
         flex-direction: column;
-        row-gap: 98px;
+        row-gap: 40px;
     }
     .app-top-right {
         width: 100%;
@@ -746,7 +748,7 @@ color:#BFBFBF;
         width: 100%;
     }
     .inner-approach {
-        row-gap: 120px;
+        row-gap: 80px;
     }
     
     .ab-banner-top h1 {
@@ -758,7 +760,7 @@ color:#BFBFBF;
         position: relative;
     }
     .inner-mission {
-        gap: 100px;
+        gap: 60px;
         width: 100%;
     }
     .mission-right {
@@ -824,6 +826,15 @@ color:#BFBFBF;
     section.poster .pf-right{
         display: block;
     }
+    .inner-founders {
+        row-gap: 80px;
+    }
+    .inner-explore {
+        padding: 70px 0;
+    }
+    .inner-acc {
+        row-gap: 40px;
+    }
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
@@ -847,9 +858,10 @@ line-height: 24px;
     .app-top-right p {
 font-size: 17px;
 line-height: 22.1px;
+text-wrap: pretty;
     }
     .inner-approach {
-        padding: 60px 16px;
+        padding: 30px 16px;
     }
     
     .pf-left-top h2{
@@ -897,6 +909,47 @@ letter-spacing: -0.05em;
     .mission-bottom p {
         font-size: 14px;
         line-height: 18px;
+    }
+    section.solution-banner {
+        height: 100%;
+        min-height: 100%;
+        padding: 30px 0;
+    }
+    .bb-right-grid {
+        grid-template-columns: 1fr;
+    }
+    .benefit-centre p {
+        max-width: 100%;
+    }
+    .bg-green.edu-in {
+        margin-top: 60px;
+    }
+    .inner-edu {
+        padding: 60px 0;
+    }
+    .plan-in {
+        padding:60px 0;
+    }
+    .bg-green,.light-blue  .acc-top {
+        text-align: center;
+    }
+    .inner-bfooter {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .inner-bfooter .custom-button {
+         margin-left: 0; 
+        width: 100%;
+    }
+    .ab-banner-top {
+        row-gap: 20px;
+    }
+    .inner-about-banner {
+        row-gap: 70px;
+    }
+    .inner-donate {
+        padding:50px 0;
+        gap: 40px;
     }
 }
 @media(max-width: 400px){
