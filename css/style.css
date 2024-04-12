@@ -139,6 +139,7 @@ h1{
 line-height: 62.5px;
 letter-spacing: -0.03em;
 color:#212121;
+text-transform: capitalize;
 }
 h2{
   font-family: 'Gambarino-Regular';
