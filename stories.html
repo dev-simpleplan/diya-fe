@@ -253,7 +253,7 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="customer-images">
+                             <div class="customer-images">
                                 <div class="cu-img-left">
                                     <div class="cu-img cu-img1"><img src="images\story-ban1 (1).jpg" alt=""></div>
                                     <div class="cu-img cu-img2"><img src="images\story-ban3 (1).jpg" alt=""></div>
@@ -262,7 +262,7 @@
                                     <div class="cu-img cu-img3"><img src="images\story-ban2 (1).jpg" alt=""></div>
                                     <div class="cu-img cu-img4"><img src="images\story-ban4 (1).jpg" alt=""></div>
                                 </div>
-                            </div> -->
+                            </div> 
 
                         </div>
                         </div>
@@ -1104,36 +1104,38 @@
 
 
 <script>
-   $(window).on('scroll', function() {
-  $('.num-counter').each(function() {
-    var elementTop = $(this).offset().top;
-    var elementBottom = elementTop + $(this).outerHeight();
-    var viewportTop = $(window).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-    
-    if (elementBottom > viewportTop && elementTop < viewportBottom) {
-      if (!$(this).data('counted')) {
-        $(this).data('counted', true);
-        var $this = $(this);
-        var countTo = parseFloat($this.attr('data-count'));
-        $({ countNum: $this.text() }).animate(
-          { countNum: countTo },
-          {
-            duration: 2000,
-            easing: 'swing',
-            step: function() {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function() {
-              $this.text(this.countNum);
-            }
-          }
-        );
-      }
-    }
-  });
-});
+  var counted = 0;
+      $(window).scroll(function() {
 
+        var oTop = $('.average-counter').offset().top - window.innerHeight;
+        if (counted == 0 && $(window).scrollTop() > oTop) {
+          $('.num-counter').each(function() {
+            var $this = $(this),
+              countTo = $this.attr('data-count');
+            $({
+              countNum: $this.text()
+            }).animate({
+                countNum: countTo
+              },
+
+              {
+
+                duration: 2000,
+                easing: 'swing',
+                step: function() {
+                  $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                  $this.text(this.countNum);
+                  //alert('finished');
+                }
+
+              });
+          });
+          counted = 1;
+        }
+
+      });
 
 </script>
 </html>
