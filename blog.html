@@ -280,15 +280,15 @@
                             <div class="case-bottom">
                                 <div class="case-tabs">
                                     <div class="tab">
-                                        <button class="tablinks" onclick="openCity(event, 'all')"
+                                        <button class="tablinks" onclick="openEvent(event, 'all')"
                                             id="defaultOpen">All</button>
                                         <button class="tablinks"
                                             onclick="openCity(event, 'pre-diabetic')">pre-Diabetic</button>
-                                        <button class="tablinks" onclick="openCity(event, 'type1')">Type 1 -
+                                        <button class="tablinks" onclick="openEvent(event, 'type1')">Type 1 -
                                             diabetes</button>
-                                        <button class="tablinks" onclick="openCity(event, 'type2')">Type 2 -
+                                        <button class="tablinks" onclick="openEvent(event, 'type2')">Type 2 -
                                             diabetes</button>
-                                        <button class="tablinks" onclick="openCity(event, 'gestational')">gestational
+                                        <button class="tablinks" onclick="openEvent(event, 'gestational')">gestational
                                             diabetes</button>
                                     </div>
                                 </div>
@@ -1399,9 +1399,10 @@
     <!-- JS Ends-->
 </body>
 <!-- Body ends-->
+<!-- tab js -->
 <script>
     document.getElementById("defaultOpen").click();
-    function openCity(evt, cityName) {
+    function openEvent(evt, cityName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -1417,4 +1418,42 @@
 
    
 </script>
+<!-- tab js -->
+<!-- dropdown js -->
+<script>
+  $(document).ready(function () {
+    // Function to toggle dropdown visibility when label is clicked
+    $(".custom-dropdown-label").click(function (event) {
+        event.stopPropagation(); // Prevents the click event from propagating to the document
+        var $dropdownSelect = $(this).siblings(".custom-dropdown-select");
+        // Close any open dropdowns
+        $(".custom-dropdown-select").not($dropdownSelect).hide();
+        $dropdownSelect.toggle();
+
+         // Add or remove the 'rotate' class
+         $(this).find('img').toggleClass('rotate');
+    });
+    
+
+    // Function to handle selection from dropdown
+    $(".custom-dropdown-select ul li").click(function (event) {
+        var selectedValue = $(this).attr("value");
+        $(this).parents(".custom-dropdown-select").toggle(); // Hide dropdown after selection
+        event.stopPropagation(); // Prevents the click event from propagating to the document
+    });
+
+    // Close dropdown if click happens outside
+    $(document).click(function (event) {
+        var $target = $(event.target);
+        if (!$target.closest('.custom-dropdown').length) {
+            $(".custom-dropdown-select").hide();
+             // Remove the 'rotate' class
+             $('.custom-dropdown-label.sd-label img').removeClass('rotate');
+        }
+    });
+});
+
+
+  </script>
+<!-- dropdown js -->
 </html>
