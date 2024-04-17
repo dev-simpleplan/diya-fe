@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+       
     <link href="css\style.css" rel="stylesheet">
     <link href="css\anshul.css" rel="stylesheet">
     <style>
@@ -314,14 +314,46 @@
                                             diabetes</button>
                                     </div>
                                 </div>
-                                <div class="dropdown">
-                                    <select onchange="openCity(event, this.value)" class="select3">
-                                      <option value="all">All Case Studies</option>
-                                      <option value="pre-diabetic">Pre-Diabetic</option>
-                                      <option value="type1">Type 1 - diabetes</option>
-                                      <option value="type2">Type 2 - diabetes</option>
-                                      <option value="gestational">Gestational diabetes</option>
-                                    </select>
+                                <div class="case-dropdown">
+                                    <div class=" custom-dropdown filter-dropdown">
+                                        <div class="custom-dropdown-label sd-label">
+                                          <p>
+                                            All Case Studies
+                                        </p>
+                                            <img src="images\stories-arrow.svg" alt="" />
+                                          
+                                        </div>
+                                        <div class="custom-dropdown-select sd-select">
+                                          <ul>
+                                            <li>
+                                              <div class="eventTabLink" onclick="openEvent(event, 'all')">
+                                                All Case studies
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="eventTabLink" onclick="openEvent(event, 'pre-diabetic')">
+                                                pre-diabetic
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="eventTabLink" onclick="openEvent(event, 'type1')">
+                                                Type 1 diabetes
+                                              </div>
+                                            </li>
+                                            <li >
+                                              <div class="eventTabLink" onclick="openEvent(event, 'type2')">
+                                                Type 2 diabetes
+                                              </div>
+                                            </li>
+                                            <li>
+                                                <div class="eventTabLink" onclick="openEvent(event, 'gestational')">
+                                                    gestational diabetes
+                                                </div>
+                                              </li>
+                    
+                                          </ul>
+                                        </div>
+                                  </div>
                                   </div>
                                 <div class="tabcontent" id="all">
                                     <div class="case-stories">
@@ -1090,12 +1122,13 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 
-    
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        
         <script src="js/jquery.in-viewport-class.js"></script>
     <script src="js\custom.js"></script>
     <!-- JS Ends-->
@@ -1103,7 +1136,7 @@
 <!-- Body ends-->
 <script>
     document.getElementById("defaultOpen").click();
-    function openCity(evt, cityName) {
+    function openEvent(evt, cityName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -1120,56 +1153,40 @@
    
 </script>
 
-
-
-
 <script>
-  var counted = 0;
-      $(window).scroll(function() {
+  $(document).ready(function () {
+    // Function to toggle dropdown visibility when label is clicked
+    $(".custom-dropdown-label").click(function (event) {
+        event.stopPropagation(); // Prevents the click event from propagating to the document
+        var $dropdownSelect = $(this).siblings(".custom-dropdown-select");
+        // Close any open dropdowns
+        $(".custom-dropdown-select").not($dropdownSelect).hide();
+        $dropdownSelect.toggle();
 
-        var oTop = $('.average-counter').offset().top - window.innerHeight;
-        if (counted == 0 && $(window).scrollTop() > oTop) {
-          $('.num-counter').each(function() {
-            var $this = $(this),
-              countTo = $this.attr('data-count');
-            $({
-              countNum: $this.text()
-            }).animate({
-                countNum: countTo
-              },
+         // Add or remove the 'rotate' class
+         $(this).find('img').toggleClass('rotate');
+    });
+    
 
-              {
+    // Function to handle selection from dropdown
+    $(".custom-dropdown-select ul li").click(function (event) {
+        var selectedValue = $(this).attr("value");
+        $(this).parents(".custom-dropdown-select").toggle(); // Hide dropdown after selection
+        event.stopPropagation(); // Prevents the click event from propagating to the document
+    });
 
-                duration: 2000,
-                easing: 'swing',
-                step: function() {
-                  $this.text(Math.floor(this.countNum));
-                },
-                complete: function() {
-                  $this.text(this.countNum);
-                  //alert('finished');
-                }
-
-              });
-          });
-          counted = 1;
+    // Close dropdown if click happens outside
+    $(document).click(function (event) {
+        var $target = $(event.target);
+        if (!$target.closest('.custom-dropdown').length) {
+            $(".custom-dropdown-select").hide();
+             // Remove the 'rotate' class
+             $('.custom-dropdown-label.sd-label img').removeClass('rotate');
         }
-
-      });
-
-</script>
-<script>
-    $(document).ready(function () {
-      $('.select3').select2();
-    // Show/hide other option field based on selection
-    $('#heard_option').on('change', function () {
-      var selectedValue = $(this).val();
-      if (selectedValue === 'other') {
-        $('.other-option').slideDown();
-      } else {
-      $('.other-option').slideUp();
-    }
-  });
+    });
 });
-</script>
+
+
+  </script>
+
 </html>

@@ -1297,6 +1297,7 @@ justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   column-gap: 22px;
+  row-gap: 79px;
 }
 .inner-blog{
   display: flex;
@@ -1337,13 +1338,13 @@ justify-content: space-between;
 .blog1:hover .link span .show{
   transform: translateX(100%);
 }
-.blog-in .hide{
+.blog-link .hide{
   position: absolute;
     inset: 0;
     transition: 0.9s ease all;
     transform: translateX(-100%);
 }
-.blog-in .show{
+.blog-link .show{
   transition: 0.3s ease all;
   transform: translateX(0%);
 }
