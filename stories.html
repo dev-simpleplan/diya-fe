@@ -302,15 +302,15 @@
                             <div class="case-bottom">
                                 <div class="case-tabs">
                                     <div class="tab">
-                                        <button class="tablinks" onclick="openCity(event, 'all')"
+                                        <button class="tablinks" onclick="openEvent(event, 'all')"
                                             id="defaultOpen">All</button>
                                         <button class="tablinks"
                                             onclick="openCity(event, 'pre-diabetic')">pre-Diabetic</button>
-                                        <button class="tablinks" onclick="openCity(event, 'type1')">Type 1 -
+                                        <button class="tablinks" onclick="openEvent(event, 'type1')">Type 1 -
                                             diabetes</button>
-                                        <button class="tablinks" onclick="openCity(event, 'type2')">Type 2 -
+                                        <button class="tablinks" onclick="openEvent(event, 'type2')">Type 2 -
                                             diabetes</button>
-                                        <button class="tablinks" onclick="openCity(event, 'gestational')">gestational
+                                        <button class="tablinks" onclick="openEvent(event, 'gestational')">gestational
                                             diabetes</button>
                                     </div>
                                 </div>
@@ -1134,6 +1134,7 @@
     <!-- JS Ends-->
 </body>
 <!-- Body ends-->
+<!-- tab js -->
 <script>
     document.getElementById("defaultOpen").click();
     function openEvent(evt, cityName) {
@@ -1152,7 +1153,8 @@
 
    
 </script>
-
+<!-- tab js -->
+<!-- dropdown js -->
 <script>
   $(document).ready(function () {
     // Function to toggle dropdown visibility when label is clicked
@@ -1188,5 +1190,5 @@
 
 
   </script>
-
+<!-- dropdown js -->
 </html>
