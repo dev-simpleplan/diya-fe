@@ -928,20 +928,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="spacer"></div>
         <!-- footer starts  -->
 <footer>
@@ -1155,7 +1141,7 @@
 </script>
 <!-- tab js -->
 <!-- dropdown js -->
-<script>
+ <script>
   $(document).ready(function () {
     // Function to toggle dropdown visibility when label is clicked
     $(".custom-dropdown-label").click(function (event) {
@@ -1167,6 +1153,13 @@
 
          // Add or remove the 'rotate' class
          $(this).find('img').toggleClass('rotate');
+
+         // Add or remove the overlay
+        // if ($dropdownSelect.is(":visible")) {
+        //     $("body").append('<div class="overlay"></div>');
+        // } else {
+        //     $(".overlay").remove();
+        // }
     });
     
 
@@ -1189,6 +1182,15 @@
 });
 
 
-  </script>
+  </script>  
+
+
+
+
+
+
+
+
+
 <!-- dropdown js -->
 </html>
