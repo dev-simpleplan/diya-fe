@@ -1135,6 +1135,8 @@ justify-content: space-between;
   padding-bottom: 10px;
 }
 
+
+
 /* Transition */
 
 
@@ -1358,10 +1360,17 @@ justify-content: space-between;
   margin-right: auto;
   position: relative;
     height: 100%;
+    overflow: hidden;
 }
 .faq-img{
 position: relative;
 padding-top: 100%;
+clip-path: inset(0 100% 0 0);
+transition: 1s clip-path ease;
+transition-delay: 0.8s;
+}
+.was-in-viewport .faq-img, .element-in-viewport .faq-img, .in-viewport .faq-img{
+  clip-path: inset(0 0% 0 0);
 }
 .faq-img img{
   width: 100%;
@@ -1482,6 +1491,7 @@ padding-top: 100%;
      position: relative; 
     width: 35%;
     margin-left: auto;
+    overflow: hidden;
 } 
 .pf-img img{
   width: 100%;
@@ -1493,7 +1503,13 @@ padding-top: 100%;
 .pf-img{
   position: relative;
     padding-top: 100%;
-}
+    clip-path: inset(100% 0 0% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
+    }
+.was-in-viewport .pf-img, .element-in-viewport .pf-img, .in-viewport .pf-img{
+      clip-path: inset(0% 0 0 0);
+    } 
 /* pre-footer ends */
 /* footer starts */
 .logo-white a{
@@ -1992,6 +2008,7 @@ background-color: #FAF9F7;
 .program-bottom {
   flex-direction: column;
   row-gap: 40px;
+  padding-left: 0;
 }
 .sbb-left {
   width: 100%;

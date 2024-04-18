@@ -61,14 +61,77 @@ max-width: 38ch;
 .app-top-left{
     color:#739761;
     text-transform: uppercase;
+    clip-path: inset(0 100% 0% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
 }
+.app-top-right {
+    clip-path: inset(0 0 0% 100%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
+}
+.was-in-viewport .app-top-left,
+.was-in-viewport .app-top-right ,
+.was-in-viewport .appimg,
+.was-in-viewport .founder-description,
+.was-in-viewport .mission-right,
+.was-in-viewport .inner-mission,
+.was-in-viewport .edu-top,
+.was-in-viewport .eb-left,
+.was-in-viewport .eb-right,
+.was-in-viewport .plan-left,
+.was-in-viewport .module-top,
+.was-in-viewport .module1 ,
+.was-in-viewport .fo,
+.was-in-viewport .courses
+{
+    clip-path: inset(0% 0% 0% 0%);
+}
+ .element-in-viewport .app-top-left,
+ .element-in-viewport .app-top-right,
+ .element-in-viewport .appimg,
+ .element-in-viewport .founder-description,
+ .element-in-viewport .mission-right,
+ .element-in-viewport .inner-mission,
+ .element-in-viewport .edu-top,
+ .element-in-viewport .eb-left,
+ .element-in-viewport .eb-right,
+ .element-in-viewport .plan-left,
+ .element-in-viewport .module-top,
+ .element-in-viewport .module1,
+ .element-in-viewport .fo,
+ .element-in-viewport .courses
+ {
+    clip-path: inset(0% 0% 0% 0%);
+ } 
+ .in-viewport .app-top-left,
+ .in-viewport .app-top-right,
+ .in-viewport .appimg,
+ .in-viewport .founder-description,
+ .in-viewport .mission-right,
+ .in-viewport .inner-mission,
+ .in-viewport .edu-top,
+ .in-viewport .eb-left,
+ .in-viewport .eb-right,
+ .in-viewport .plan-left,
+ .in-viewport .module-top,
+ .in-viewport .module1,
+ .in-viewport .fo,
+ .in-viewport .courses
+ {
+    clip-path: inset(0% 0% 0% 0%);
+  } 
 .approach-top{
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 .appimg{
     position: relative;
     padding-top: 70%;
+    clip-path: inset(0% 100% 0% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
 }
 .appimg img{
     width:100%;
@@ -81,6 +144,7 @@ max-width: 38ch;
 .approach-bottom{
     width: 45%;
     margin-right: auto;
+    overflow: hidden;
 }
 /* approach section ends */
 /* founders section starts */
@@ -122,6 +186,9 @@ max-width: 38ch;
 .founder-description{
     padding: 30px 32px 34px 32px;
     width: 40%;
+    clip-path: inset(0% 100% 0% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
 }
 .founder-description p{
     color:#555555;
@@ -201,6 +268,9 @@ max-width: 38ch;
     width:40%;
     margin-left: auto;
     position: relative;
+    clip-path: inset(0 0% 0% 100%);
+    transition: 1s clip-path ease; 
+    transition-delay: 0.6s;
 }
 .mission-img{
     position: relative;
@@ -243,6 +313,9 @@ max-width: 38ch;
     gap: 160px;
      width: 60%;
     margin-right: auto; 
+    clip-path: inset(0 100% 0% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
 }
 /* mission section ends */
 /* explore section starts */
@@ -340,6 +413,7 @@ font-size: clamp(68px, 6vw, 96px);
 font-weight: 400;
 line-height: 100.8px;
 color:#90B180;
+margin-left: 10px;
 }
 .sol-ban-bottom p{
     color:#6B6B6B;
@@ -504,6 +578,19 @@ letter-spacing: -0.03em;
 .edu-top{
     display: flex;
     justify-content: space-between;
+    clip-path: inset(100% 0% 0% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
+}
+.eb-left{
+    clip-path: inset(0 100% 0% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
+}
+.eb-right{
+    clip-path: inset(0 0 0% 100%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
 }
 .edu-numbers{
     display: flex;
@@ -554,6 +641,9 @@ letter-spacing: -0.03em;
     row-gap: 61px;
     width: 35%;
     margin-right: auto;
+    clip-path: inset(0 100% 0% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
 }
 .inner-plan-right{
     display: flex;
@@ -961,6 +1051,14 @@ input[type="radio"] {
 .first-name , .last-name , .email , .phone-no{
     width:50%;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  
+}
+
+
 /* contact page ends */
 /* thank you page starts */
 section.thankyou{
@@ -1344,11 +1442,22 @@ section.hol-benefits {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    clip-path: inset(0% 0% 100% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
 }
-.inner-module{
+.module-desk{
     display: flex;
     flex-direction: column;
     gap: 88px;
+}
+.inner-module {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.mod-mob{
+    display: none;
 }
 .module1-bottom p {
     max-width: 29ch;
@@ -1364,6 +1473,15 @@ section.hol-benefits {
     border: 1px solid #E8E8E8;
     background: #ffff;
     padding-bottom: 40px;
+    clip-path: inset(0% 0% 100% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
+}
+.second{
+    transition-delay: 0.8s;
+}
+.third{
+    transition-delay: 1s;
 }
 .module1-bottom {
     padding: 0 32px;
@@ -1432,7 +1550,10 @@ color:#121212;
 }
 .fo {
     position: relative;
-     overflow: hidden; 
+     overflow: hidden;
+     clip-path: inset(0 0% 100% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s; 
 }
 .fo-desig{
 font-family: "Instrument Sans", sans-serif;
@@ -1493,7 +1614,7 @@ background: #BCD7F0;
     gap: 60px;
     width:100%;
     transform: translateY(100%);
-    transition: 1s ease all;
+    transition: 0.6s ease all;
 }
 .fo:hover .fo-description{
     transform: translateY(0);
@@ -1513,7 +1634,7 @@ text-align: end;
     overflow-y: auto; /* Enables scrolling */
     max-height: 150px; /* Adjust as needed */
     scrollbar-width: thin; /* For Firefox */
-    scrollbar-color:  #f0f0f0; /* For Firefox */
+    scrollbar-color:  red; /* For Firefox */
 }
 
 /* For Webkit browsers like Chrome, Safari */
@@ -1522,11 +1643,11 @@ text-align: end;
 }
 
 .fo-para p::-webkit-scrollbar-track {
-    background: #f0f0f0;
+    background: red;
 }
 
 .fo-para p::-webkit-scrollbar-thumb {
-    background-color: #c0c0c0;
+    background-color: red;
     border-radius: 4px;
     border: 2px solid #f0f0f0;
 }
@@ -1621,6 +1742,9 @@ color:#121212;
     flex-direction: column;
     gap: 109px;
     align-items: center;
+    clip-path: inset(0% 0% 100% 0%);
+    transition: 1s clip-path ease;
+    transition-delay: 0.6s;
 }
 .course-tab.label3 {
     background: #F3E0D7;
@@ -1907,9 +2031,17 @@ section.blog-study {
     gap: 43px;
 }
 .st-list ul{
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: disc;
+    color: #6B6B6B;
+    padding-left: 47px;
+    max-width: 100%;
+}
+.st-anchor a{
+    text-decoration: underline;
+    color: #6B6B6B;
 }
 .p-wo-heading p {
     color:#6B6B6B;
@@ -2101,7 +2233,77 @@ text-align: center;
     gap: 24px;
 }
 /* 404 page ends */
+/* terms and conditions page */
 
+    .inner-terms {
+        padding-top: 164px;
+        display: flex;
+        flex-direction: column;
+        gap: 95px;
+        max-width: 62ch;
+    margin: 0 auto;
+    }
+
+.term-top h1{
+    color:#1A1A1A;
+}
+
+.t-head{
+font-size: 28px;
+line-height: 36.4px;
+letter-spacing: -0.01em;
+color:#494949;
+}
+.t-head-para p{
+    color:#6B6970;
+    max-width: 100%;
+}
+.t-para p{
+        color:#6B6970;
+        max-width: 100%;
+}
+.t-sub-head h3{
+    color:#25232B;
+}
+.t-head-para {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.term {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.t-para {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.term-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 92px;
+}
+.content-div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.para-li ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: disc;
+    color: #6B6B6B;
+    padding-left: 47px;
+    max-width: 100%;
+}
+.para-a a{
+    text-decoration: underline;
+    color: #6B6B6B;
+}
+/* terms and conditions page */
 
 
 
@@ -2565,6 +2767,15 @@ section.holistic-segment  ul.bxslider {
 .inner-nf {
     padding-top: 80px;
 }
+.mod-mob{
+    display: block;
+}
+.module-head a{
+    display: none;
+}
+.contact-form {
+    padding-top: 56px;
+}
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
@@ -2708,6 +2919,9 @@ letter-spacing: -0.05em;
     }
     section.not-found {
         height: 600px;
+    }
+    .hol-ban-bottom.bg-green {
+        text-align: left;
     }
 }
 @media(max-width: 400px){
