@@ -1615,6 +1615,7 @@ background: #BCD7F0;
     width:100%;
     transform: translateY(100%);
     transition: 0.6s ease all;
+    justify-content: space-evenly;
 }
 .fo:hover .fo-description{
     transform: translateY(0);
@@ -1633,23 +1634,22 @@ text-align: end;
 .fo-para p {
     overflow-y: auto; /* Enables scrolling */
     max-height: 150px; /* Adjust as needed */
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color:  red; /* For Firefox */
 }
 
 /* For Webkit browsers like Chrome, Safari */
 .fo-para p::-webkit-scrollbar {
-    width: 8px;
+    width: 2.5px;
 }
 
 .fo-para p::-webkit-scrollbar-track {
-    background: red;
+    box-shadow: inset 0 0 1px #795B4E;
+    background: #F3E0D7;
 }
 
 .fo-para p::-webkit-scrollbar-thumb {
-    background-color: red;
-    border-radius: 4px;
-    border: 2px solid #f0f0f0;
+    background: #795B4E;
+    border-radius: 16px;
+    outline: 1px solid #795B4E;
 }
 
 .fo-description.visible {
@@ -1681,7 +1681,6 @@ color:#121212;
     line-height: 20.58px;
     letter-spacing: 0.02em;
     color: #5F7589;
-    max-width: 31ch;
 }
 .fo-des {
     display: flex;
@@ -1829,6 +1828,7 @@ color: #6B6B6B;
     padding-top: 43px;
     padding-bottom: 61px;
     height: 100%;
+    width: 45%;
 }
 .bg-ban-right {
     width: 50%;
@@ -2383,6 +2383,9 @@ color:#494949;
     .in-st-bottom {
         padding: 0 280px;
     }
+    .average-counter {
+        padding: 24px 70px;
+    }
 }
 /* Max Width 1300px Ends */
 /* Max Width 1200px */
@@ -2486,6 +2489,9 @@ color:#494949;
 .inner-blog-ban {
     padding-left: calc(30px - 5%);
     padding-right: calc(30px - 5%);
+}
+.average-counter {
+    bottom: -87px;
 }
 }
 /* Max Width 1100px Ends */
@@ -2725,6 +2731,7 @@ section.holistic-segment  ul.bxslider {
     gap: 40px;
     padding-top: 20px;
     padding-bottom: 0;
+    width: 100%;
 }
 .bg-content {
     gap: 22px;
@@ -2775,6 +2782,9 @@ section.holistic-segment  ul.bxslider {
 }
 .contact-form {
     padding-top: 56px;
+}
+.average-counter {
+    bottom: 0px;
 }
 }
 /* Max Width 991px Ends */
@@ -2922,6 +2932,9 @@ letter-spacing: -0.05em;
     }
     .hol-ban-bottom.bg-green {
         text-align: left;
+    }
+    .average-head {
+        text-align: center;
     }
 }
 @media(max-width: 400px){

@@ -1400,13 +1400,24 @@
 <!-- blog slider ends -->
 <!-- founders js -->
 <script>
+if (window.matchMedia("(max-width: 992px)").matches) { // Checks if device width is less than or equal to 768px
     document.querySelectorAll('.fo').forEach(function(fo) {
-    fo.addEventListener('click', function() {
-        // Toggle the 'visible' class on the .fo-description element
-        var description = this.querySelector('.fo-description');
-        description.classList.toggle('visible');
+        fo.addEventListener('click', function(event) {
+            // Toggle the 'visible' class on the .fo-description element
+            var description = this.querySelector('.fo-description');
+            description.classList.toggle('visible');
+            event.stopPropagation(); // Prevents the click event from propagating to the .fo-description
+        });
     });
-});
+
+    // Hide .fo-description when it's clicked
+    document.querySelectorAll('.fo-description').forEach(function(description) {
+        description.addEventListener('click', function() {
+            this.classList.remove('visible');
+        });
+    });
+}
+
 
 </script>
 <!-- founders js -->
