@@ -2006,6 +2006,10 @@ background-color: #FAF9F7;
 .mobile-blog-bottom{
   display: block;
 }
+.tabcontent .blog-bottom{
+  display: grid;
+    grid-template-columns: 1fr;
+}
 .blog-in{
   display: flex;
     flex-direction: column;

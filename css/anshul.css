@@ -2702,7 +2702,6 @@ section.holistic-segment  ul.bxslider {
     height: 100%;
 }
 .blog-ban-bottom {
-    border: none;
     padding-left: 0;
     flex-direction: column;
 }
@@ -2732,6 +2731,7 @@ section.holistic-segment  ul.bxslider {
     padding-top: 20px;
     padding-bottom: 0;
     width: 100%;
+    padding: 20px;
 }
 .bg-content {
     gap: 22px;
