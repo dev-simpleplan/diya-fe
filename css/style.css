@@ -850,10 +850,13 @@ inset: 0;
  } 
 /* solutions ends */
 /* Work starts */
-.work {
-  position: relative;
-  height: 100vh;
+  .work {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
 .pinned .work-line {
   background-color: blue; 
 }
@@ -990,7 +993,9 @@ inset: 0;
  .line-fill-wrap .lf.two{
   background-color: #055627;
  }
-  
+ .work-in {
+  width: 100%;
+}
  /* Work Ends */
 /* stories starts */
 .mobile-stories-bottom{
@@ -1909,6 +1914,12 @@ background-color: #FAF9F7;
 .banner-right{
   width: 25%;
 }
+.fc-left {
+  display: flex;
+  column-gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 /* .sub-head h2 {
   font-size: 65px;
@@ -2158,6 +2169,7 @@ color:#212121;
 /* Max Width 767px */
 @media(max-width: 767px){
   .fc-left{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 48px;
   }
