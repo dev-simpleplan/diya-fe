@@ -1827,6 +1827,7 @@ color: #6B6B6B;
     padding-top: 43px;
     padding-bottom: 61px;
     height: 100%;
+    width: 45%;
 }
 .bg-ban-right {
     width: 50%;
@@ -2723,6 +2724,7 @@ section.holistic-segment  ul.bxslider {
     gap: 40px;
     padding-top: 20px;
     padding-bottom: 0;
+    width: 100%;
 }
 .bg-content {
     gap: 22px;
