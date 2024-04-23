@@ -422,10 +422,7 @@ margin-left: 10px;
     color:#6B6B6B;
     max-width: 45ch;
 }
-section.solution-banner{
-    height: 100vh;
-    min-height: 700px;
-}
+
 .sol-ban-left{
     display: flex;
     flex-direction: column;
@@ -436,6 +433,8 @@ section.solution-banner{
     display: flex;
     height: 100%;
     justify-content: space-between;
+    padding-top: 186px;
+    padding-bottom: 83px;
 }
 .sol-ban-bottom{
     display: flex;
@@ -527,7 +526,7 @@ max-width: 50ch;
 .bb-circle{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 23px;
     position: sticky;
     top: 80px;
     margin-left: -11px;
@@ -538,6 +537,7 @@ max-width: 50ch;
     background: #034A2F;
     width: 24px;
     height: 24px;
+    box-shadow: #034A2F 0 0 24px 12px;
 }
 .bb-text{
     color:#034A2F;
@@ -739,6 +739,9 @@ padding-bottom: 2px;
 .green-footer{
     position: sticky;
     bottom:0;
+}
+.bfoot-button a{
+    padding: 10px 26px;
 }
 /* blue footer */
 /* contact page starts*/
@@ -964,6 +967,7 @@ letter-spacing: 0.02em;
 .select2-container--default .select2-results__option--selected {
     background-color:#E8F1E3 ;
     font-size: 16px;
+    color:#034A2F;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     font-family: "Instrument Sans", sans-serif;
@@ -1430,6 +1434,12 @@ section.holistic-segment .ellipse {
 section.hol-benefits {
     padding-top: 92px;
 }
+section.holistic-segment .mobile-segment-list .bx-wrapper {
+    background-color:#5886B4;
+}
+section.holistic-segment .mobile-segment-list  ul.bxslider li .segli{
+    color:#A2C2E2;
+}
 /* holistic benefits */
 /* module section starts */
 .module-label {
@@ -1734,6 +1744,10 @@ color:#121212;
 .hol-ban-bottom.bg-green .hol-text p{
     color:#BDCAC5;
 }
+section.virtual-banner .hol-ban-img img
+{
+object-position: bottom;
+}
 /* vistual banner ends */
 /* virtual module section */
 .courses {
@@ -1976,6 +1990,13 @@ section.blog-study {
     display: flex;
     flex-direction: column;
     gap: 39px;
+    
+}
+.st-head h1{
+    max-width: 112ch;
+}
+section.inner-blog  .st-head h1{
+    max-width: 40ch;
 }
 .st-img {
     position: relative;
@@ -2077,6 +2098,7 @@ color:#AAAAAA;
     gap: 8px;
     position: relative;
     z-index: 10000; 
+    cursor: pointer;
 }
 .share-text.label1 {
     color: #034A2F;
@@ -2496,6 +2518,12 @@ color:#494949;
 .average-counter {
     bottom: -87px;
 }
+.hol-ban-img {
+    padding-top: 40%;
+}
+section.virtual-banner .hol-ban-img  {
+    padding-top: 28%;
+}
 }
 /* Max Width 1100px Ends */
 /* Max Width 991px */
@@ -2542,9 +2570,7 @@ color:#494949;
         flex-direction: column;
         row-gap: 92px;
     }
-    .sol-ban-right{
-        margin-bottom: 50px;
-    }
+    
     .sol-ban-left {
         row-gap: 48px;
     }
@@ -2652,10 +2678,7 @@ color:#494949;
     .hol-label.label2 {
         padding-bottom: 0;
     }
-section.holistic-segment  ul.bxslider {
-        list-style: none;
-        display: none;
-}
+
 .module-bottom {
     grid-template-columns: 1fr;
 }
@@ -2775,7 +2798,7 @@ section.holistic-segment  ul.bxslider {
     gap: 12px;
 }
 .inner-nf {
-    padding-top: 80px;
+    padding-top: 105px;
 }
 .mod-mob{
     display: block;
@@ -2784,10 +2807,29 @@ section.holistic-segment  ul.bxslider {
     display: none;
 }
 .contact-form {
-    padding-top: 56px;
+    padding-top: 121px;
 }
 .average-counter {
     bottom: 0px;
+}
+   .inner-bfooter {
+    flex-direction: column;
+    row-gap: 22px;
+    text-align: center;
+}
+.foot-label p{
+    line-height: 130%;
+}
+.inner-bfooter .custom-button {
+     margin-left: 0; 
+    width: 100%;
+}
+.sol-ban {
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+.hol-ban-in {
+    padding-top: 40px;
 }
 }
 /* Max Width 991px Ends */
@@ -2813,9 +2855,6 @@ line-height: 24px;
 font-size: 17px;
 line-height: 22.1px;
 text-wrap: pretty;
-    }
-    .inner-approach {
-        padding: 30px 16px;
     }
     
     .pf-left-top h2{
@@ -2867,11 +2906,8 @@ letter-spacing: -0.05em;
     section.solution-banner {
         height: 100%;
         min-height: 100%;
-        padding: 30px 0;
     }
-    .bb-right-grid {
-        grid-template-columns: 1fr;
-    }
+    
     .benefit-centre p {
         max-width: 100%;
     }
@@ -2884,16 +2920,16 @@ letter-spacing: -0.05em;
     .plan-in {
         padding:60px 0;
     }
-    .bg-green,.light-blue  .acc-top {
+    .bg-green .acc-top {
         text-align: center;
+        line-height: 126%;
     }
-    .inner-bfooter {
-        flex-direction: column;
-        row-gap: 10px;
+    .light-blue .acc-top {
+        text-align: center;
+        line-height: 126%;
     }
-    .inner-bfooter .custom-button {
-         margin-left: 0; 
-        width: 100%;
+    .bg-green.edu-in .edu-head h2 {
+        max-width: 19ch;
     }
     .ab-banner-top {
         row-gap: 20px;
@@ -2939,6 +2975,17 @@ letter-spacing: -0.05em;
     .average-head {
         text-align: center;
     }
+    .hol-ban-img {
+        padding-top: 45%;
+    }
+    .option-wrapper .select2-container{
+        background-size: 3%;
+    }
+}
+@media(max-width: 500px){
+.bb-right-grid {
+    grid-template-columns: 1fr;
+  }
 }
 @media(max-width: 400px){
 .ab-banner-top h1 {
