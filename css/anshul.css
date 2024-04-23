@@ -1350,14 +1350,21 @@ text-transform : capitalize;
 }
 .custom-dropdown-select.sd-select ul li {
     border-bottom: 1px solid #F1F0EE;
+    /* padding-bottom: 21px;
+    padding-top: 24px; */
+}
+.eventTabLink {
     padding-bottom: 21px;
-    padding-top: 24px;
+    padding-top: 24px; 
 }
 .rotate {
     transform: rotate(180deg);
 }
 .custom-dropdown-select.sd-select {
     display: none;
+}
+.case-dropdown {
+    z-index: 10000;
 }
 
 /* customer stories page ends */
