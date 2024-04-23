@@ -53,8 +53,9 @@
                     <div class="inner-nav">
                         <div class="nav-left">
                             <div class="logo">
-                                <a href="index.html">Diya</a>
-                                <!-- <img src="" alt="Diya"> -->
+                                <a href="index.html">
+                                 <img src="images\black-logo.svg" alt="Diya"> 
+                                 </a>
                             </div>
                         </div>
                         <div class="nav-right">
@@ -123,7 +124,9 @@
                 <div class="container-fluid">
                     <div class="inner-nav">
                         <div class="logo">
-                            <a href="index.html">Diya</a>
+                            <a href="index.html">
+                                <img src="images\black-logo.svg" alt="">
+                            </a>
                         </div>
                         <div class="sidenav-right">
 
@@ -471,7 +474,7 @@
                                             <div class="sbb-right">
                                                 <div class="sbbr-left">
                                                     <div class="solgraph">
-                                                        <img src="images\solgraph.png" alt="">
+                                                        <img src="https://syncedhq.com/wp-content/uploads/2023/09/comment-67-new.gif" alt="">
                                                     </div>
                                                     <div class="graphcont">
                                                         <p>“I saw clear results in my blood sugar levels after i started
@@ -561,7 +564,7 @@
                                             <div class="sbb-right">
                                                 <div class="sbbr-left">
                                                     <div class="solgraph">
-                                                        <img src="images\solgraph.png" alt="">
+                                                        <img src="https://syncedhq.com/wp-content/uploads/2023/09/comment-67-new.gif" alt="">
                                                     </div>
                                                     <div class="graphcont graph2">
                                                         <p>“I saw clear results in my blood sugar levels after i started
@@ -1170,8 +1173,9 @@
                             <div class="container-fluid">
                                 <div class="footer-top-in">
                                     <div class="logo-white logo">
-                                        <a href="index.html">Diya</a>
-                                        <!-- <img src="" alt="">  -->
+                                        <a href="index.html">
+                                         <img src="images\logo-white.svg" alt="">  
+                                         </a>
                                     </div>
 
                                 </div>
@@ -1524,6 +1528,58 @@
 
 </script>
 <!-- Works Animation Ends -->
+<!-- gif starts -->
 
+<script>
+    (function($) {
 
+$(document).ready(function() {
+  
+  var $win = $(window);
+  var elementTop, elementBottom, viewportTop, viewportBottom;
+
+  function isScrolledIntoView(elem) {
+    elementTop = $(elem).offset().top;
+    elementBottom = elementTop + $(elem).outerHeight();
+    viewportTop = $win.scrollTop();
+    viewportBottom = viewportTop + $win.height();
+    return (elementBottom > viewportTop && elementTop < viewportBottom);
+  }
+  
+    if($('img[src$="gif"]').length){
+
+    var gifSrc, srcGif;
+
+    $('img[src$="gif"]').each(function(){
+      gifSrc = $(this).attr('src');
+      $(this).attr('data-gif', gifSrc);
+    });
+
+    $win.on('scroll.gifrun', function() {
+
+      $('img[src$="gif"]').each(function(){
+
+        srcGif = $(this).attr('data-gif'); 
+
+        if (!(isScrolledIntoView(this) === true)) {
+          $(this).attr('src', srcGif);
+        } else {
+          if($(this).attr('src') == srcGif){
+            // do nothing
+          } else {
+            $(this).attr('src', srcGif);
+          }
+        }
+      });
+    
+    });	 /* end $win.on('scroll.gifrun') */
+
+  } /* end img[src$="gif"] */
+  
+
+});
+
+})(jQuery);
+</script>
+<!-- gif ends -->
 </html>
