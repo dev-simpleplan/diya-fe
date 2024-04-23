@@ -63,12 +63,12 @@ max-width: 38ch;
     text-transform: uppercase;
     clip-path: inset(0 100% 0% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .app-top-right {
     clip-path: inset(0 0 0% 100%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .was-in-viewport .app-top-left,
 .was-in-viewport .app-top-right ,
@@ -131,7 +131,7 @@ max-width: 38ch;
     padding-top: 70%;
     clip-path: inset(0% 100% 0% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .appimg img{
     width:100%;
@@ -188,7 +188,7 @@ max-width: 38ch;
     width: 40%;
     clip-path: inset(0% 100% 0% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .founder-description p{
     color:#555555;
@@ -224,7 +224,7 @@ max-width: 38ch;
     font-size: 16px;
 }
 .founder-name.light-blue{
-    top: 0;
+    top: -1px;
     right: -1px;
 }
 .designation.light-blue{ 
@@ -270,7 +270,7 @@ max-width: 38ch;
     position: relative;
     clip-path: inset(0 0% 0% 100%);
     transition: 1s clip-path ease; 
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .mission-img{
     position: relative;
@@ -315,7 +315,7 @@ max-width: 38ch;
     margin-right: auto; 
     clip-path: inset(0 100% 0% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 /* mission section ends */
 /* explore section starts */
@@ -390,6 +390,9 @@ section.impact .acc-top{
     gap: 62px;
     padding-top: 101px;
     padding-bottom: 93px;
+}
+.donate-button a{
+    padding: 14px 27px;
 }
 /* donate section ends */
 /* solution banner starts */
@@ -580,17 +583,17 @@ letter-spacing: -0.03em;
     justify-content: space-between;
     clip-path: inset(100% 0% 0% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .eb-left{
     clip-path: inset(0 100% 0% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .eb-right{
     clip-path: inset(0 0 0% 100%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .edu-numbers{
     display: flex;
@@ -643,7 +646,7 @@ letter-spacing: -0.03em;
     margin-right: auto;
     clip-path: inset(0 100% 0% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .inner-plan-right{
     display: flex;
@@ -1444,7 +1447,7 @@ section.hol-benefits {
     gap: 32px;
     clip-path: inset(0% 0% 100% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .module-desk{
     display: flex;
@@ -1475,13 +1478,13 @@ section.hol-benefits {
     padding-bottom: 40px;
     clip-path: inset(0% 0% 100% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .second{
-    transition-delay: 0.8s;
+    transition-delay: 0.6s;
 }
 .third{
-    transition-delay: 1s;
+    transition-delay: 0.9s;
 }
 .module1-bottom {
     padding: 0 32px;
@@ -1553,7 +1556,7 @@ color:#121212;
      overflow: hidden;
      clip-path: inset(0 0% 100% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s; 
+    transition-delay: 0.3s; 
 }
 .fo-desig{
 font-family: "Instrument Sans", sans-serif;
@@ -1743,7 +1746,7 @@ color:#121212;
     align-items: center;
     clip-path: inset(0% 0% 100% 0%);
     transition: 1s clip-path ease;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .course-tab.label3 {
     background: #F3E0D7;
