@@ -134,7 +134,7 @@ border-bottom: 1px solid #034A2F;
 text-transform: uppercase;
 display: none;
 }
-h1{
+h2{
  font-size:  clamp(32px, 6vw, 50px);
 line-height: 62.5px;
 letter-spacing: -0.03em;
@@ -142,20 +142,20 @@ color:#212121;
 font-weight: 400;
 text-transform: capitalize;
 }
-h2{
+h3{
   font-family: 'Gambarino-Regular';
   font-size: clamp(32px, 6vw, 60px);
   font-weight: 400;
   line-height: 112%;
  color:#212121
 }
-h3{
+h4{
   font-size: 22px;
   line-height: 28.6px;
   letter-spacing: -0.01em; 
   color:#2B2727;
 }
-h4{
+h5{
   font-family: 'Gambarino-Regular';
 font-size: 24px;
 font-weight: 400;
@@ -1062,7 +1062,7 @@ justify-content: space-between;
   justify-content: space-between;
   row-gap: 17px;
 }
-.story-top-left h1{
+.story-top-left h2{
   color:#202322;
   transform: translateY(100%);
 }
@@ -1169,7 +1169,7 @@ justify-content: space-between;
 
 
 
-.story-content h3{
+.story-content h4{
   transition: 0.6s ease all;
 }
 .story-content p{
@@ -1213,13 +1213,7 @@ justify-content: space-between;
   /* padding: 28px 34px 20px 34px; */
 }
 .link-arrow{
-  background-color: #034A2F;
   border-radius: 50%;
-  width: 37px;
-  height: 37px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   right:0;
   top:0;
@@ -1228,7 +1222,7 @@ justify-content: space-between;
 .story:hover{
   background: #034A2F;
 }
-.story:hover .story-content h3 {
+.story:hover .story-content h4{
   color: #fff;
 }
 .story:hover .story-content p{
@@ -1279,7 +1273,7 @@ justify-content: space-between;
 .blog-top-left{
   max-width: 41ch;
 }
-.blog-top-left h1{
+.blog-top-left h2{
   color:#202322;
 }
 .blog1 a{
@@ -1446,7 +1440,7 @@ transition-delay: 0.3s;
   row-gap: 47px;
   width: 100%;
 }
-.faq-head h1{
+.faq-head h2{
   max-width: 14ch;
   color:#202322;
 }
@@ -1657,6 +1651,7 @@ color:#568472;
   justify-content: center;
   padding: 3px;
   border: 1.17px solid #FCFBFA;
+  border-radius: 0;
 }
 .formcontainer .pp-check input[type="checkbox"]::before {
   content: "";
@@ -2033,11 +2028,11 @@ background-color: #FAF9F7;
 .fc-right-bottom{
   justify-content: space-between;
 }
-.sub-head h2.mob-display{
+.sub-head h4.mob-display{
   display: block;
   color:#90B180;
 }
-.sub-head h2.mob-none{
+.sub-head h4.mob-none{
   display: none;
 }
 .segment-list{
@@ -2280,19 +2275,19 @@ line-height: 137%;
 font-size: 12px;
 line-height: 16.92px;
   }
-  h1{
+  h2{
 font-size: 32px;
 line-height: 40px;
   }
-h3{
+h4{
   font-size: 14px;  
   line-height: 18.2px;
   }
-  .reason-que h3 , .reason-no h3{
+  .reason-que h4 , .reason-no h4{
     font-size: 18px;
     line-height: 146%;
   }
-  h4{
+  h5{
 font-size: 16.63px;
 line-height: 17.3px;
   }

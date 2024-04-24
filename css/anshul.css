@@ -331,10 +331,10 @@ max-width: 38ch;
     color: #BDCAC5;
     max-width: 28ch;
 }
-.reason-no h3{
+.reason-no h4{
     color:#7BA494;
 }
-.reason-que h3{
+.reason-que h4{
     color:#FCFCFA;
 }
 .reason-ans p{
@@ -408,7 +408,7 @@ font-weight: 400;
 line-height: 120%;
 color:#212121;
 text-transform: capitalize;
-max-width: 15ch;
+max-width: 16ch;
 }
 .sol-ban-head h1 span{
 font-family: 'Gambarino-Regular';
@@ -480,7 +480,7 @@ max-width: 50ch;
     justify-content: space-between;
     align-items: flex-start;
 }
-.bb-right-head h1{
+.bb-right-head h2{
     text-transform: capitalize;
     color: #393939;
     max-width: 20ch;
@@ -561,7 +561,7 @@ background-color: #034A2F;
     row-gap: 80px;
     flex-direction: column;
 }
-.bg-green.edu-in .edu-head h2{
+.bg-green.edu-in .edu-head h3{
     color: #FAF9F7;
     max-width: 20ch;
 }
@@ -611,7 +611,7 @@ letter-spacing: -0.03em;
     justify-content: space-between;
     align-items: flex-end;
 }
-.light-blue.edu-in .edu-head h2{
+.light-blue.edu-in .edu-head h3{
     color: #121212;
     max-width: 12ch;
 }
@@ -630,7 +630,7 @@ letter-spacing: -0.03em;
 }
 /* education courses */
 /* plan section starts */
-.plan-heading h1{
+.plan-heading h2{
     text-transform: capitalize;
     max-width: 15ch;
 }
@@ -1838,7 +1838,7 @@ ul.course-list.label2 {
     padding-left: calc(120px - 5%);
     padding-right: calc(120px - 5%);
 }
-.blog-ban-top {
+.blog-ban-top h2{
     color: #202322;
     text-align: center;
 }
@@ -1851,7 +1851,7 @@ letter-spacing: 0.16em;
 color: #393939;
 text-transform: uppercase;
 }
-.bg-head h3 {
+.bg-head h4 {
     color: #393939;
     max-width: 35ch;
 }
@@ -1997,6 +1997,39 @@ section.blog-study {
  border-bottom: 1px solid;
  color:#8B8B8B;
   }
+
+  .formcontainer .privacy-pol input{
+    background-color: #FAF9F7;
+   }
+   .formcontainer .privacy-pol input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border: 1.17px solid #9D9B9B;
+    border-radius: 0;
+  }
+  .formcontainer .privacy-pol input[type="checkbox"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(21% 40%, 21% 40%, 8% 54%, 25% 68%, 36% 77%, 47% 65%, 48% 64%, 64% 47%, 75% 35%, 93% 13%, 81% 4%, 36% 54%);
+    transform: scale(0);
+    background-color: #9D9B9B;
+    transition: 0.2s all ease;
+  }
+  .formcontainer .privacy-pol input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  .formcontainer .privacy-pol input[type="checkbox"]:hover {
+    color: black;
+  }
+
+
+
+
   .inner-email {
     padding-left: calc(120px - 5%);
     padding-right: calc(120px - 5%);
@@ -2021,10 +2054,10 @@ section.blog-study {
     gap: 39px;
     
 }
-.st-head h1{
+.st-head h2{
     max-width: 112ch;
 }
-section.inner-blog  .st-head h1{
+section.inner-blog  .st-head h2{
     max-width: 40ch;
 }
 .st-img {
@@ -2100,7 +2133,7 @@ section.inner-blog  .st-head h1{
     color:#6B6B6B;
     max-width: 100%;
 }
-.p-wi-heading h3 {
+.p-wi-heading h4 {
     color:#202322;
 }
 .caption{
@@ -2298,7 +2331,7 @@ text-align: center;
     margin: 0 auto;
     }
 
-.term-top h1{
+.term-top h2{
     color:#1A1A1A;
 }
 
@@ -2316,7 +2349,7 @@ color:#494949;
         color:#6B6970;
         max-width: 100%;
 }
-.t-sub-head h3{
+.t-sub-head h4{
     color:#25232B;
 }
 .t-head-para {
@@ -2775,7 +2808,7 @@ section.virtual-banner .hol-ban-img  {
     padding-left: 0;
     flex-direction: column;
 }
-.bg-head h3 {
+.bg-head h4 {
     max-width: 100%;
 }
 .bg-text p {
@@ -2990,7 +3023,7 @@ letter-spacing: -0.05em;
         text-align: center;
         line-height: 126%;
     }
-    .bg-green.edu-in .edu-head h2 {
+    .bg-green.edu-in .edu-head h3 {
         max-width: 19ch;
     }
     .ab-banner-top {
@@ -3043,7 +3076,7 @@ letter-spacing: -0.05em;
     .option-wrapper .select2-container{
         background-size: 3%;
     }
-    .email-head h1{
+    .email-head h2{
             font-size: 22px;
             line-height: 27px;
     }
