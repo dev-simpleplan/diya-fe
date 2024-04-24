@@ -1078,7 +1078,7 @@ section.thankyou{
 }
 .ty-head {
     font-family: 'Gambarino-Regular';
-    font-size: 85.05px;
+    font-size: clamp(85px , 8vw , 60px);
     font-weight: 400;
     line-height: 89.3px;
     letter-spacing: -0.03em;
@@ -1239,7 +1239,7 @@ section.stories-banner{
     transition: 0.3s;
 font-size: 12px;
 font-weight: 600;
-line-height: 12.48px;
+line-height: 130%;
 letter-spacing: 0.27em;
 color:#034A2F;
 text-transform: uppercase;
@@ -1956,6 +1956,7 @@ section.blog-study {
     line-height: 18px;
     letter-spacing: 0.02em;
   color:#202322;
+  border-radius: 0;
    }
 .email-form .formcontainer .e-mail input::placeholder {
     font-family: "Instrument Sans", sans-serif;
@@ -1982,6 +1983,33 @@ section.blog-study {
     padding: 16px 20px;
     height: 100%;
 }
+
+.formcontainer .privacy-pol input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    border: 1.17px solid #9D9B9B;
+  }
+  .formcontainer .privacy-pol input[type="checkbox"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(21% 40%, 21% 40%, 8% 54%, 25% 68%, 36% 77%, 47% 65%, 48% 64%, 64% 47%, 75% 35%, 93% 13%, 81% 4%, 36% 54%);
+    transform: scale(0);
+    background-color: #9D9B9B;
+    transition: 0.2s all ease;
+  }
+  .formcontainer .privacy-pol input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  .formcontainer .privacy-pol input[type="checkbox"]:hover {
+    color: black;
+  }
+  
+
 .email-form .formcontainer .privacy-pol label{
     font-family: "Instrument Sans", sans-serif;
     font-size: 12px;
@@ -2254,7 +2282,7 @@ text-transform: uppercase;
 /* 404 page starts */
 section.not-found {
     height: 100vh;
-    min-height: 700px;
+    min-height: 600px;
 }
 .fof {
 font-family: 'Gambarino-Regular';
@@ -2494,6 +2522,22 @@ section.stories-banner   .average-counter {
     .inner-donate{
         padding: 80px 0;
     }
+    .in-st-bottom {
+        padding: 0 150px;
+        gap: 30px;
+    }
+    .in-st-inner {
+        gap: 40px;
+    }
+    .img-p-head {
+        gap: 30px;
+    }
+section.contact-form .average-counter {
+        padding: 24px 35px;
+    }
+    section.contact-form .average-bottom {
+        gap: 50px;
+    }
 }
 /* Max Width 1200px Ends */
 /* Max Width 1100px */
@@ -2584,7 +2628,10 @@ section.stories-banner   .average-counter {
 }
 
 section.contact-form .average-counter{
-    bottom: -75px;
+    bottom: -30px;
+}
+section.contact-form .con-bottom {
+    padding-bottom: 160px;
 }
 .hol-ban-img {
     padding-top: 40%;
@@ -2614,6 +2661,9 @@ section.virtual-banner .hol-ban-img  {
 /* Max Width 1100px Ends */
 /* Max Width 991px */
 @media(max-width: 992px){
+    section.contact-form .con-bottom {
+        padding-bottom: 0;
+    }
     .approach-top {
         flex-direction: column;
         row-gap: 40px;
@@ -2966,6 +3016,12 @@ section.contact-form .average-counter {
 .fo-description {
     gap: 0px;
 }
+section.thankyou {
+    height: 700px;
+}
+section.not-found {
+    height: 600px;
+}
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
@@ -3103,9 +3159,6 @@ letter-spacing: -0.05em;
     .fof {
         font-size: 104px;
         line-height: 108.16px;
-    }
-    section.not-found {
-        height: 600px;
     }
     .hol-ban-bottom.bg-green {
         text-align: left;

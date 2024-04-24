@@ -1682,6 +1682,7 @@ color:#568472;
   justify-content: center;
   padding: 3px;
   border: 1.17px solid #FCFBFA;
+  border-radius: 0;
 }
 .formcontainer .pp-check input[type="checkbox"]::before {
   content: "";
