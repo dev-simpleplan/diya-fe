@@ -719,6 +719,9 @@ letter-spacing: -0.03em;
   display: flex;
     justify-content: space-between;
 }
+.program-head h2{
+  max-width: 30ch;
+}
 .program-no{
   display: flex;
   align-items: flex-end;
@@ -1988,6 +1991,9 @@ background-color: #FAF9F7;
 .spacer{
   padding-top: 120px;
 }
+.program-head h2 {
+  max-width: 19ch;
+}
 }
 /* Max Width 1200px Ends */
 /* Max Width 1100px */
@@ -2254,6 +2260,20 @@ color:#212121;
 .inner-pre-footer{
   padding: 70px 0;
 }
+.segment-in .container-fluid{
+  padding: 0;
+}
+.blog1 a{
+  gap: 0;
+}
+.blog1-bottom{
+  padding: 20px 24px;
+  border: 1px solid #e8e8e8;
+  border-top: none;
+}
+.mobile-blog-bottom .blog1{
+  padding: 2px;
+}
 /* .pf-left-top h2{
   max-width: 100%;
 } */
@@ -2283,8 +2303,8 @@ line-height: 17.08px;
     font-size: 12px;
   }
   .label3{
-font-size: 12px;
-line-height: 16.92px;
+font-size: 10px;
+line-height: 14.92px;
   }
   
   .statement2{
@@ -2300,8 +2320,8 @@ font-size: 32px;
 line-height: 40px;
   }
 h3{
-  font-size: 14px;  
-  line-height: 18.2px;
+  font-size: 16px;  
+  line-height: 20.2px;
   }
   .reason-que h3 , .reason-no h3{
     font-size: 18px;
@@ -2386,6 +2406,9 @@ line-height: 24.96px;
 }
 .inner-pf-left{
   gap: 40px;
+}
+.program-head h2 {
+  max-width: 100%;
 }
 }
 @media(max-width: 500px){
