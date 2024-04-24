@@ -1069,13 +1069,13 @@ justify-content: space-between;
 .story-top-left{
   overflow: hidden;
 }
-.story-top-right a{
+.story-top-right .desktop{
   padding: 11px 35px;
 }
-.blog-top-right a{
+.blog-top-right .desktop{
   padding: 11px 35px;
 }
-.faq-right-bottom a{
+.faq-right-bottom .desktop{
   padding: 11px 35px;
 }
 /* Transition */
