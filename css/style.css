@@ -1069,13 +1069,13 @@ justify-content: space-between;
 .story-top-left{
   overflow: hidden;
 }
-.story-top-right a{
+.story-top-right .desktop{
   padding: 11px 35px;
 }
-.blog-top-right a{
+.blog-top-right .desktop{
   padding: 11px 35px;
 }
-.faq-right-bottom a{
+.faq-right-bottom .desktop{
   padding: 11px 35px;
 }
 /* Transition */
@@ -1502,8 +1502,8 @@ transition-delay: 0.3s;
 /* pre-footer starts */
 .pf-left-top h2{
   font-family: "Inter", sans-serif;
-    font-size: 96px;
-    line-height: 96px;
+    font-size: clamp(36px, 8vw, 96px);
+    line-height: 100%;
     letter-spacing: -0.07em;
   color:#fff;
   max-width: 16ch;
@@ -1512,7 +1512,7 @@ transition-delay: 0.3s;
 .inner-pre-footer{
   background-color: #A9C2E5;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
  .inner-pf-left{
    display: flex;
@@ -1945,6 +1945,7 @@ padding-bottom: 2px;
   padding: 100px 0;
 }
 section.banner-home {
+  height: 100svh;
 background-color: #FAF9F7;
 }
 .none-after-1200{
@@ -2001,6 +2002,12 @@ background-color: #FAF9F7;
   .nav-right{
     gap: 60px;
   }
+  .inner-pre-footer{
+    padding: 80px 0;
+  }
+  .pf-img{
+    padding-top: 101%;
+  }
 }
 /* Max Width 1100px Ends */
 /* Max Width 991px */
@@ -2015,9 +2022,9 @@ background-color: #FAF9F7;
   width: 100%;
   margin-right: 0;
 }
-.pf-right{
+/* .pf-right{
   display: none;
-}
+} */
  .footer-centre-in{
   row-gap: 120px;
     flex-direction: column;
@@ -2235,21 +2242,29 @@ color:#212121;
 .no{
   font-size: 22px;
 }
-.inner-pre-footer {
-  padding-top: 37px;
-  padding-bottom: 60px;
-}
-section.poster .inner-pre-footer{
-  padding-bottom: 122px;
-}
+/* .inner-pre-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+} */
 .spacer{
   padding-top: 90px;
 }
-
+.inner-pre-footer{
+  padding: 70px 0;
+}
+/* .pf-left-top h2{
+  max-width: 100%;
+} */
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
 @media(max-width: 767px){
+  .pf-right{
+    display: none;
+  }
+  .pf-left-top h2{
+    max-width: 100%;
+  }
   .fc-left{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2364,6 +2379,12 @@ line-height: 54.44px;
 font-size: 24px;
 line-height: 24.96px;
   }
+  .inner-pre-footer {
+    padding: 40px 0;
+}
+.inner-pf-left{
+  gap: 40px;
+}
 }
 @media(max-width: 500px){
  
