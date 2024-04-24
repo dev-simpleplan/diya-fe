@@ -1376,15 +1376,17 @@ justify-content: space-between;
 }  */
 .blog1:hover .link span .hide{
   transform: translateX(0);
+  transition: 0.9s ease all;
 }
 .blog1:hover .link span .show{
   transform: translateX(100%);
+  transition: 0.6s ease all;
 }
 .blog-link .hide{
   position: absolute;
-    inset: 0;
-    transition: 0.9s ease all;
-    transform: translateX(-100%);
+  inset: 0;
+  transition: 0.1s ease all;
+  transform: translateX(-100%);
 }
 .blog-link .show{
   transition: 0.3s ease all;
