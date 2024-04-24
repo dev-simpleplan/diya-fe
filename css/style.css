@@ -362,7 +362,7 @@ color:#034A2F
 .sidenav{
     display: none;
     background-color: #FAF9F7;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
      background-color: #FAF9F7;
      width:100%;
@@ -1839,6 +1839,9 @@ padding-bottom: 2px;
   padding-bottom: 18px;
   border-bottom: 1px solid #547468;
 }
+.footer-top-in .logo{
+  width: 10%;
+}
 .footer-centre {
   padding-top: 32px;
     padding-bottom: 30px;
@@ -2011,7 +2014,7 @@ background-color: #FAF9F7;
   display: none;
 }
 .spacer{
-  padding-top: 120px;
+  padding-top: 100px;
 }
 .program-head h2 {
   max-width: 19ch;
@@ -2299,6 +2302,9 @@ color:#212121;
 .logo{
   width: 18%;
 }
+.footer-top-in .logo {
+  width: 20%;
+}
 /* .pf-left-top h2{
   max-width: 100%;
 } */
@@ -2438,6 +2444,9 @@ line-height: 24.96px;
 .logo {
   width: 20%;
 }
+.footer-top-in .logo {
+  width: 25%;
+}
 }
 @media(max-width: 500px){
  
@@ -2474,6 +2483,9 @@ line-height: 24.96px;
 }
 .logo {
   width: 26%;
+}
+.footer-top-in .logo {
+  width: 30%;
 }
 }
 @media(max-width: 370px){

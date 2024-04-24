@@ -224,8 +224,8 @@ max-width: 38ch;
     font-size: 16px;
 }
 .founder-name.light-blue{
-    top: -1px;
-    right: -1px;
+    top: 0px;
+    right: 0px;
 }
 .designation.light-blue{ 
     bottom: 0;
@@ -2460,6 +2460,19 @@ color:#494949;
 section.stories-banner   .average-counter {
         bottom: 176px;
     }
+    .inner-approach{
+        gap: 40px;
+    }
+    .inner-founders{
+        gap: 98px;
+    }
+    .inner-mission{
+        width: 50%;
+        gap: 120px;
+    }
+    .inner-donate{
+        padding: 80px 0;
+    }
 }
 /* Max Width 1200px Ends */
 /* Max Width 1100px */
@@ -2584,10 +2597,10 @@ section.virtual-banner .hol-ban-img  {
     .inner-approach {
         row-gap: 80px;
     }
-    .ab-banner-top h1 {
+    /* .ab-banner-top h1 {
         font-size: 80px;
         line-height: 78px;
-    }
+    } */
     .mission-left {
         width: 100%;
         position: relative;
@@ -2606,8 +2619,10 @@ section.virtual-banner .hol-ban-img  {
     .explore-bottom {
         flex-direction: column;
     }
-    section.about-banner{
-        height: 600px;
+    section.about-banner {
+        height: 100%;
+        padding: 100px 0;
+        padding-top: 50px;
     }
     .sol-ban {
         flex-direction: column;
@@ -2890,6 +2905,11 @@ section.contact-form .average-counter {
 .st-ban-in .average-counter .average{
     align-items: center;
 }
+.mission-in{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+}
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
@@ -2898,10 +2918,13 @@ section.contact-form .average-counter {
         font-size: 50px;
         line-height: 55px; 
     }
-    .ab-banner-top h1{
+    /* .ab-banner-top h1{
         font-size: 80px;      
         line-height: 78px;
-    } 
+    }  */
+    section.about-banner{
+        padding: 60px 0;
+    }
     .statement1{
 font-size: 14px;
 line-height: 18.2px;
@@ -3065,6 +3088,9 @@ letter-spacing: -0.05em;
     .inner-st-ban{
         gap: 60px;
     }
+    .inner-about-banner {
+        padding-top: 75px;
+    }
 }
 @media(max-width: 500px){
 .bb-right-grid {
@@ -3078,9 +3104,7 @@ letter-spacing: -0.05em;
 }
 }
 @media(max-width: 400px){
-.ab-banner-top h1 {
-    font-size: 63px;
-}
+
 }
 /* Max Width 767px Ends */
 /* Responsive Css Ends */
