@@ -813,12 +813,12 @@ color:#666666
     color: #A7BC9F;
 }
 .avgtop{
-    font-size: 14px;
+    font-size: 24px;
     line-height: 14.7px;
     color:#1C410D;
 }
 .avgtop span{
-font-size: 24px;
+font-size: 38px;
 line-height: 25.2px;
 color:#1C410D;
 }
@@ -843,7 +843,7 @@ max-width: 13ch;
     gap: 37px;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    bottom: 12px;
     left: 0;
 }
 .average-bottom{
@@ -1884,7 +1884,7 @@ color: #6B6B6B;
     justify-content: space-between;
     gap: 39px;
 }
-.blog-ban-bottom {
+.blog-ban-bottom a {
     display: flex;
     border: 1px solid #EDEDED;
     padding-left: 36px;
@@ -2435,6 +2435,9 @@ color:#494949;
     .fo-para p {
         max-width: 100%;
     }
+section.stories-banner   .average-counter {
+        bottom: 176px;
+    }
 }
 /* Max Width 1200px Ends */
 /* Max Width 1100px */
@@ -2492,6 +2495,7 @@ color:#494949;
     }
     .con-bottom {
         padding-top: 25px;
+        padding-bottom: 70px;
     }
     .form-detail {
         gap: 40px;
@@ -2522,8 +2526,9 @@ color:#494949;
     padding-left: calc(30px - 5%);
     padding-right: calc(30px - 5%);
 }
-.average-counter {
-    bottom: -87px;
+
+section.contact-form .average-counter{
+    bottom: -75px;
 }
 .hol-ban-img {
     padding-top: 40%;
@@ -2632,7 +2637,7 @@ section.virtual-banner .hol-ban-img  {
     }
     .inner-st-ban {
         flex-direction: column;
-        padding-top: 100px;
+        padding-top: 165px;
         gap: 64px;
     }
     .s-ban-left {
@@ -2734,7 +2739,7 @@ section.virtual-banner .hol-ban-img  {
     overflow-y: hidden;
     height: 100%;
 }
-.blog-ban-bottom {
+.blog-ban-bottom a{
     padding-left: 0;
     flex-direction: column;
 }
@@ -2754,10 +2759,8 @@ section.virtual-banner .hol-ban-img  {
 .inner-blog-ban {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 60px;
-}
-.inner-blog-ban {
-    gap: 40px;
+    padding-top: 95px;
+    gap:40px
 }
 .bg-ban-left {
     gap: 40px;
@@ -2789,8 +2792,11 @@ section.virtual-banner .hol-ban-img  {
     padding: 0;
 }
 .in-st-inner {
-    padding-top: 60px;
+    padding-top: 125px;
     gap: 40px;
+}
+.inner-about-banner {
+    padding-top: 125px;
 }
 .st-head {
     gap: 24px;
@@ -2838,6 +2844,13 @@ section.virtual-banner .hol-ban-img  {
 .hol-ban-in {
     padding-top: 40px;
 }
+section.contact-form .average-counter {
+    bottom: 0px;
+}
+.con-bottom {
+     padding-bottom: 0;
+}
+
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
@@ -2949,7 +2962,7 @@ letter-spacing: -0.05em;
         gap: 40px;
     }
     .inner-st-ban {
-        padding-top: 25px;
+        padding-top: 100px;
     }
     .fo-bottom {
         grid-template-columns: 1fr;
@@ -2967,7 +2980,7 @@ letter-spacing: -0.05em;
         left: 0;
     }
     .inner-faq-p {
-        padding-top: 80px;
+        padding-top: 145px;
     }
     .fof {
         font-size: 104px;
@@ -2988,11 +3001,30 @@ letter-spacing: -0.05em;
     .option-wrapper .select2-container{
         background-size: 3%;
     }
+    .email-head h1{
+            font-size: 22px;
+            line-height: 27px;
+    }
+    .avgtop span {
+        font-size: 24px;
+    }
+    .avgtop {
+        font-size: 14px;
+    }
+    .hol-ban-bottom {
+        padding: 43px 0;
+    }
 }
 @media(max-width: 500px){
 .bb-right-grid {
     grid-template-columns: 1fr;
   }
+  .email-form {
+    padding: 0 10px;
+}
+.email-head {
+    padding: 0 10px;
+}
 }
 @media(max-width: 400px){
 .ab-banner-top h1 {
