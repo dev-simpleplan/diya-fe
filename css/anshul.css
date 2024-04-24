@@ -2586,6 +2586,9 @@ section.virtual-banner .hol-ban-img  {
   .explore-bottom{
     gap: 20px;
   }
+  .hol-bottom {
+    gap:40px
+  }
 }
 /* Max Width 1100px Ends */
 /* Max Width 991px */
@@ -2733,7 +2736,7 @@ section.virtual-banner .hol-ban-img  {
     margin-top: 80px;
     }
     .hbb-in {
-        gap: 80px;
+        gap: 50px;
     }
     .hol-bottom {
         gap: 40px;
