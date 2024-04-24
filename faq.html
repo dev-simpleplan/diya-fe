@@ -269,7 +269,7 @@
                                 </li>
                                 <li>
                                   <div class="eventTabLink" onclick="openEvent(event, 'pre-diabetic')">
-                                    pre-diabetic
+                                    Pre-diabetic
                                   </div>
                                 </li>
                                 <li>
@@ -284,7 +284,7 @@
                                 </li>
                                 <li>
                                     <div class="eventTabLink" onclick="openEvent(event, 'gestational')">
-                                        gestational diabetes
+                                        Gestational diabetes
                                     </div>
                                   </li>
         
@@ -820,7 +820,8 @@
                                         </div>
                                         <div class="fcrb-right">
                                             <div class="footer-label label3">FOR YOUR QUERIES</div>
-                                            <a href="contact.html" class="custom-button white">CONTACT US</a>
+                                            <div class="footer-button"><a href="contact.html" class="custom-button white">CONTACT US</a></div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -917,39 +918,48 @@
 
 <!-- dropdown js -->
 <script>
-  $(document).ready(function () {
-    // Function to toggle dropdown visibility when label is clicked
-    $(".custom-dropdown-label").click(function (event) {
-        event.stopPropagation(); // Prevents the click event from propagating to the document
-        var $dropdownSelect = $(this).siblings(".custom-dropdown-select");
-        // Close any open dropdowns
-        $(".custom-dropdown-select").not($dropdownSelect).hide();
-        $dropdownSelect.toggle();
-
-         // Add or remove the 'rotate' class
-         $(this).find('img').toggleClass('rotate');
-    });
-    
-
-    // Function to handle selection from dropdown
-    $(".custom-dropdown-select ul li").click(function (event) {
-        var selectedValue = $(this).attr("value");
-        $(this).parents(".custom-dropdown-select").toggle(); // Hide dropdown after selection
-        event.stopPropagation(); // Prevents the click event from propagating to the document
-    });
-
-    // Close dropdown if click happens outside
-    $(document).click(function (event) {
-        var $target = $(event.target);
-        if (!$target.closest('.custom-dropdown').length) {
-            $(".custom-dropdown-select").hide();
-             // Remove the 'rotate' class
-             $('.custom-dropdown-label.sd-label img').removeClass('rotate');
-        }
-    });
-});
-
-
-  </script>
-<!-- dropdown js -->
+    $(document).ready(function () {
+      // Function to toggle dropdown visibility when label is clicked
+      $(".custom-dropdown-label").click(function (event) {
+          event.stopPropagation(); // Prevents the click event from propagating to the document
+          var $dropdownSelect = $(this).siblings(".custom-dropdown-select");
+          // Close any open dropdowns
+          $(".custom-dropdown-select").not($dropdownSelect).hide();
+          $dropdownSelect.toggle();
+  
+           // Add or remove the 'rotate' class
+           $(this).find('img').toggleClass('rotate');
+  
+           // Add or remove the overlay
+          // if ($dropdownSelect.is(":visible")) {
+          //     $("body").append('<div class="overlay"></div>');
+          // } else {
+          //     $(".overlay").remove();
+          // }
+      });
+      
+  
+      // Function to handle selection from dropdown
+      $(".custom-dropdown-select ul li").click(function (event) {
+          var selectedValue = $(this).text(); // Get the text of the selected option
+          $(this).parents(".custom-dropdown-select").toggle(); // Hide dropdown after selection
+          $(this).closest('.custom-dropdown').find('.custom-dropdown-label.sd-label p').text(selectedValue); // Update the label text
+          event.stopPropagation(); // Prevents the click event from propagating to the document
+      });
+  
+      // Close dropdown if click happens outside
+      $(document).click(function (event) {
+          var $target = $(event.target);
+          if (!$target.closest('.custom-dropdown').length) {
+              $(".custom-dropdown-select").hide();
+              // Remove the 'rotate' class
+               $('.custom-dropdown-label.sd-label img').removeClass('rotate');
+          }
+      });
+  });
+  
+  
+  
+    </script>  
+  <!-- dropdown js -->
 </html>

@@ -388,6 +388,9 @@ color:#034A2F
   }
   .menulist{
     transition: visibility 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
   .menulist ul{
     display: flex;
@@ -1472,6 +1475,9 @@ transition-delay: 0.3s;
 .accrodion-container.active .faq-arrow {
   transform: rotate(180deg);
 }
+.accrodion-container.active{
+  pointer-events: none;
+}
 /* faq page ends */
 /* pre-footer starts */
 .pf-left-top h2{
@@ -1605,6 +1611,7 @@ transition: 0.6s ease all;
    /* margin-bottom: 30px; */
    border:none;
    border-bottom: 1px solid #fff;
+   border-radius: 0;
  }
  .formcontainer .name input::placeholder {
   font-family: "Instrument Sans", sans-serif;
@@ -2201,9 +2208,11 @@ color:#212121;
 }
 .inner-pre-footer {
   padding-top: 37px;
+  padding-bottom: 60px;
+}
+section.poster .inner-pre-footer{
   padding-bottom: 122px;
 }
-
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
@@ -2318,7 +2327,10 @@ line-height: 54.44px;
   .fc-line {
     top:485px;
   }
-  
+  .bloghead h4{
+font-size: 24px;
+line-height: 24.96px;
+  }
 }
 @media(max-width: 500px){
  
