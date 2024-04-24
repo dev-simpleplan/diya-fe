@@ -2538,6 +2538,9 @@ section.contact-form .average-counter {
     section.contact-form .average-bottom {
         gap: 50px;
     }
+    .bg-green.edu-in .edu-head h2 {
+        max-width: 19ch;
+    }
 }
 /* Max Width 1200px Ends */
 /* Max Width 1100px */
@@ -2937,9 +2940,7 @@ section.virtual-banner .hol-ban-img  {
 .image-cap {
     gap: 12px;
 }
-.inner-nf {
-    padding-top: 105px;
-}
+
 .mod-mob{
     display: block;
 }
@@ -3015,12 +3016,6 @@ section.contact-form .average-counter {
 }
 .fo-description {
     gap: 0px;
-}
-section.thankyou {
-    height: 700px;
-}
-section.not-found {
-    height: 600px;
 }
 }
 /* Max Width 991px Ends */
