@@ -2654,7 +2654,10 @@ section.virtual-banner .hol-ban-img  {
     }
     .inner-plan {
         flex-direction: column;
-        row-gap: 80px;
+        row-gap: 50px;
+    }
+    .plan-left{
+        row-gap: 40px;
     }
     .plan-right {
         width: 100%;
