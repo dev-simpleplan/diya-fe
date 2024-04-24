@@ -1550,7 +1550,6 @@ $('.mobile-stories-bottom .owl-carousel').owlCarousel({
    <!-- blog slider ends -->
 
    <!-- gif starts -->
-
 <script>
     (function($) {
 
@@ -1567,7 +1566,7 @@ $(document).ready(function() {
     return (elementBottom > viewportTop && elementTop < viewportBottom);
   }
   
-    if($('img[src$="gif"]').length){
+  if($('img[src$="gif"]').length){
 
     var gifSrc, srcGif;
 
@@ -1581,14 +1580,17 @@ $(document).ready(function() {
       $('img[src$="gif"]').each(function(){
 
         srcGif = $(this).attr('data-gif'); 
+        var originalSrc = $(this).data('original-src');
 
-        if (!(isScrolledIntoView(this) === true)) {
-          $(this).attr('src', srcGif);
-        } else {
-          if($(this).attr('src') == srcGif){
-            // do nothing
-          } else {
+        if (isScrolledIntoView(this)) {
+          if(!$(this).data('playing')) {
             $(this).attr('src', srcGif);
+            $(this).data('playing', true);
+          }
+        } else {
+          if($(this).data('playing')) {
+            $(this).data('playing', false);
+            $(this).attr('src', originalSrc);
           }
         }
       });
@@ -1601,6 +1603,7 @@ $(document).ready(function() {
 });
 
 })(jQuery);
+
 </script>
 <!-- gif ends -->
 </html>
