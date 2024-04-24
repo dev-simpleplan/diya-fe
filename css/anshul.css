@@ -397,7 +397,7 @@ section.impact .acc-top{
 /* donate section ends */
 /* solution banner starts */
 .sol-inner-ban{
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
 }  
@@ -2617,7 +2617,7 @@ section.virtual-banner .hol-ban-img  {
         margin-top: 56px;
     }
     .mission-img {
-        padding-top: 75%;
+        padding-top: 70%;
     }
     .explore-bottom {
         flex-direction: column;
@@ -2918,6 +2918,9 @@ section.contact-form .average-counter {
 }
 .inner-donate{
     gap: 40px;
+}
+.sol-inner-ban{
+    height: 100%;
 }
 }
 /* Max Width 991px Ends */
