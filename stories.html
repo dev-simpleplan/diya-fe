@@ -326,7 +326,9 @@
                                           <p>
                                             All Case Studies
                                         </p>
+                                        <div class="select-dd-arrow">
                                             <img src="images\stories-arrow.svg" alt="" />
+                                        </div>
                                           
                                         </div>
                                         <div class="custom-dropdown-select sd-select">
@@ -1095,10 +1097,11 @@
         var $dropdownSelect = $(this).siblings(".custom-dropdown-select");
         // Close any open dropdowns
         $(".custom-dropdown-select").not($dropdownSelect).hide();
+        $(this).toggleClass('active');
         $dropdownSelect.toggle();
 
          // Add or remove the 'rotate' class
-         $(this).find('img').toggleClass('rotate');
+        //  $(this).find('img').toggleClass('rotate');
 
          // Add or remove the overlay
         // if ($dropdownSelect.is(":visible")) {
@@ -1113,6 +1116,7 @@
     $(".custom-dropdown-select ul li").click(function (event) {
         var selectedValue = $(this).text(); // Get the text of the selected option
         $(this).parents(".custom-dropdown-select").toggle(); // Hide dropdown after selection
+        $(".custom-dropdown-label").removeClass('active');
         $(this).closest('.custom-dropdown').find('.custom-dropdown-label.sd-label p').text(selectedValue); // Update the label text
         event.stopPropagation(); // Prevents the click event from propagating to the document
     });
@@ -1122,8 +1126,9 @@
         var $target = $(event.target);
         if (!$target.closest('.custom-dropdown').length) {
             $(".custom-dropdown-select").hide();
+            $(".custom-dropdown-label").removeClass('active');
             // Remove the 'rotate' class
-             $('.custom-dropdown-label.sd-label img').removeClass('rotate');
+            //  $('.custom-dropdown-label.sd-label img').removeClass('rotate');
         }
     });
 });
