@@ -2580,6 +2580,9 @@ section.virtual-banner .hol-ban-img  {
   .st-ban-in{
     padding-bottom: 0;
   }
+  .explore-bottom{
+    gap: 20px;
+  }
 }
 /* Max Width 1100px Ends */
 /* Max Width 991px */
@@ -2908,6 +2911,12 @@ section.contact-form .average-counter {
 .mission-in{
     display: flex;
     flex-direction: column-reverse;
+    gap: 40px;
+}
+.explore-reasons{
+    padding-top: 70px
+}
+.inner-donate{
     gap: 40px;
 }
 }
