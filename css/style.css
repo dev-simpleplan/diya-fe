@@ -2456,6 +2456,9 @@ line-height: 24.96px;
 .footer-top-in .logo {
   width: 25%;
 }
+.sidenav{
+  padding: 16px 0;
+}
 }
 @media(max-width: 500px){
  
