@@ -1,34 +1,41 @@
 // Header Animation
 var prevScrollpos = window.pageYOffset;
 var navbar = document.querySelector(".navigation");
+var sidenav = document.querySelector(".sidenav"); 
 var scrollThreshold = 100; // Set the threshold value in pixels
 
 window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+  var currentScrollPos = window.pageYOffset;
 
-// Check if the current scroll position is greater than or equal to the threshold
-if (currentScrollPos >= scrollThreshold) {
+  // Check if the current scroll position is greater than or equal to the threshold
+  if (currentScrollPos >= scrollThreshold) {
     if (prevScrollpos > currentScrollPos) {
-    navbar.style.top = "0";
+      navbar.style.top = "0";
+      sidenav.style.top = "0"; 
     } else {
-    navbar.style.top = "-100px";
+      navbar.style.top = "-100px";
+      sidenav.style.top = "-100px"; 
     }
-} else {
+  } else {
     // If the scroll position is less than the threshold, always show the navbar
     navbar.style.top = "0";
-}
+    sidenav.style.top = "0"; 
+  }
 
-prevScrollpos = currentScrollPos;
+  prevScrollpos = currentScrollPos;
 }
 
 //Header Js
 $(window).scroll(function() {
   if ($(this).scrollTop() > 200) {
     $('.navigation').addClass('backdrop');
+    $('.sidenav').addClass('backdrop'); // Add this line
   } else {
     $('.navigation').removeClass('backdrop');
+    $('.sidenav').removeClass('backdrop'); // Add this line
   }
 });
+
 
 $(document).ready(function(){
   $('.ham-menu').click(function(){
