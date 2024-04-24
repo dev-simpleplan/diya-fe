@@ -1782,11 +1782,11 @@ object-position: bottom;
 .courses {
     border: 1px solid #E8E8E8;
     background: #FFFFFF;
-    padding: 40px 126px 40px 26px;
+    padding: 40px 26px 40px 26px;
     display: flex;
     flex-direction: column;
     gap: 109px;
-    align-items: center;
+    align-items: flex-start;
     clip-path: inset(0% 0% 100% 0%);
     transition: 1s clip-path ease;
     transition-delay: 0.3s;
@@ -1802,12 +1802,14 @@ object-position: bottom;
     line-height: 33.8px;
     letter-spacing: -0.01em;
     color: #494545;
+
 }
 .course-head {
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: baseline;
+    max-width: 28ch;
 }
 ul.course-list.label2 {
     align-items: baseline;
@@ -1816,6 +1818,7 @@ ul.course-list.label2 {
     display: flex;
     flex-direction: column;
     gap: 22px;
+    padding-left: 16px;
 }
 .module-bottom .courses:nth-child(3n+1) .course-tab.label3 {
     background-color:#F3E0D7;   
