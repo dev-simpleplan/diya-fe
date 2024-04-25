@@ -2784,7 +2784,7 @@ section.virtual-banner .hol-ban-img  {
     gap: 60px;
 }
 .s-ban-text {
-    gap: 15px;
+    gap: 5px;
 }
 .tab {
     gap: 16px;
@@ -2907,7 +2907,7 @@ section.virtual-banner .hol-ban-img  {
     .inner-st-ban {
         flex-direction: column;
         padding-top: 165px;
-        gap: 64px;
+        gap:40px;
     }
     .s-ban-left {
         width: 100%;
