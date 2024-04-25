@@ -135,7 +135,7 @@ text-transform: uppercase;
 display: none;
 }
 h2{
- font-size:  clamp(32px, 6vw, 50px);
+ font-size:  clamp(50px, 6vw, 32px);
 line-height: 62.5px;
 letter-spacing: -0.03em;
 color:#212121;
@@ -1235,7 +1235,7 @@ justify-content: space-between;
 .story{
   flex: 0 0 48%;
   border: 1px solid #E8E8E8;
-  padding: 28px 52px 20px 25px;
+  padding: 28px 26px 20px 26px;
   transition: 0.6s ease all;
   /* padding: 28px 34px 20px 34px; */
 }
