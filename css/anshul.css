@@ -930,8 +930,8 @@ body:has(.select2-container--open) {
 .option-wrapper .select2-container{
     border-bottom: 1px solid #BDBDBD;
     background-image: url('../images/contact-arrow.svg');
-    background-position: right center;
-    background-size: 2%;
+    background-position: 98% center;
+    background-size: 2.3%;
     background-repeat: no-repeat;
 }
 .select2-container .select2-selection--single {
@@ -2963,6 +2963,16 @@ section.virtual-banner .hol-ban-img  {
 
 .module-bottom {
     grid-template-columns: 1fr;
+}
+.courses {
+    gap: 50px;
+    padding: 20px 26px 20px 26px;
+}
+.course-head {
+    max-width: 100%;
+}
+.module-top {
+    gap: 20px;
 }
  .fo-name {
     position: absolute;
