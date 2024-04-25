@@ -1166,6 +1166,9 @@ section.stories-banner{
     width: 62%;
     padding-top: 82%;
 }
+.cu-img-right {
+    padding-top: 16px;
+}
 .customer-images {
      display: flex; 
     gap: 12px;
