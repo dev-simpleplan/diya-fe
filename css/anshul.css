@@ -2943,6 +2943,9 @@ section.virtual-banner .hol-ban-img  {
 .bg-text p {
     max-width: 100%;
 }
+.email-form {
+  width:90%
+}
 .bg-ban-right {
     width: 100%;
     order: -1;
