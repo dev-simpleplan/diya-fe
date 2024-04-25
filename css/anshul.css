@@ -468,7 +468,7 @@ max-width: 50ch;
 .bb-line{
     border: 1px solid #034A2F;
     width: 1px;
-    height: 680px;
+    height: 621px;
 }
 .inner-benefits{
     row-gap: 195px;
@@ -2505,6 +2505,9 @@ color:#494949;
     }
     .benefit-centre p {
         max-width: 23ch;
+    }
+    .bb-line{
+        height: 680px;
     }
 }
 /* Max Width 1600px Ends */
