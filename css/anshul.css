@@ -3104,6 +3104,9 @@ section.contact-form .average-counter {
 section.thankyou {
     height: 700px;
 }
+.bb-right {
+    width: 100%;
+}
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
