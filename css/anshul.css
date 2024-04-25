@@ -2596,6 +2596,19 @@ section.stories-banner   .average-counter {
     .inner-donate{
         padding: 80px 0;
     }
+    .inner-approach{
+        gap: 40px;
+    }
+    .inner-founders{
+        gap: 98px;
+    }
+    .inner-mission{
+        width: 50%;
+        gap: 120px;
+    }
+    .inner-donate{
+        padding: 80px 0;
+    }
     .in-st-bottom {
         padding: 0 150px;
         gap: 30px;
@@ -2619,6 +2632,14 @@ section.contact-form .average-counter {
         gap: 40px;
         padding-top: 100px;
     }
+    .sol-ban {
+        padding-top: 0;
+        padding-bottom: 0px;
+      }
+      .sol-inner-ban {
+        height: 700px;
+      }
+      
 }
 /* Max Width 1200px Ends */
 /* Max Width 1100px */
@@ -2732,6 +2753,9 @@ section.virtual-banner .hol-ban-img  {
   .explore-bottom{
     gap: 20px;
   }
+  .explore-bottom{
+    gap: 20px;
+  }
   .hol-bottom {
     gap:40px
   }
@@ -2742,6 +2766,16 @@ section.virtual-banner .hol-ban-img  {
 /* Max Width 1100px Ends */
 /* Max Width 991px */
 @media(max-width: 992px){
+    section.about-banner {
+        height: 100%;
+        padding: 100px 0;
+        padding-top: 50px;
+    }
+    .mission-in{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
     section.contact-form .con-bottom {
         padding-bottom: 0;
     }
@@ -2758,10 +2792,6 @@ section.virtual-banner .hol-ban-img  {
     .inner-approach {
         row-gap: 80px;
     }
-    /* .ab-banner-top h1 {
-        font-size: 80px;
-        line-height: 78px;
-    } */
     .mission-left {
         width: 100%;
         position: relative;
@@ -2808,7 +2838,8 @@ section.virtual-banner .hol-ban-img  {
         row-gap: 40px;
     }
     .inner-edu {
-        row-gap: 100px;
+        row-gap: 80px;
+        padding: 80px 0;
     }
     .inner-plan {
         flex-direction: column;
@@ -3107,18 +3138,26 @@ section.thankyou {
 .bb-right {
     width: 100%;
 }
+.explore-reasons{
+    padding-top: 70px
+}
+.inner-donate{
+    gap: 40px;
+}
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
 @media(max-width: 767px){
+    section.about-banner{
+        padding: 60px 0;
+    }
     .ab-banner-top h2{
         font-size: 50px;
         line-height: 55px; 
     }
-    /* .ab-banner-top h1{
-        font-size: 80px;      
-        line-height: 78px;
-    }  */
+    .inner-about-banner {
+        padding-top: 75px;
+    }
     section.about-banner{
         padding: 60px 0;
     }
