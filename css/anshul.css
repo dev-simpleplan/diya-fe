@@ -1166,6 +1166,9 @@ section.stories-banner{
     width: 62%;
     padding-top: 82%;
 }
+.cu-img-right {
+    padding-top: 16px;
+}
 .customer-images {
      display: flex; 
     gap: 12px;
@@ -1925,6 +1928,13 @@ color: #6B6B6B;
 }
 section.blog-study {
     padding-top: 112px;
+}
+section.blog-study .blog1:hover{
+    background-color: rgba(217, 227, 212, 0.26);
+}
+section.blog-study .blog1{
+    padding:8px;
+    transition: 0.6s ease all;
 }
 /* blog banner ends */
 /* email box section starts */
@@ -2843,11 +2853,11 @@ section.virtual-banner .hol-ban-img  {
     .cu-img2 {
         align-self: end;
         width: 95%;
-        padding-top: 70%;
+        padding-top: 100%;
     }
     .cu-img3 {
         width: 95%;
-        padding-top: 85%;
+        padding-top: 100%;
     }
     .cu-img4 {
         width: 62%;
