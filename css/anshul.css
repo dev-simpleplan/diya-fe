@@ -931,7 +931,7 @@ body:has(.select2-container--open) {
     border-bottom: 1px solid #BDBDBD;
     background-image: url('../images/contact-arrow.svg');
     background-position: 98% center;
-    background-size: 2.3%;
+    background-size: 2.5%;
     background-repeat: no-repeat;
 }
 .select2-container .select2-selection--single {
