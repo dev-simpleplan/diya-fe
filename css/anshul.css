@@ -3185,6 +3185,10 @@ section.thankyou {
 .inner-donate{
     gap: 40px;
 }
+h2{
+    font-size:  clamp(32px, 6vw, 60px);
+   line-height: 110%;
+}
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
