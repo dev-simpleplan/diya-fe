@@ -1301,6 +1301,7 @@ justify-content: space-between;
 .blog-top-left h2{
   color:#202322;
   max-width: 13ch;
+  padding-bottom: 10px;
 }
 .blog1 a{
   display: flex;
