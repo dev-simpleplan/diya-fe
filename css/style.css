@@ -2023,6 +2023,9 @@ background-color: #FAF9F7;
 .edu-bottom{
   gap: 20px;
 }
+section.banner-home {
+  height: 700px;
+}
 }
 /* Max Width 1200px Ends */
 /* Max Width 1100px */
@@ -2447,6 +2450,12 @@ line-height: 24.96px;
 .sidenav{
   padding: 16px 0;
 }
+h2.mob-none {
+  display: none;
+}
+.sub-head h2.mob-display {
+  display: block;
+}
 }
 @media(max-width: 500px){
   .logo {
@@ -2485,6 +2494,10 @@ line-height: 24.96px;
 }
 .bar1, .bar2, .bar3 {
   width: 33px;
+}
+
+.sub-head .mob-display{
+  display: block;
 }
 }
 @media(max-width: 370px){
