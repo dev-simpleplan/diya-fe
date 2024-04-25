@@ -1270,11 +1270,10 @@ justify-content: space-between;
   justify-content: space-between;
   align-items: center;
 }
-.blog-top-left{
-  max-width: 41ch;
-}
+
 .blog-top-left h2{
   color:#202322;
+  max-width: 13ch;
 }
 .blog1 a{
   display: flex;
@@ -2275,10 +2274,7 @@ line-height: 137%;
 font-size: 12px;
 line-height: 16.92px;
   }
-  h2{
-font-size: 32px;
-line-height: 40px;
-  }
+  
 h4{
   font-size: 14px;  
   line-height: 18.2px;
