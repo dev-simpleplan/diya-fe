@@ -1517,11 +1517,13 @@ section.holistic-segment .mobile-segment-list  ul.bxslider li .segli{
 .module1-top.label2 {
     padding: 24px 32px;
     display: inline-block;
+    height: 100%;
 }
 .module1{
     display: inline-flex;
     flex-direction: column;
     gap: 158px;
+    height: 100%;
     border: 1px solid #E8E8E8;
     background: #ffff;
     padding-bottom: 40px;
@@ -1537,6 +1539,7 @@ section.holistic-segment .mobile-segment-list  ul.bxslider li .segli{
 }
 .module1-bottom {
     padding: 0 32px;
+    height: 100%;
 }
 .module-bottom {
     display: grid;
@@ -1963,7 +1966,7 @@ section.blog-study .blog1{
 }
 .email-form .formcontainer .e-mail input {
     width: 100%;
-     padding: 14px 0;
+     padding: 15px 0;
      padding-left:20px;
      background-color:#FAF9F7;
      border:1px solid #D9D9D9;
@@ -2566,6 +2569,12 @@ color:#494949;
 section.contact-form .average-counter {
     padding: 24px 54px;
 }
+.hol-ban-bottom {
+    padding: 50px 0;
+}
+.email-form {
+    width: 55%;
+}
 }
 /* Max Width 1300px Ends */
 /* Max Width 1200px */
@@ -2767,6 +2776,22 @@ section.virtual-banner .hol-ban-img  {
   }
   .bb-line {
     height: 870px;
+}
+.module-desk {
+    gap: 50px;
+}
+.hbb-in {
+    gap: 60px;
+}
+.s-ban-text {
+    gap: 15px;
+}
+.tab {
+    gap: 16px;
+    justify-content: space-between;
+}
+.tab button {
+    padding: 12px 12px;
 }
 }
 /* Max Width 1100px Ends */
