@@ -483,11 +483,12 @@ max-width: 50ch;
 .bb-right-head h2{
     text-transform: capitalize;
     color: #393939;
-    max-width: 20ch;
+    /* max-width: 20ch; */
+    max-width: 100%;
 }
 .benefit-centre p{
     color: #676A6C;
-    max-width: 23ch;
+    max-width: 100%;
 }
 .benefit-no , .usp{
     color: #C2C2C2;
@@ -519,6 +520,7 @@ max-width: 50ch;
     display: flex;
     flex-direction: column;
     gap: 56px;
+    width:70%;
 }
 .bb-left{
     position: relative;
@@ -2495,6 +2497,15 @@ color:#494949;
 /* Max Width 1700px Ends */
 /* Max Width 1600px */
 @media(max-width: 1600px){
+    .bb-right-head h2 {
+        max-width: 20ch;
+    }
+    .bb-right {
+        width: 50%;
+    }
+    .benefit-centre p {
+        max-width: 23ch;
+    }
 }
 /* Max Width 1600px Ends */
 /* Max Width 1500px */
@@ -2502,6 +2513,9 @@ color:#494949;
     section.contact-form .average-counter {
         padding: 24px 90px;
     }
+
+    
+
 }
 /* Max Width 1500px Ends */
 /* Max Width 1400px */
@@ -2945,6 +2959,9 @@ section.virtual-banner .hol-ban-img  {
 }
 .email-form {
   width:90%
+}
+section.segment .container-fluid {
+    padding:0;
 }
 .bg-ban-right {
     width: 100%;
