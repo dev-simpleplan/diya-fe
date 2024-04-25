@@ -2765,6 +2765,9 @@ section.virtual-banner .hol-ban-img  {
   .fo-description {
     gap: 98px;
   }
+  .bb-line {
+    height: 870px;
+}
 }
 /* Max Width 1100px Ends */
 /* Max Width 991px */
