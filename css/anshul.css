@@ -1929,6 +1929,13 @@ color: #6B6B6B;
 section.blog-study {
     padding-top: 112px;
 }
+section.blog-study .blog1:hover{
+    background-color: rgba(217, 227, 212, 0.26);
+}
+section.blog-study .blog1{
+    padding:8px;
+    transition: 0.6s ease all;
+}
 /* blog banner ends */
 /* email box section starts */
 .email-head {
