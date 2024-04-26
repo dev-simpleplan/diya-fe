@@ -1571,7 +1571,7 @@ transition-delay: 0.3s;
 }
 .pf-img{
   position: relative;
-    padding-top: 100%;
+    padding-top: 110%;
     clip-path: inset(100% 0 0% 0%);
     transition: 1s clip-path ease;
     transition-delay: 0.3s;
