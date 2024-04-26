@@ -474,6 +474,7 @@ max-width: 50ch;
     row-gap: 195px;
     display: flex;
     flex-direction: column;
+    padding-top: 92px;
 }
 .benefits-bottom{
     display: flex;
@@ -3180,7 +3181,7 @@ section.thankyou {
     width: 100%;
 }
 .explore-reasons{
-    padding-top: 70px
+    padding-top: 70px;
 }
 .inner-donate{
     gap: 40px;
