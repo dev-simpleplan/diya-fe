@@ -1530,7 +1530,7 @@ section.holistic-segment .mobile-segment-list  ul.bxslider li .segli{
     display: inline-flex;
     flex-direction: column;
     gap: 158px;
-    height: 100%;
+    
     border: 1px solid #E8E8E8;
     background: #ffff;
     padding-bottom: 40px;
@@ -1546,7 +1546,7 @@ section.holistic-segment .mobile-segment-list  ul.bxslider li .segli{
 }
 .module1-bottom {
     padding: 0 32px;
-    height: 100%;
+    height: calc(100% - 90px);
 }
 .module-bottom {
     display: grid;
