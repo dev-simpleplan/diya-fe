@@ -1669,6 +1669,12 @@ line-height: 22.56px;
 letter-spacing: 0.02em;
 color:#568472;
  }
+ .formcontainer .name label{
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  transition: 0.6s ease all;
+ }
  .formcontainer .name input:focus{
   outline: none;
  }
@@ -1725,23 +1731,21 @@ padding-bottom: 2px;
  column-gap: 12px; 
     align-items: flex-start;
 }
-.formcontainer {
+.formcontainer form {
   row-gap: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.f-form input#submit {
+  display: none;
 }
  .fc-left{
   display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 62px;
  }
- .arrow-svg{
-  position: absolute;
-    bottom: 11px;
-    right: 0;
-    transition: 0.6s ease all;
- }
+ 
  .fc-right-top{
   display: flex;
     flex-direction: column;
@@ -1849,9 +1853,8 @@ padding-bottom: 2px;
   border: 1px solid #547468;
   display: none;
 }
-.name:hover .formcontainer.name  input{
-  width:110%;
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
+.arrow-svg{
+  transition: 0.6s ease all;
 }
 .name:hover .arrow-svg{
   transform: translateX(10px);
@@ -2468,11 +2471,18 @@ line-height: 24.96px;
 .sidenav{
   padding: 16px 0;
 }
-h2.mob-none {
+/* h2.mob-none {
+  display: none;
+} */
+/* .sub-head h2.mob-display {
+  display: block;
+} */
+span.ban-img {
   display: none;
 }
-.sub-head h2.mob-display {
-  display: block;
+h2.mob-none {
+  display: flex;
+  gap: 5px;
 }
 }
 @media(max-width: 500px){
