@@ -1272,6 +1272,7 @@ text-transform: uppercase;
   .tab button.active {
     background-color: #034A2F;
     color:#FFFFFF;
+    border:0;
   }
   .case-stories{
     display: grid;
