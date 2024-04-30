@@ -308,7 +308,8 @@ height: 100%;
   align-items: flex-start;
   justify-content: space-between;
   gap: 55px;
-  padding: 48px 40px;
+  /* padding: 48px 40px; */
+  padding:40px;
   opacity: 0; 
   transform: translateY(-100%);
   transition: 0.2s all ease;
@@ -353,7 +354,7 @@ color:#034A2F
 .rdrop{
   width: max-content;
   padding: 49px 40px;
-  padding-right: 163px;
+  padding-right: 110px;
 }
 .custom-button.coloured:hover{
   background-color: #4CCC9B;
@@ -1726,10 +1727,6 @@ padding-bottom: 2px;
     flex-direction: column;
     justify-content: space-between;
 }
- /* .footer-center{
-  display: flex;
-    justify-content: space-between;
- } */
  .fc-left{
   display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1739,6 +1736,7 @@ padding-bottom: 2px;
   position: absolute;
     bottom: 11px;
     right: 0;
+    transition: 0.6s ease all;
  }
  .fc-right-top{
   display: flex;
@@ -1782,17 +1780,10 @@ padding-bottom: 2px;
   position: relative;
   height: 24px;
   width: 24px;
+  transition: 0.6s ease all;
 }
-.c{
-  color: #fff;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    display: inline-flex;
-    width: 14px;
-    height: 14px;
-    padding-left: 3px;
-    padding-bottom: 1px;
-    align-items: center;
+.social-icons a:hover {
+  transform: scale(1.2);
 }
 .footer-content{
   color: #fff;
@@ -1853,6 +1844,28 @@ padding-bottom: 2px;
   top: 335px;
   border: 1px solid #547468;
   display: none;
+}
+.name:hover .formcontainer.name  input{
+  width:110%;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+.name:hover .arrow-svg{
+  transform: translateX(10px);
+}
+
+
+input[type="submit"] {
+  width: 105%;
+  border: 0;
+  background: #034A2F;
+  color: #ffff;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12.48px;
+  letter-spacing: 0.27em;
+  padding: 13px 0;
+  text-transform: uppercase;
 }
 /* silent killer starts */
 .inner-silent{
@@ -2480,13 +2493,13 @@ h2.mob-none {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  column-gap: 60px;
+  column-gap: 30px;
   row-gap: 20px;
 }
-.fc-right-bottom {
+/* .fc-right-bottom {
   flex-direction: column;
   row-gap: 40px;
-}
+} */
 .fcrb-left {
   row-gap: 10px;
 }
