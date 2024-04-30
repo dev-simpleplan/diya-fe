@@ -935,10 +935,10 @@ body:has(.select2-container--open) {
     background-size: 2.5%;
     background-repeat: no-repeat;
 }
-span.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus.select2-container--open {
+/* span.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus.select2-container--open {
     background-image: url('../images/con-arrow.svg');
     background-size: 2.5%;
-}
+} */
 .select2-container .select2-selection--single {
     height: 100%;
     border: none;
@@ -1007,7 +1007,7 @@ text-align: left;
 color:#202322;
 text-transform: none;
   }
-  .terms label span{
+  .terms label span a{
 font-size: 12px;
 font-weight: 600;
 line-height: 18px;
@@ -1495,6 +1495,7 @@ section.holistic-segment .mobile-segment-list  ul.bxslider li .segli{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding-bottom: 10px;
 }
 .module-top {
     display: flex;
@@ -1523,7 +1524,7 @@ section.holistic-segment .mobile-segment-list  ul.bxslider li .segli{
 .module1-top.label2 {
     padding: 24px 32px;
     display: inline-block;
-    height: 100%;
+    height: 90px;
 }
 .module1{
     display: inline-flex;
