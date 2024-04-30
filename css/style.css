@@ -512,6 +512,9 @@ color:#C4BDB0;
     top: 0;
     left: 0;
 }
+.inner-menu-button{
+  display: none;
+}
  /* ham menu */
 /* header ends */
 /* banner starts */
@@ -2520,6 +2523,12 @@ h2.mob-none {
    }
 .sr-bottom.label1 {
     font-size: 12px;
+}
+.inner-menu-button{
+  display: block;
+}
+.menu-button{
+  display: none;
 }
   }
 
