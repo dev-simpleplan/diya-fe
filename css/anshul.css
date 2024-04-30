@@ -1546,7 +1546,6 @@ section.holistic-segment .mobile-segment-list  ul.bxslider li .segli{
 }
 .module1-bottom {
     padding: 0 32px;
-    height: calc(100% - 90px);
 }
 .module-bottom {
     display: grid;
