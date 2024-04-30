@@ -774,7 +774,7 @@ width: 50%;
 }
 .support-mail a{
     color: #034A2F;
-    padding: 8px 0;
+    padding: 3px 0;
     border-bottom: 1px solid #000000;
 }
 .address a{
@@ -935,6 +935,10 @@ body:has(.select2-container--open) {
     background-size: 2.5%;
     background-repeat: no-repeat;
 }
+span.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus.select2-container--open {
+    background-image: url('../images/con-arrow.svg');
+    background-size: 2.5%;
+}
 .select2-container .select2-selection--single {
     height: 100%;
     border: none;
@@ -1065,6 +1069,7 @@ input[type="radio"] {
 .email-form {
     width:42%;
 }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
