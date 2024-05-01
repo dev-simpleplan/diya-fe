@@ -1,6 +1,8 @@
 /* about banner starts */
 section.about-banner{
-    height: 100vh;
+    height: 100%;
+    padding-top: 228px;
+    padding-bottom: 39px;
 }
 .ab-banner-in{
     height: 100%;
@@ -849,6 +851,9 @@ max-width: 13ch;
     bottom: 12px;
     left: 0;
 }
+section.stories-banner  .average-counter {
+    bottom:105px;
+}
 .average-bottom{
     display: flex;
     gap: 62px;
@@ -1117,7 +1122,7 @@ section.thankyou{
 /* thank you page ends */
 /* customer stories page starts */
 section.stories-banner{
-    /* height: 100vh; */
+     /* height: 100vh;  */
      min-height: 700px; 
 }
 .s-label{
@@ -1185,12 +1190,13 @@ section.stories-banner{
 .inner-st-ban {
     padding-top: 142px;
     display: flex;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    /* white-space: nowrap; */
-    height: 100vh;
+    /* overflow-y: auto;
+    scroll-behavior: smooth;   */
+      white-space: nowrap;
+     /* height: 100vh;  */
     align-items: stretch;
     transition: 0.5s ease all;  
+    /* overflow: hidden; */
 }
 .s-ban-left {
     width: 50%;
@@ -1199,7 +1205,8 @@ section.stories-banner{
     flex-direction: column;
     gap: 64px;
     position: sticky;
-    top:0;
+    height: 100vh;
+    top: 15%;
 }
 .s-ban-right {
     width: 40%;
@@ -2850,7 +2857,7 @@ section.virtual-banner .hol-ban-img  {
     }
     section.about-banner {
         height: 100%;
-        padding: 100px 0;
+        
         padding-top: 50px;
     }
     .sol-ban {
@@ -3200,9 +3207,7 @@ h2{
 /* Max Width 991px Ends */
 /* Max Width 767px */
 @media(max-width: 767px){
-    section.about-banner{
-        padding: 60px 0;
-    }
+    
     .ab-banner-top h2{
         font-size: 50px;
         line-height: 55px; 
@@ -3210,9 +3215,7 @@ h2{
     .inner-about-banner {
         padding-top: 75px;
     }
-    section.about-banner{
-        padding: 60px 0;
-    }
+    
     .statement1{
 font-size: 14px;
 line-height: 18.2px;
