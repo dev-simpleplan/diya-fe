@@ -581,7 +581,7 @@ color:#C4BDB0;
 section.banner-home{
   height: 100svh;
   min-height: 700px;
-  padding-top: 90px;
+  padding-top: 140px;
   overflow: hidden;
 }
 section.banner-home .container{
@@ -601,8 +601,8 @@ section.banner-home .container{
 .banner-left{
   flex-direction: column;
   display: flex;
-  justify-content: space-between;
-/* row-gap: 158px; */
+   justify-content: space-between; 
+ /* row-gap: 158px;  */
   width: 80%;
 }
 .container-fluid{
