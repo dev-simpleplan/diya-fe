@@ -1,6 +1,8 @@
 /* about banner starts */
 section.about-banner{
-    height: 100vh;
+    height: 100%;
+    padding-top: 228px;
+    padding-bottom: 39px;
 }
 .ab-banner-in{
     height: 100%;
@@ -468,12 +470,13 @@ max-width: 50ch;
 .bb-line{
     border: 1px solid #034A2F;
     width: 1px;
-    height: 680px;
+    height: 621px;
 }
 .inner-benefits{
     row-gap: 195px;
     display: flex;
     flex-direction: column;
+    padding-top: 92px;
 }
 .benefits-bottom{
     display: flex;
@@ -483,11 +486,12 @@ max-width: 50ch;
 .bb-right-head h2{
     text-transform: capitalize;
     color: #393939;
-    max-width: 20ch;
+    /* max-width: 20ch; */
+    max-width: 100%;
 }
 .benefit-centre p{
     color: #676A6C;
-    max-width: 23ch;
+    max-width: 100%;
 }
 .benefit-no , .usp{
     color: #C2C2C2;
@@ -519,6 +523,7 @@ max-width: 50ch;
     display: flex;
     flex-direction: column;
     gap: 56px;
+    width:70%;
 }
 .bb-left{
     position: relative;
@@ -771,7 +776,7 @@ width: 50%;
 }
 .support-mail a{
     color: #034A2F;
-    padding: 8px 0;
+    padding: 3px 0;
     border-bottom: 1px solid #000000;
 }
 .address a{
@@ -845,6 +850,9 @@ max-width: 13ch;
     position: absolute;
     bottom: 12px;
     left: 0;
+}
+section.stories-banner  .average-counter {
+    bottom:105px;
 }
 .average-bottom{
     display: flex;
@@ -928,10 +936,14 @@ body:has(.select2-container--open) {
 .option-wrapper .select2-container{
     border-bottom: 1px solid #BDBDBD;
     background-image: url('../images/contact-arrow.svg');
-    background-position: right center;
-    background-size: 2%;
+    background-position: 98% center;
+    background-size: 2.5%;
     background-repeat: no-repeat;
 }
+/* span.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus.select2-container--open {
+    background-image: url('../images/con-arrow.svg');
+    background-size: 2.5%;
+} */
 .select2-container .select2-selection--single {
     height: 100%;
     border: none;
@@ -1000,7 +1012,7 @@ text-align: left;
 color:#202322;
 text-transform: none;
   }
-  .terms label span{
+  .terms label span a{
 font-size: 12px;
 font-weight: 600;
 line-height: 18px;
@@ -1062,6 +1074,7 @@ input[type="radio"] {
 .email-form {
     width:42%;
 }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -1109,7 +1122,7 @@ section.thankyou{
 /* thank you page ends */
 /* customer stories page starts */
 section.stories-banner{
-    /* height: 100vh; */
+     /* height: 100vh;  */
      min-height: 700px; 
 }
 .s-label{
@@ -1177,12 +1190,13 @@ section.stories-banner{
 .inner-st-ban {
     padding-top: 142px;
     display: flex;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    /* white-space: nowrap; */
-    height: 100vh;
+    /* overflow-y: auto;
+    scroll-behavior: smooth;   */
+      /* white-space: nowrap; */
+     /* height: 100vh;  */
     align-items: stretch;
     transition: 0.5s ease all;  
+    /* overflow: hidden; */
 }
 .s-ban-left {
     width: 50%;
@@ -1191,7 +1205,8 @@ section.stories-banner{
     flex-direction: column;
     gap: 64px;
     position: sticky;
-    top:0;
+    height: 100vh;
+    top: 15%;
 }
 .s-ban-right {
     width: 40%;
@@ -1310,6 +1325,7 @@ text-transform: uppercase;
   .pagination a.active {
     background-color: #034A2F;
     color: #FEFDFC;
+    border:0;
   }
   
   .pagination a:hover:not(.active) {background-color: #D3E4CB;}
@@ -1487,6 +1503,7 @@ section.holistic-segment .mobile-segment-list  ul.bxslider li .segli{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding-bottom: 10px;
 }
 .module-top {
     display: flex;
@@ -1515,11 +1532,13 @@ section.holistic-segment .mobile-segment-list  ul.bxslider li .segli{
 .module1-top.label2 {
     padding: 24px 32px;
     display: inline-block;
+    height: 90px;
 }
 .module1{
     display: inline-flex;
     flex-direction: column;
     gap: 158px;
+    
     border: 1px solid #E8E8E8;
     background: #ffff;
     padding-bottom: 40px;
@@ -1961,7 +1980,7 @@ section.blog-study .blog1{
 }
 .email-form .formcontainer .e-mail input {
     width: 100%;
-     padding: 14px 0;
+     padding: 15px 0;
      padding-left:20px;
      background-color:#FAF9F7;
      border:1px solid #D9D9D9;
@@ -2495,6 +2514,18 @@ color:#494949;
 /* Max Width 1700px Ends */
 /* Max Width 1600px */
 @media(max-width: 1600px){
+    .bb-right-head h2 {
+        max-width: 20ch;
+    }
+    .bb-right {
+        width: 50%;
+    }
+    .benefit-centre p {
+        max-width: 23ch;
+    }
+    .bb-line{
+        height: 680px;
+    }
 }
 /* Max Width 1600px Ends */
 /* Max Width 1500px */
@@ -2502,6 +2533,9 @@ color:#494949;
     section.contact-form .average-counter {
         padding: 24px 90px;
     }
+
+    
+
 }
 /* Max Width 1500px Ends */
 /* Max Width 1400px */
@@ -2549,6 +2583,12 @@ color:#494949;
 section.contact-form .average-counter {
     padding: 24px 54px;
 }
+.hol-ban-bottom {
+    padding: 50px 0;
+}
+.email-form {
+    width: 60%;
+}
 }
 /* Max Width 1300px Ends */
 /* Max Width 1200px */
@@ -2568,6 +2608,19 @@ section.contact-form .average-counter {
     }
 section.stories-banner   .average-counter {
         bottom: 176px;
+    }
+    .inner-approach{
+        gap: 40px;
+    }
+    .inner-founders{
+        gap: 98px;
+    }
+    .inner-mission{
+        width: 50%;
+        gap: 120px;
+    }
+    .inner-donate{
+        padding: 80px 0;
     }
     .inner-approach{
         gap: 40px;
@@ -2605,6 +2658,14 @@ section.contact-form .average-counter {
         gap: 40px;
         padding-top: 100px;
     }
+    .sol-ban {
+        padding-top: 0;
+        padding-bottom: 0px;
+      }
+      .sol-inner-ban {
+        height: 700px;
+      }
+      
 }
 /* Max Width 1200px Ends */
 /* Max Width 1100px */
@@ -2718,16 +2779,48 @@ section.virtual-banner .hol-ban-img  {
   .explore-bottom{
     gap: 20px;
   }
+  .explore-bottom{
+    gap: 20px;
+  }
   .hol-bottom {
     gap:40px
   }
   .fo-description {
     gap: 98px;
   }
+  .bb-line {
+    height: 870px;
+}
+.module-desk {
+    gap: 50px;
+}
+.hbb-in {
+    gap: 60px;
+}
+.s-ban-text {
+    gap: 5px;
+}
+.tab {
+    gap: 16px;
+    justify-content: space-between;
+}
+.tab button {
+    padding: 12px 12px;
+}
 }
 /* Max Width 1100px Ends */
 /* Max Width 991px */
 @media(max-width: 992px){
+    section.about-banner {
+        height: 100%;
+        padding: 100px 0;
+        padding-top: 50px;
+    }
+    .mission-in{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
     section.contact-form .con-bottom {
         padding-bottom: 0;
     }
@@ -2744,10 +2837,6 @@ section.virtual-banner .hol-ban-img  {
     .inner-approach {
         row-gap: 80px;
     }
-    /* .ab-banner-top h1 {
-        font-size: 80px;
-        line-height: 78px;
-    } */
     .mission-left {
         width: 100%;
         position: relative;
@@ -2768,7 +2857,7 @@ section.virtual-banner .hol-ban-img  {
     }
     section.about-banner {
         height: 100%;
-        padding: 100px 0;
+        
         padding-top: 50px;
     }
     .sol-ban {
@@ -2794,7 +2883,8 @@ section.virtual-banner .hol-ban-img  {
         row-gap: 40px;
     }
     .inner-edu {
-        row-gap: 100px;
+        row-gap: 80px;
+        padding: 80px 0;
     }
     .inner-plan {
         flex-direction: column;
@@ -2831,7 +2921,7 @@ section.virtual-banner .hol-ban-img  {
     .inner-st-ban {
         flex-direction: column;
         padding-top: 165px;
-        gap: 64px;
+        gap:40px;
     }
     .s-ban-left {
         width: 100%;
@@ -2888,6 +2978,16 @@ section.virtual-banner .hol-ban-img  {
 .module-bottom {
     grid-template-columns: 1fr;
 }
+.courses {
+    gap: 50px;
+    padding: 20px 26px 20px 26px;
+}
+.course-head {
+    max-width: 100%;
+}
+.module-top {
+    gap: 20px;
+}
  .fo-name {
     position: absolute;
     bottom: 0;
@@ -2942,6 +3042,12 @@ section.virtual-banner .hol-ban-img  {
 }
 .bg-text p {
     max-width: 100%;
+}
+.email-form {
+  width:90%
+}
+section.segment .container-fluid {
+    padding:0;
 }
 .bg-ban-right {
     width: 100%;
@@ -3084,21 +3190,32 @@ section.contact-form .average-counter {
 section.thankyou {
     height: 700px;
 }
+.bb-right {
+    width: 100%;
+}
+.explore-reasons{
+    padding-top: 70px;
+}
+.inner-donate{
+    gap: 40px;
+}
+h2{
+    font-size:  clamp(32px, 6vw, 60px);
+   line-height: 110%;
+}
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
 @media(max-width: 767px){
+    
     .ab-banner-top h2{
         font-size: 50px;
         line-height: 55px; 
     }
-    /* .ab-banner-top h1{
-        font-size: 80px;      
-        line-height: 78px;
-    }  */
-    section.about-banner{
-        padding: 60px 0;
+    .inner-about-banner {
+        padding-top: 75px;
     }
+    
     .statement1{
 font-size: 14px;
 line-height: 18.2px;
