@@ -1192,7 +1192,7 @@ section.stories-banner{
     display: flex;
     /* overflow-y: auto;
     scroll-behavior: smooth;   */
-      white-space: nowrap;
+      /* white-space: nowrap; */
      /* height: 100vh;  */
     align-items: stretch;
     transition: 0.5s ease all;  
