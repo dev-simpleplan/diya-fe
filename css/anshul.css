@@ -15,6 +15,12 @@ section.about-banner{
     justify-content: space-between;
     row-gap: 100px;
 }
+.ab-banner-top.desktop{
+    display: block;
+}
+.ab-banner-top.mobile{
+    display: none;
+}
 .ab-banner-top h2{
     font-family: "Inter", sans-serif;
     font-size: clamp(26px, 8vw, 66px);
@@ -24,8 +30,8 @@ section.about-banner{
   color:#90B180; 
 }
 .ab-banner-top h1{
-    font-family: 'Gambarino-Regular';
-    font-size: clamp(80px, 10vw, 144px);
+    /* font-family: 'Gambarino-Regular'; */
+    font-size: clamp(70px, 10vw, 144px);
     font-weight: 400;
     line-height: 105%;
     letter-spacing: -0.03em; 
@@ -34,12 +40,6 @@ section.about-banner{
     max-width: 55ch;
 line-height: 27px;
 letter-spacing: 0.02em;
-}
-.ab-banner-top{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    row-gap: 10px;
 }
 /* about banner ends */
 /* approach section starts */
@@ -323,7 +323,7 @@ max-width: 38ch;
 /* explore section starts */
 .inner-explore{
     background-color: #013F27;
-    padding: 112px 0;
+    padding: 112px 0 60px 0;
 }
 .explore-head {
     color: #4DCC9C;
@@ -337,6 +337,7 @@ max-width: 38ch;
     color:#7BA494;
 }
 .reason-que h4{
+    font-weight: 400;
     color:#FCFCFA;
 }
 .reason-ans p{
@@ -542,7 +543,8 @@ max-width: 50ch;
     background: #034A2F;
     width: 24px;
     height: 24px;
-    box-shadow: #034A2F 0 0 24px 12px;
+  box-shadow: #07641B70 0 0 12px 6px;
+
 }
 .bb-text{
     color:#034A2F;
@@ -647,11 +649,14 @@ letter-spacing: -0.03em;
     display: flex;
     flex-direction: column;
     row-gap: 61px;
-    width: 35%;
+    width: 39%;
     margin-right: auto;
     clip-path: inset(0 100% 0% 0%);
     transition: 1s clip-path ease;
     transition-delay: 0.3s;
+}
+.plan-left .plan-heading h2{
+    font-size: clamp(32px, 5.5vw, 50px);
 }
 .inner-plan-right{
     display: flex;
@@ -2813,13 +2818,8 @@ section.virtual-banner .hol-ban-img  {
 @media(max-width: 992px){
     section.about-banner {
         height: 100%;
-        padding: 100px 0;
+        padding: 42px 0;
         padding-top: 50px;
-    }
-    .mission-in{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 40px;
     }
     section.contact-form .con-bottom {
         padding-bottom: 0;
@@ -2857,7 +2857,6 @@ section.virtual-banner .hol-ban-img  {
     }
     section.about-banner {
         height: 100%;
-        
         padding-top: 50px;
     }
     .sol-ban {
@@ -2866,7 +2865,7 @@ section.virtual-banner .hol-ban-img  {
     }
     
     .sol-ban-left {
-        row-gap: 48px;
+        row-gap: 40px;
     }
     .inner-benefits {
         row-gap: 82px;
@@ -3161,8 +3160,8 @@ section.contact-form .average-counter {
 }
 .mission-in{
     display: flex;
-    flex-direction: column-reverse;
-    gap: 40px;
+    flex-direction: column;
+    /* gap: 40px; */
 }
 .explore-reasons{
     padding-top: 70px
@@ -3203,10 +3202,44 @@ h2{
     font-size:  clamp(32px, 6vw, 60px);
    line-height: 110%;
 }
+.trusted-by{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+    padding-top: 130px;
+}
+.tb-head p{
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #B9B9B9;
+}
+.tb-img{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 }
 /* Max Width 991px Ends */
 /* Max Width 767px */
 @media(max-width: 767px){
+    .sol-ban-head h1{
+        font-size: 68px;
+        line-height: 72.5px;
+    }
+    .sol-ban-head h1 br{
+        display: none;
+    }
+    .ab-banner-top.desktop{
+        display: none;
+    }
+    .ab-banner-top.mobile{
+        display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 10px;
+    }
     
     .ab-banner-top h2{
         font-size: 50px;
@@ -3308,7 +3341,7 @@ letter-spacing: -0.05em;
         row-gap: 20px;
     }
     .inner-about-banner {
-        row-gap: 70px;
+        row-gap: 56px;
     }
     .inner-donate {
         padding:50px 0;
@@ -3379,10 +3412,14 @@ letter-spacing: -0.05em;
     .inner-about-banner {
         padding-top: 75px;
     }
+    .sol-points{
+        gap: 24px;
+    }
 }
 @media(max-width: 500px){
 .bb-right-grid {
     grid-template-columns: 1fr;
+    row-gap: 48px;
   }
   .email-form {
     padding: 0 10px;
