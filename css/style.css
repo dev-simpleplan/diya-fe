@@ -2559,11 +2559,19 @@ input[type="submit"] {
       left: -20%;
  }
 }
+@media(max-width: 400px){
+  .rule::before{
+    left: -21.5%;
+}
+.txt.two{
+  margin-left: 12px;
+}
+}
 @media(max-width: 380px){
   h2.mob-none{
     gap: 0;
     align-items: start;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
   }
   .head h1 {
       font-size: clamp(56px, 8vw, 144px);
