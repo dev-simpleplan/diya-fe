@@ -388,7 +388,7 @@
 <!-- benefits section ends -->
 
 <!-- blue footer wrapper -->
-<div class="blue-footer-wrapper">
+<div class="blue-footer-wrapper parent-sticky-wrapper">
 <!--green education courses section -->
 <section class="education">
     <div class="edu-in bg-green">
@@ -529,7 +529,7 @@
     </div>
 </section>
 <!-- green accomplishment section ends -->
-<div class="blue-footer">
+<div class="blue-footer sticky-wrapper">
     <div class="bfooter-in bg-blue">
         <div class="container-fluid">
             <div class="inner-bfooter">
@@ -547,7 +547,7 @@
 
 
 <!-- green footer starts-->
-<div class="green-footer-wrapper">
+<div class="green-footer-wrapper parent-sticky-wrapper">
 <!--blue education courses section -->
 <section class="education">
     <div class="edu-in light-blue">
@@ -689,7 +689,7 @@
     </div>
 </section>
 <!-- blue accomplishment section ends -->
-<div class="green-footer">
+<div class="green-footer sticky-wrapper">
     <div class="bfooter-in bg-green">
         <div class="container-fluid">
             <div class="inner-bfooter">
@@ -1631,6 +1631,29 @@ $(document).ready(function() {
 });
 
 })(jQuery);
+
+</script>
+
+<script>
+    $(window).on('scroll', function() {
+        $('.parent-sticky-wrapper').each(function() {
+            let $parentWrapper = $(this);
+            let $stickyWrapper = $parentWrapper.find('.sticky-wrapper');
+
+            let wrapperHeight = $parentWrapper.outerHeight();
+            let scrollY = $(window).scrollTop();
+            let wrapperTop = $parentWrapper.offset().top;
+            let heightWhenBecomeSticky = wrapperHeight / 3;
+
+            // Trigger the sticky class when the scroll position reaches half the wrapper height
+            if (scrollY >= (wrapperTop + heightWhenBecomeSticky - $(window).height() / 2)) {
+                $stickyWrapper.addClass('sticky');
+            } else {
+                $stickyWrapper.removeClass('sticky');
+            }
+        });
+});
+
 
 </script>
 <!-- gif ends -->
