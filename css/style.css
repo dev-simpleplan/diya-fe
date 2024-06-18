@@ -2446,9 +2446,18 @@ input[type="submit"] {
       flex-direction: column;
  }
   .stories-top{
-      flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-end;
       gap: 16px;
+ }
+ .blog-top{
+  align-items: flex-end;
+  grid-area: 16px;
+ }
+ .blog-top-left h2{
+  padding-bottom: 0;
+ }
+ .story-top-right,.blog-top-right{
+  flex-shrink: 0;
  }
   .owl-theme .owl-nav.disabled+.owl-dots{
       margin-top: 30px;
@@ -2507,11 +2516,6 @@ input[type="submit"] {
  }
   .story-bottom{
       font-size: 8px;
- }
-  .blog-top {
-      flex-direction: column;
-      align-items: baseline;
-      row-gap: 16px;
  }
   .footer-bottom-list ul {
       flex-wrap: wrap;
