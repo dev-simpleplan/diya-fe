@@ -3261,6 +3261,7 @@ line-height: 24px;
 font-size: 17px;
 line-height: 22.1px;
 text-wrap: pretty;
+letter-spacing:.2px;
     }
     
     .pf-left-top h2{
@@ -3300,6 +3301,7 @@ letter-spacing: -0.05em;
     }
     .plan-r-right{
         width: 100%;
+        order: -1;
     }
     .mi-content{
         font-size: 18px;
