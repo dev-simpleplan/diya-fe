@@ -1,467 +1,535 @@
 <!DOCTYPE html>
 <html lang="">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>newsletter</title>
-    <meta name="author" content="Your Name">
-    <meta name="description" content="Example description">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name" />
+    <meta name="description" content="Example description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital@0;1&family=Instrument+Serif&family=Inter&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital@0;1&family=Instrument+Serif&family=Inter&display=swap"
+      rel="stylesheet"
+    />
 
     <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Inter", sans-serif;
-            font-weight: 400;
-            color: #212121;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        color: #212121;
+      }
 
-        table,
-        td,
-        tr {
-            vertical-align: top;
-            border-collapse: collapse;
-        }
+      table,
+      td,
+      tr {
+        vertical-align: top;
+        border-collapse: collapse;
+      }
 
-        * {
-            line-height: inherit;
-        }
+      * {
+        line-height: inherit;
+      }
 
-        a[x-apple-data-detectors=true] {
-            color: inherit !important;
-            text-decoration: none !important;
-        }
+      a[x-apple-data-detectors="true"] {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
 
-        .top_header img {
-            max-width: 160px;
-            padding: 9px 0;
-        }
+      .top_header img {
+        max-width: 160px;
+        padding: 9px 0;
+      }
 
-        .em-head {
-            font-family: "Instrument Serif", serif;
-            font-size: 111.34px;
-            font-weight: 400;
-            line-height: 116.91px;
-            letter-spacing: -0.03em;
-            text-align: center;
-        }
+      .em-head {
+        font-family: "Instrument Serif", serif;
+        font-size: 111.34px;
+        font-weight: 400;
+        line-height: 116.91px;
+        letter-spacing: -0.03em;
+        text-align: center;
+      }
 
-        .green {
-            color: #90B180
-        }
+      .green {
+        color: #90b180;
+      }
 
-        .blue {
-            color: #8FABD1;
-        }
+      .blue {
+        color: #8fabd1;
+      }
 
-        .em-sub-head {
-            font-family: "Inter", sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: -0.07em;
-            text-align: center;
-            text-transform: capitalize;
-        }
+      .em-sub-head {
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.07em;
+        text-align: center;
+        text-transform: capitalize;
+      }
 
-        .em-text p {
-            font-family: "Instrument Sans", sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 21px;
-            letter-spacing: 0.02em;
-            text-align: center;
-            color: #656565;
-            max-width: 52ch;
-            margin-left: auto;
-            margin-right: auto;
-        }
+      .em-text p {
+        font-family: "Instrument Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #656565;
+        max-width: 52ch;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-        .email-img img {
-            width: 100%;
-            height: 100%;
-        }
+      .email-img img {
+        width: 100%;
+        height: 100%;
+      }
 
-        .greybg {
-            position: relative;
-            z-index: 9;
-        }
+      .greybg {
+        position: relative;
+        z-index: 9;
+      }
 
-        .inner-grey {
-            padding: 48px 24px 37px 24px;
-        }
+      .inner-grey {
+        padding: 48px 24px 37px 24px;
+      }
 
-        .mean-head {
-            font-family: "Instrument Serif", serif;
-            font-size: 64px;
-            line-height: 67.2px;
-            letter-spacing: -0.03em;
-            text-align: center;
-            text-transform: capitalize;
-            color: #212121;
-        }
+      .mean-head {
+        font-family: "Instrument Serif", serif;
+        font-size: 64px;
+        line-height: 67.2px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        text-transform: capitalize;
+        color: #212121;
+      }
 
-        .mean-p {
-            font-size: 20px;
-            line-height: 20px;
-            letter-spacing: -0.07em;
-            text-align: center;
-            color: #646464;
-        }
+      .mean-p {
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: -0.07em;
+        text-align: center;
+        color: #646464;
+      }
 
-        .v-head {
-            font-family: "Instrument Serif", serif;
-            font-size: 32px;
-            font-weight: 400;
-            line-height: 33.28px;
-            color: #212121;
-            max-width: 18ch;
-        }
+      .v-head {
+        font-family: "Instrument Serif", serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 33.28px;
+        color: #212121;
+        max-width: 18ch;
+      }
 
-        .v-content p {
-            font-family: "Instrument Sans", sans-serif;
-            font-size: 14px;
-            line-height: 19.74px;
-            letter-spacing: 0.02em;
-            color: #555555;
-            max-width: 25ch;
-            margin: 0;
-            padding-left: 10px;
-        }
+      .v-content p {
+        font-family: "Instrument Sans", sans-serif;
+        font-size: 14px;
+        line-height: 19.74px;
+        letter-spacing: 0.02em;
+        color: #555555;
+        max-width: 25ch;
+        margin: 0;
+        padding-left: 10px;
+      }
 
-        .virtual-right img {
-            width: 100%;
-            height: 100%;
-        }
-.holistic-left img{
-    width: 100%;
-    height: 100%;
-}
-        .v-content {
-            padding-top: 41px;
-        }
+      .virtual-right img {
+        width: 100%;
+        height: 100%;
+      }
+      .holistic-left img {
+        width: 100%;
+        height: 100%;
+      }
+      .v-content {
+        padding-top: 41px;
+      }
 
-        .v-tick {
-            padding-top: 41px;
-        }
-        .em-foot-right img{
-          width: 100%;
-          height: 100%;
-        }
-        .emfl-bottom img{
-            width: 70%;
-            height: 100%;
-        }
-        .emfl-top{
-font-size: 48px;
-line-height: 48px;
-letter-spacing: -0.07em;
-color:#FFFFFF;
-text-transform: capitalize;
-        }
+      .v-tick {
+        padding-top: 41px;
+      }
+      .em-foot-right img {
+        width: 100%;
+        height: 100%;
+      }
+      .emfl-bottom img {
+        width: 70%;
+        height: 100%;
+      }
+      .emfl-top {
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -0.07em;
+        color: #ffffff;
+        text-transform: capitalize;
+      }
     </style>
     <style id="media-query" type="text/css">
-        @media (max-width: 620px) {
-            .em-head {
-    font-size: 71.34px;
-    line-height: 60.91px;
+      @media (max-width: 620px) {
+        .em-head {
+          font-size: 71.34px;
+          line-height: 60.91px;
         }
         .mean-head {
-    font-size: 50px;
-    line-height: 100%; 
-    }
-   .virtual-right{
-    display: none;
-   }
-   .holistic-left{
-    display: none;
-   }
-}
-        
+          font-size: 50px;
+          line-height: 100%;
+        }
+        .virtual-right {
+          display: none;
+        }
+        .holistic-left {
+          display: none;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body class="clean-body" style="margin: 0; padding: 0; -webkit-text-size-adjust: 100%; background-color: #f6f6f6;">
+  <body
+    class="clean-body"
+    style="
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      background-color: #f6f6f6;
+    "
+  >
     <!--[if IE]><div class="ie-browser"><![endif]-->
-    <table cellpadding="0" cellspacing="0" class="nl-container" role="presentation"
-        style="table-layout: fixed; vertical-align: top; min-width: 320px; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;"
-        valign="top" width="100%">
-        <tbody>
-            <tr style="vertical-align: top;" valign="top">
-                <td style="word-break: break-word; vertical-align: top;" valign="top">
-
-
+    <table
+      cellpadding="0"
+      cellspacing="0"
+      class="nl-container"
+      role="presentation"
+      style="
+        table-layout: fixed;
+        vertical-align: top;
+        min-width: 320px;
+        border-spacing: 0;
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%;
+      "
+      valign="top"
+      width="100%"
+    >
+      <tbody>
+        <tr style="vertical-align: top" valign="top">
+          <td style="word-break: break-word; vertical-align: top" valign="top">
+            <div>
+              <div
+                class="block-grid"
+                style="
+                  min-width: 320px;
+                  max-width: 600px;
+                  overflow-wrap: break-word;
+                  word-wrap: break-word;
+                  word-break: break-word;
+                  margin: 0 auto;
+                  background-color: transparent;
+                "
+              >
+                <div
+                  class="col num12"
+                  style="
+                    min-width: 320px;
+                    max-width: 600px;
+                    display: table-cell;
+                    vertical-align: top;
+                    width: 600px;
+                  "
+                >
+                  <div class="col_cont" style="width: 100% !important">
+                    <!--[if (!mso)&(!IE)]><!-->
                     <div>
-                        <div class="block-grid"
-                            style="min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: transparent;">
+                      <!--<![endif]-->
+                      <div
+                        class="top_header"
+                        style="background-color: #a9c2e5; text-align: center"
+                      >
+                        <a href=""
+                          ><img src="images/logo-white.svg" alt=""
+                        /></a>
+                      </div>
 
-                            <div class="col num12"
-                                style="min-width: 320px; max-width: 600px; display: table-cell; vertical-align: top; width: 600px;">
-                                <div class="col_cont" style="width:100% !important;">
-                                    <!--[if (!mso)&(!IE)]><!-->
-                                    <div>
-                                        <!--<![endif]-->
-                                        <div class="top_header" style="background-color: #A9C2E5 ; text-align: center;">
-                                            <a href=""><img src="images/logo-white.svg" alt=""></a>
-                                        </div>
-
-                                        <div class="em-banner" style="padding-top: 50px;">
-                                            <div class="em-head" style="padding-bottom: 24px;">We Hear You</div>
-                                            <div class="em-sub-head blue">Thank you for joining our newsletter</div>
-                                            <div class="em-text" style="padding: 86px 0 ;">
-                                                <p>We have received your request and our team is preparing a response
-                                                    for same. Someone from our team will get in touch with you shortly.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="email-img" style="height: 438px;">
-                                            <img src="images\story-ban4 (1).jpg" alt="">
-                                        </div>
-
-                                        <div class="greybg"
-                                            style="max-width: 562px; min-width: 310px; background-color: #F5F5F5; margin: 0 auto; margin-top: -126px;">
-                                            <div class="inner-grey">
-
-                                                <div class="mean-text">
-                                                    <div class="mean-head">In The meantime</div>
-                                                    <div class="mean-p" style="padding-top: 24px;">Check Out Our
-                                                        Offerings</div>
-                                                </div>
-                                                <div class="virtual"
-                                                    style="background-color: #D5E2F6; margin-top: 48px;">
-                                                    <table style="width: 100%; height: 100%;">
-                                                        <tr>
-                                                            <td style="height: 100%;">
-                                                                <div class="virtual-left"
-                                                                    style="padding: 43px 0 52px 37px; ">
-                                                                    <div class="v-head">Virtual Diabetes Education
-                                                                        Courses</div>
-                                                                    <div class="v-points" style="padding-top:14px">
-                                                                        <div class="v-point">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        <div class="v-tick">
-                                                                                            <img src="images\email-point.svg"
-                                                                                                alt="">
-                                                                                        </div>
-
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="v-content">
-                                                                                            <p>
-                                                                                                Care Plan Benefit / USP
-                                                                                                1 and description lorem
-                                                                                                ipsum dolor sit.
-                                                                                            </p>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        <div class="v-tick">
-                                                                                            <img src="images\email-point.svg"
-                                                                                                alt="">
-                                                                                        </div>
-
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="v-content">
-                                                                                            <p>
-                                                                                                Care Plan Benefit / USP
-                                                                                                1 and description lorem
-                                                                                                ipsum dolor sit.
-                                                                                            </p>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        <div class="v-tick">
-                                                                                            <img src="images\email-point.svg"
-                                                                                                alt="">
-                                                                                        </div>
-
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="v-content">
-                                                                                            <p>
-                                                                                                Care Plan Benefit / USP
-                                                                                                1 and description lorem
-                                                                                                ipsum dolor sit.
-                                                                                            </p>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        <div class="v-tick">
-                                                                                            <img src="images\email-point.svg"
-                                                                                                alt="">
-                                                                                        </div>
-
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="v-content">
-                                                                                            <p>
-                                                                                                Care Plan Benefit / USP
-                                                                                                1 and description lorem
-                                                                                                ipsum dolor sit.
-                                                                                            </p>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </div>
-                                                                    </div>
-
-
-
-                                                                </div>
-                                                            </td>
-                                                            <td style="height: 100%;">
-                                                                <div class="virtual-right"
-                                                                    style="height: 100%; width: 100%;">
-                                                                    <img src="images\email-img.png" alt="">
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-
-                                                <div class="holistic"
-                                                    style="background-color: #F0ECDF; margin-top: 19px;">
-                                                    <table style="width: 100%; height: 100%;">
-                                                        <tr>
-                                                            <td style="height: 100%;">
-                                                                <div class="holistic-left"
-                                                                style="height: 100%; width: 100%;">
-                                                                <img src="images\email-img2.png" alt="">
-                                                            </div>
-                                                            </td>
-                                                            <td style="height: 100%;">
-                                                                <div class="holistic-right"
-                                                                style="padding: 43px 0 52px 27px; ">
-                                                                <div class="v-head">Holistic <br>Care Program</div>
-                                                                <div class="v-points" style="padding-top:14px">
-                                                                    <div class="v-point">
-                                                                        <table>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="v-tick">
-                                                                                        <img src="images\email-point.svg"
-                                                                                            alt="">
-                                                                                    </div>
-
-                                                                                </td>
-                                                                                <td>
-                                                                                    <div class="v-content">
-                                                                                        <p>
-                                                                                            Care Plan Benefit / USP
-                                                                                            1 and description lorem
-                                                                                            ipsum dolor sit.
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="v-tick">
-                                                                                        <img src="images\email-point.svg"
-                                                                                            alt="">
-                                                                                    </div>
-
-                                                                                </td>
-                                                                                <td>
-                                                                                    <div class="v-content">
-                                                                                        <p>
-                                                                                            Care Plan Benefit / USP
-                                                                                            1 and description lorem
-                                                                                            ipsum dolor sit.
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="v-tick">
-                                                                                        <img src="images\email-point.svg"
-                                                                                            alt="">
-                                                                                    </div>
-
-                                                                                </td>
-                                                                                <td>
-                                                                                    <div class="v-content">
-                                                                                        <p>
-                                                                                            Care Plan Benefit / USP
-                                                                                            1 and description lorem
-                                                                                            ipsum dolor sit.
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="v-tick">
-                                                                                        <img src="images\email-point.svg"
-                                                                                            alt="">
-                                                                                    </div>
-
-                                                                                </td>
-                                                                                <td>
-                                                                                    <div class="v-content">
-                                                                                        <p>
-                                                                                            Care Plan Benefit / USP
-                                                                                            1 and description lorem
-                                                                                            ipsum dolor sit.
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-
-
-
-                                                            </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-
-                                            </div>
-
-
-                                        </div>
-
-                                        <div class="email-footer" style="margin-top: 88px;">
-                                            <img src="images\e-foot-2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                      <div class="em-banner" style="padding-top: 50px">
+                        <div class="em-head" style="padding-bottom: 24px">
+                          We Hear You
                         </div>
+                        <div class="em-sub-head blue">
+                          Thank you for joining our newsletter
+                        </div>
+                        <div class="em-text" style="padding: 86px 0">
+                          <p>
+                            We have received your request and our team is
+                            preparing a response for same. Someone from our team
+                            will get in touch with you shortly.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="email-img" style="height: 438px">
+                        <img src="images\story-ban4 (1).jpg" alt="" />
+                      </div>
+
+                      <div
+                        class="greybg"
+                        style="
+                          max-width: 562px;
+                          min-width: 310px;
+                          background-color: #f5f5f5;
+                          margin: 0 auto;
+                          margin-top: -126px;
+                        "
+                      >
+                        <div class="inner-grey">
+                          <div class="mean-text">
+                            <div class="mean-head">In The meantime</div>
+                            <div class="mean-p" style="padding-top: 24px">
+                              Check Out Our Offerings
+                            </div>
+                          </div>
+                          <div
+                            class="virtual"
+                            style="background-color: #d5e2f6; margin-top: 48px"
+                          >
+                            <table style="width: 100%; height: 100%">
+                              <tr>
+                                <td style="height: 100%">
+                                  <div
+                                    class="virtual-left"
+                                    style="padding: 43px 0 52px 37px"
+                                  >
+                                    <div class="v-head">
+                                      Virtual Diabetes Education Courses
+                                    </div>
+                                    <div
+                                      class="v-points"
+                                      style="padding-top: 14px"
+                                    >
+                                      <div class="v-point">
+                                        <table>
+                                          <tr>
+                                            <td>
+                                              <div class="v-tick">
+                                                <img
+                                                  src="images\email-point.svg"
+                                                  alt=""
+                                                />
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="v-content">
+                                                <p>
+                                                  Care Plan Benefit / USP 1 and
+                                                  description lorem ipsum dolor
+                                                  sit.
+                                                </p>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="v-tick">
+                                                <img
+                                                  src="images\email-point.svg"
+                                                  alt=""
+                                                />
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="v-content">
+                                                <p>
+                                                  Care Plan Benefit / USP 1 and
+                                                  description lorem ipsum dolor
+                                                  sit.
+                                                </p>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="v-tick">
+                                                <img
+                                                  src="images\email-point.svg"
+                                                  alt=""
+                                                />
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="v-content">
+                                                <p>
+                                                  Care Plan Benefit / USP 1 and
+                                                  description lorem ipsum dolor
+                                                  sit.
+                                                </p>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="v-tick">
+                                                <img
+                                                  src="images\email-point.svg"
+                                                  alt=""
+                                                />
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="v-content">
+                                                <p>
+                                                  Care Plan Benefit / USP 1 and
+                                                  description lorem ipsum dolor
+                                                  sit.
+                                                </p>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td style="height: 100%">
+                                  <div
+                                    class="virtual-right"
+                                    style="height: 100%; width: 100%"
+                                  >
+                                    <img src="images\email-img.png" alt="" />
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+
+                          <div
+                            class="holistic"
+                            style="background-color: #f0ecdf; margin-top: 19px"
+                          >
+                            <table style="width: 100%; height: 100%">
+                              <tr>
+                                <td style="height: 100%">
+                                  <div
+                                    class="holistic-left"
+                                    style="height: 100%; width: 100%"
+                                  >
+                                    <img src="images\email-img2.png" alt="" />
+                                  </div>
+                                </td>
+                                <td style="height: 100%">
+                                  <div
+                                    class="holistic-right"
+                                    style="padding: 43px 0 52px 27px"
+                                  >
+                                    <div class="v-head">
+                                      Holistic <br />Care Program
+                                    </div>
+                                    <div
+                                      class="v-points"
+                                      style="padding-top: 14px"
+                                    >
+                                      <div class="v-point">
+                                        <table>
+                                          <tr>
+                                            <td>
+                                              <div class="v-tick">
+                                                <img
+                                                  src="images\email-point.svg"
+                                                  alt=""
+                                                />
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="v-content">
+                                                <p>
+                                                  Care Plan Benefit / USP 1 and
+                                                  description lorem ipsum dolor
+                                                  sit.
+                                                </p>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="v-tick">
+                                                <img
+                                                  src="images\email-point.svg"
+                                                  alt=""
+                                                />
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="v-content">
+                                                <p>
+                                                  Care Plan Benefit / USP 1 and
+                                                  description lorem ipsum dolor
+                                                  sit.
+                                                </p>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="v-tick">
+                                                <img
+                                                  src="images\email-point.svg"
+                                                  alt=""
+                                                />
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="v-content">
+                                                <p>
+                                                  Care Plan Benefit / USP 1 and
+                                                  description lorem ipsum dolor
+                                                  sit.
+                                                </p>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="v-tick">
+                                                <img
+                                                  src="images\email-point.svg"
+                                                  alt=""
+                                                />
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="v-content">
+                                                <p>
+                                                  Care Plan Benefit / USP 1 and
+                                                  description lorem ipsum dolor
+                                                  sit.
+                                                </p>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="email-footer" style="margin-top: 88px">
+                        <img src="images\e-foot-2.png" alt="" />
+                      </div>
                     </div>
-
-
-
-
-
-                </td>
-            </tr>
-        </tbody>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
     </table>
-
-</body>
-
+  </body>
 </html>
